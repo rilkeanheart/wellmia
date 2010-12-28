@@ -1,0 +1,674 @@
+/*
+Screen style sheet (browsers)
+Author:   Michael Green
+Version:  2009.01
+*/
+
+/* 
+GENERAL STYLES ---------------------------- */
+
+body {
+        /*font-size:  67%;*/
+        text-align: left;
+        color:#0267cf;
+        direction:ltr;
+        font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+        font-size:11px; 
+        text-align:left;
+        /* fill in css declarations in here to test css autocomplete */
+    }
+    
+    .wrapper {
+        width:  100em;
+        max-width: 95%;
+        margin: 0 auto;
+        text-align: left;
+    } 
+    
+    .header {
+        height: 60px;
+        background-color: #ffffff;
+
+    }
+    
+    .content .primary {
+        width:  78.82%; /* width increased and padding removed */
+        float: right;
+        display: inline;
+        background-color: #ffffff;
+    }
+    
+    .content .secondary {
+        width:  20%;
+        float: left;
+        display: inline;
+        background-color: #ffffff;
+        word-wrap: breakword;
+        padding:10px 0 0 2px;
+    }
+    
+    .content .primary .primary {
+        width:  64.7%;
+        float: left;
+        display: inline;
+        background-color: #ffffff;
+    }
+    
+    .content .primary .secondary {
+        width:  29.33%;
+        float: right;
+        display: inline;
+    }
+    
+    .userIDBlock {
+        
+    }
+    
+    .userIcon {
+        
+    }
+    
+    .userName {
+        display:table-cell;
+        vertical-align:top;
+        width:1000px;   
+    }
+    
+    .leftNavSection {
+        word-wrap:  break-word;
+    }
+    
+    .leftNavSection li {
+        display: block;
+        position: relative;
+        font-size:13px;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    a {
+        color: #3B5998;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    label {
+        color: #666666;
+        cursor: pointer;
+        font-weight: bold;
+        vertical-align: middle;
+    }
+    
+    button.isaLink {
+        background: none repeat scroll 0 0 transparent;
+        border: medium none;
+        /*color: #3b5998;*/
+        cursor: pointer;
+        /*font-family: "lucinda grande", tahoma, verdana,arial, sans-serif;*/
+        font-size: 100%;
+        margin: 0;
+        overflow: visible;
+        /*padding: 0;*/
+        text-align: left;
+        width: auto;
+    }
+    
+    button.news_actions_like,
+    button.news_actions_dislike {
+        
+    }
+    
+    form {
+        margin:0;
+        padding:0;
+    }
+    
+    .uiStreamHeaderSelect select {
+        font-family:  "lucida grande", tahoma,verdana,arial,sans-serif;
+        font-size:  11px;
+        padding: 2px;
+        border: 1px solid #BDC7D8;
+        border-collapse: collapse;
+        border-spacing: 0;
+        display: inline-block;
+    }
+    
+    .uiActionLinks_bottom a,
+    .uiActionLinks_bottom button.isaLink,
+    .uiActionLinks_left,
+    .uiActionLinks_right {
+        /*color:  #6D84B4;*/
+    }
+    
+    .uiUfiAddComment textArea {
+        height: 29px;
+    }
+
+    .uiUfiAddCommentCollapsed .textBox {
+        height: 14px;
+    }
+        
+    .uiUfiAddComment .textBoxContainer {
+        width: 380px;
+    }
+    
+    .child_focused .uiUfiAddCommentMinimized .textBoxContainer,
+    .uiUfiAddComment .textBoxContainer {
+        width: 380px;
+    }
+    
+    .uiUfiAddComment .textBoxContainer,
+    .uiUfiAddComment .textBox {
+        margin: 0;
+    }
+    
+    .uiUfiAddComment .textBoxContainer,
+    .uiUfiAddComment .commentBtn {
+        float: right;
+    }
+    
+    .uiTextareaAutogrow {
+        overflow: hidden;
+    }
+    
+    .uiTextareaNoResize {
+        
+    }
+    
+    .uiButtonConfirm {
+        background-color: #5874A8;
+        background-position: 0 -48px;
+        border-color: #29447E #29447E #1A356E;
+        color: #FFFFFF;
+    }
+    
+    .uiButtonSpecial .uiButtonText,
+    .uiButtonConfirm .uiButtonText,
+    .uibuttonSpecial input, .uiButtonConfirm input {
+        color: #FFFFFF;
+    }
+    
+    .uiButton, .uiButtonSuppressed:active,
+    .uiButtonSuppressed:focus,
+    .uiButtonSuppressed:hover {
+        border-color:  #999999 #999999 #888888;
+        border-style: solid;
+        border-width: 1px;
+        color: #333333;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 11px;
+        font-weight: bold;
+        line-height: normal !important;
+        padding: 2px 6px;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: top;
+        white-space: nowrap;
+    }
+    
+    .uiButton .uiButtonText, .uiButton input {
+        background: none repeat scroll 0 0 transparent;
+        border: 0 none;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+        font-size:  11px;
+        font-weight: bold;
+        margin: 0;
+        outline: medium none;
+        padding: 1px 0 2px;
+        white-space: nowrap;
+    }
+    
+    uiUfiAddComment label {
+        display: block;
+    }
+    
+    .hiddenAddComment .uiUfiAddComment,
+    .uiUfiAddCommentMinimized .memberPic,
+    .uiUfiAddCommentCollapsed .commentBtn  {
+        display: none;
+    }
+    
+    textarea, .inputtext, .inputpassword {
+        border: 1px solid #BDC7D8;
+        font-family: "lucinda grande", tahoma,verdana,arial,sans-serif;
+        font-size: 11px;
+        padding: 3px;
+    }
+    
+    .pageletComposer {
+        
+    }
+    
+    .uiComposer {
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+    }
+    
+    .uiList {
+        
+    }
+    
+    .uiListHorizontal li:first-child {
+        border-width: 0;
+        padding-left: 0px;
+    }
+    
+    .uiListHorizontal li {
+        display: block;
+        float: left;
+        padding-left: 10px;
+        font-size: 18px;
+        
+    }
+    
+    .uiListHorizontal li:first-child a{
+        padding-left: 10px;
+    }
+    
+    .uiListHorizontal li a {
+        padding-left: 50px;
+        color: #000000;
+    }
+    
+    .uiListHorizontal {
+        
+    }
+    
+    .uiListLight, .uiListMedium, .uiListDark {
+        border-style: solid;
+    }
+    
+    .uiListItem {
+        display: block;
+    }
+    
+    .uiListItem:first-child {
+        border-width: 0;
+    }
+    
+    .uiListVerticalItemBorder {
+        border-width: 1px 0 0;
+    }
+    
+    .uiHeader {
+        padding: 6px 0 16px;
+        border-bottom: 5px solid #0267cf;
+    }
+    
+    .uiHeaderWithImage .uiHeaderTop {
+        position: relative;
+    }
+    
+    .uiHeaderPage {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .uiHeaderPage .uiHeaderTop .uiTextTitle,  .uiHeaderPage .uiHeadertop .fsl {
+        margin-top: 3px;
+    }
+    
+    .uiHeaderPage .uiHeaderActions {
+        margin-top: 1px;
+    }
+    
+    .uiHeaderPage .uiHeaderTitle {
+        line-height: 20px;
+        min-height: 20px;
+        padding-bottom: 2px;
+        vertical-align: bottom;
+        margin-bottom: 0;
+    }
+    
+    .uiIconLink .img {
+        left: 0;
+        /* position: absolute; */
+        vertical-align: middle;
+    }
+    
+    .UIImageBlock_Content {
+        display: table-cell;
+        vertical-align: top;
+        width:  10000px;
+    }
+    
+    .uiStreamHeaderSelect {
+        display: inline-block;
+        float: right;
+    }
+    
+    .uiUfi {
+        padding-top: 2px;
+        width: 398px;
+    }
+    
+    .uiUfi li {
+        
+    }
+    
+    .uiUfi .ufiNub {
+        margin-bottom:  -2px;
+        margin-top: 0;
+    }
+    
+    .uiUfi .ufiItem {
+        background-color: #EDEFF4;
+        border-bottom: 1px solid #E5EAF1;
+        margin-top: 2px;
+        padding: 5px 5px 4px;
+    }
+    
+    .uiUfiComment .memberName {
+        font-weight: bold;
+    }
+    
+    .uiUfiComment .commentContent {
+        padding-top: 1px;
+    }
+    
+    img {
+        border: 0 none;
+        width: 29px;
+        height: 29px;
+    }
+    
+    .rfloat {
+        float: right;
+    }
+    
+    .clearfix {
+        display: block;
+    }
+    
+    .clearfix:after {
+        content: ".";
+        display: block;
+        height: 0;
+        font-size:0;
+        clear: both;
+        visibility: hidden;
+    }
+    
+    .uiComposerAttachments {
+        padding: 7px 0 8px;
+        position: relative;
+    }
+    
+    .uiBubbleCount {
+        display:  inline-block;
+        font-size:  11px;
+        font-weight: bold;
+        line-height:  14px;
+        padding-left:  6px;
+    }
+    
+    .uiBubbleCount span.numberContainer {
+        display: inline-block;
+        line-height: 14px;
+        padding:  0 7px 0 1px;
+    }
+    
+    .padded_bottom_margin  {
+        padding-bottom:  10px;
+    }
+    
+    .padded_top_margin {
+        padding-top: 10px;
+    }
+    
+    .fcb {
+        color:  #333333;
+    }
+    
+    .fwb {
+        font-weight: bold;
+    }
+    
+    .fsl {
+        font-size:  13px;
+    }
+    
+    .fcg {
+        color:#000000;
+    }
+    
+    .fwn {
+        font-weight:normal;
+    }
+    
+    .fsm {
+        /* font-size:18px;*/
+    }
+    
+    .mts {
+        margin-top: 5px;
+    }
+    
+    .hidden_elem {
+        display: none !important;
+    }
+    
+    .news_list_container {
+        display: block;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .news_list_container .news_list {
+        /** position:  absolute; **/
+        top:0;
+    }
+    
+    .news_headline {
+        color: #ABC5E4;
+        margin-bottom: 3px;
+        margin-right: 15px;
+        text-decoration: underline;
+        word-wrap: break-word;
+        font-size: 1.333333em;
+        font-weight: bold;
+    }
+    
+    .news_description {
+        clear: left;
+        margin-bottom: 0px;
+        word-wrap: break-word;
+    }
+    
+    .news_age {
+        clear: left;
+        line-height: 1.333333em;
+        margin-bottom: 2px;
+        word-wrap: break-word;
+    }
+    
+    .health_tab_list {
+        margin-top: 5px;   
+    }
+    
+    .news_actions_helpful {
+        color: #578CCA;
+    }
+    
+    .news_actions_like {
+        color: #088A08;
+    }
+
+    .news_actions_dislike {
+        color: #DF0101;
+    }
+    
+    .news_actions_save {
+        color: #578CCA;
+    }
+    
+    .news_health_theme_box {
+        float:  left;
+        background-color:  #EAF646;
+        height: 20px;
+        width: 125px;
+        -moz-border-radius: 1em 1em 1em 1em;
+        border: 1px solid #d2cfcf;
+        margin-right: 5px;
+        margin-top: 3px;
+    }
+    
+    .news_actions {
+        clear: left;
+        min-height: 1%;
+        display: block;
+        list-style: none outside none;
+        padding-top: 5px;
+    }
+        
+    .news_actions li {
+        color: #999999;
+        float: left;
+        line-height: 1.16667em;
+        margin-right: 10px;
+    }
+    
+    .news_actions_comment .comments_icon {
+        width: 20px;
+        display: block;
+        overflow: visible;
+    }
+    
+    .comments_icon {
+        background: url("../images/comments.png") no-repeat scroll 0 0 transparent;
+        float: left;
+        height: 14px;
+        margin-right: 1px;
+    }
+    
+    .news_actions a {
+        float: left;
+    }
+    .news_health_theme {
+        display: block;
+        font-size: 15px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 6px;
+        text-align: center;        
+    }
+
+    .news_source {
+        color: #e37400;
+        margin-right: 3px;
+    }
+    
+    .news_item {
+        border-bottom: 1px solid #CFDEF0;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        padding-left: 0px;
+        position: relative;
+        min-height: 1%;
+        display: block;
+    }
+    
+    .news_item .thumbnail {
+        float: left;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .news_item .thumbnail-inner {
+        display: block;
+    }
+    
+    .thumbnail {
+        border: 1px solid #ccdcef;
+        display: block;
+        overflow: hidden;
+    }
+    
+    .thumbnail-inner {
+        height: 62px;
+        padding: 3px;
+        width: 62px;
+    }
+    
+    .news_context {
+        float: left;
+        margin-right: 5px;
+        display: block;
+    }
+    
+    .news_details {
+        float: right;
+        padding-top: 0px;
+        width: 77%;
+    }
+    
+    .news_popularity_box {
+        float:  left;
+        background-color:  #CFDEF0;
+        height: 68px;
+        width: 45px;
+        -moz-border-radius: 1em 1em 1em 1em;
+        border: 1px solid #d2cfcf;
+        margin-right: 5px;
+    }
+    .news_popularity_count {
+        display: block;
+        font-size: 18px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 6px;
+        text-align: center;
+    }
+    
+    
+    .news_popularity_label {
+        display: block;
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .news_item:hover .hide_link {
+        visibility: visible;
+    }
+    
+    .hide_link {
+        background-image: url("../images/hidenews_red.png");
+        cursor:  pointer;
+        height:  17px;
+        width: 17px;
+        display: inline-block;
+        visibility: hidden;
+        margin: 0;
+        padding: 0;
+        margin-top: -2px;
+        margin-left: 10px;
+        position: absolute;
+        left: 525px;
+    }
+    
+    #topbar {
+        background-color: #fffff1;
+        height:  100px;
+        left: 0;
+        position: absolute;
+        width:  100%;
+    }
+    
+    #pageLogo a {
+        background: url("../images/wellmialogo.png");
+        background-repeat: no-repeat;
+        display: block;
+        text-indent: -99999px;
+        background-color: #ffffff;
+        height: 60px;
+        width: 206px;
+        margin: 0;
+    }

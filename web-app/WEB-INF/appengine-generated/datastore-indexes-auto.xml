@@ -1,0 +1,17 @@
+<!-- Indices written at Mon, 27 Dec 2010 21:52:05 UTC -->
+
+<datastore-indexes>
+
+    <!-- Used 3 times in query history -->
+    <datastore-index kind="NewsItem" ancestor="false" source="auto">
+        <property name="category" direction="asc"/>
+        <property name="dateCreated" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="FeedEdge" ancestor="false" source="auto">
+        <property name="consumerId" direction="asc"/>
+        <property name="sortedDate" direction="desc"/>
+    </datastore-index>
+
+</datastore-indexes>
