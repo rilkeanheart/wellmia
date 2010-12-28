@@ -4,7 +4,7 @@ package com.wellmia
 class NewsItemService {
   static transactional = true
 
-  def updateNewsItems = {int iOffset, int iMaxSourcesToProcess ->
+  def updateNewsItems = {int iOffset, int iMaxSourcesToProcess, boolean categorize ->
     def newsSources = NewsSource.list(sort: 'newsSourceRank', order: 'asc', offset: iOffset, max: iMaxSourcesToProcess)
     println "Update News Item Service:  Obtained $newsSources.size() NewsSources"
     def newsItems = []
@@ -38,21 +38,24 @@ class NewsItemService {
                   //imageTitle: it.getTitle()
           )
 
-          String contentString = newsItem.title + ' ' + newsItem.content
-          NGramProfiler profiler = new NGramProfiler(contentString)
-          Map<String,Integer> profileNGramCount = profiler.createProfile()
-          //Map<String,Integer> profileNGramRank = HashMapUtility.sortHashMapByValuesD(profileNGramCount)
+          if(categorize == true) {
+            String contentString = newsItem.title + ' ' + newsItem.content
+            NGramProfiler profiler = new NGramProfiler(contentString)
+            Map<String,Integer> profileNGramCount = profiler.createProfile()
+            //Map<String,Integer> profileNGramRank = HashMapUtility.sortHashMapByValuesD(profileNGramCount)
 
-          List allCategories = CategoryProfile.list()
-          allCategories.each { category ->
-            double difference = NGramProfiler.calculateDifference(profileNGramCount,
-                                                                  category.ngramCounts)
+            List allCategories = CategoryProfile.list()
+            allCategories.each { category ->
+              double difference = NGramProfiler.calculateDifference(profileNGramCount,
+                                                                    category.ngramCounts)
 
-            double threshold =  category.getProperty('thresholdSensitivity')
-            if(difference <= threshold) {
-              //TODO:  use difference score to order category list
-              println "Found one for category:  "  +  category.getProperty('categoryName')
-              newsItem.category.add(category.getProperty('categoryName'))
+              double threshold =  category.getProperty('thresholdSensitivity')
+              if(difference <= threshold) {
+                //TODO:  use difference score to order category list
+                println "Found one for category:  "  +  category.getProperty('categoryName')
+                newsItem.category.add(category.getProperty('categoryName'))
+              }
+
             }
 
           }
@@ -65,7 +68,7 @@ class NewsItemService {
           //    build list sorting by highest score
           //    return list
 //
-          if(!newsItem.category.isEmpty()) {
+          if(!newsItem.category.isEmpty() || categorize == false) {
             NewsItem.withTransaction {
               if(!newsItem.save(flush:true))
                  throw new NewsItemUpdateException(message: "Error adding news item to source $newsSource:  $newsItem", newsItem: newsItem)

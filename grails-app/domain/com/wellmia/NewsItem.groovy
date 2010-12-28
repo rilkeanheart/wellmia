@@ -41,9 +41,10 @@ class NewsItem implements Serializable {
                fetch = FetchType.EAGER)
 	SortedSet<Comment> comments
 
+    //TODO:  Test unique constraint on NewsItem titles
     static constraints = {
     	id visible:false
-		title(blank: false)
+		title(blank: false, unique: true)
 		urlLink(url: true, blank: false)
 		publishDate(blank: false)
 		imageTitle(nullable: true)

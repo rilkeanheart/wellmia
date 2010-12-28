@@ -111,8 +111,12 @@ class NewsItemController {
 	def doNewsUpdateService = {
 		def offset = params.int("offset")
 		def maxSourcesToProcess = params.int("max")
+        def categorize = params.boolean("categorize")
 
-		newsItemService.updateNewsItems(offset, maxSourcesToProcess)
+        if(categorize == null)
+          categorize = true
+
+		newsItemService.updateNewsItems(offset, maxSourcesToProcess, categorize)
 		flash.message = "Completed news update method"
 		redirect(action: 'list')
 	}
