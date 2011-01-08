@@ -149,7 +149,7 @@ body {
     }
 
     .uiUfiAddCommentCollapsed .textBox {
-        height: 14px;
+        height: 22px;
     }
         
     .uiUfiAddComment .textBoxContainer {
@@ -652,6 +652,11 @@ body {
         margin-left: 10px;
         position: absolute;
         left: 525px;
+    }
+
+    .spinner {
+        height: 16px;
+        width: 16px;
     }
     
     #topbar {

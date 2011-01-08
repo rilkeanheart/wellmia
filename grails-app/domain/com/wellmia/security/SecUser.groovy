@@ -15,6 +15,9 @@ class SecUser {
 	String id
 
     Date dateCreated = new Date()
+
+    //TODO:  Track last login date - need to also update the userdetailsservice
+    //Date lastLoginDate = new Date()
     String username
 	String password
 

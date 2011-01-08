@@ -8,7 +8,7 @@ import org.datanucleus.jpa.annotations.Extension;
 // import com.google.appengine.api.datastore.Key;
 
 @Entity
-class Comment implements Serializable {
+class Comment implements Serializable, Comparable {
 
     @Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,7 +16,8 @@ class Comment implements Serializable {
 	String id
 
 	String content
-	Date dateCreated
+	Date dateCreated = new Date()
+    String memberCreatorUsername
 
 	// Key of Member who created comment
 	String memberCreatorId
@@ -29,6 +30,7 @@ class Comment implements Serializable {
     	id visible:false
 		content(blank:false)
 		memberCreatorId(blank:false)
+        memberCreatorUsername(blank:false)
 		commentableItemId(blank:false)
         commentableItemType(blank:false, inList:[com.wellmia.NewsItem,com.wellmia.Post])
 	}
@@ -36,4 +38,13 @@ class Comment implements Serializable {
 	String toString() {
 		"${content}"
 	}
+
+    int compareTo(Object o) {
+      int returnValue = 0
+
+      if(o.dateCreated != this.dateCreated)
+        returnValue = (this.dateCreated < o.dateCreated) ? -1 : 1
+
+      return returnValue
+    }
 }

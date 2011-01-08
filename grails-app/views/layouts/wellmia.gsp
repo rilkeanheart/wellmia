@@ -63,21 +63,7 @@
                 <!-- your footer content here-->
             </div>
         </div>
-        <g:javascript>
-              $(".uiUfiAddComment textarea").focus(function () {
-                $(this).parent().removeClass('uiUfiAddCommentCollapsed');
-                if($(this).val() == $(this).attr('defaulttext'))
-                  $(this).val("");
-              });
-         </g:javascript>
-        <g:javascript>
-              $(".uiUfiAddComment textarea").blur(function () {
-                if($(this).val() == "") {
-                  $(this).val($(this).attr('defaulttext'));
-                  $(this).parent().addClass('uiUfiAddCommentCollapsed');
-                }
-              });
-         </g:javascript>
+
 
 
     </body>

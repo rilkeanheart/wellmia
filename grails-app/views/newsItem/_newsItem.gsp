@@ -37,7 +37,7 @@
               </div>
             </g:each>
         </div>
-        <g:form onSubmit="" action="/ajax/crap/" method="post">
+        <g:form action="ajaxAdd">
             <span class="news_actions uiActionLinks uiActionLinks_bottom">
                 <span class="commentAction">
                     <i class="comments_icon"></i>
@@ -66,9 +66,50 @@
                     </button>
                 </span>
             </span>
+            <input type="hidden" name="commentableItemId" value="${newsItem.id}"/>
+            <input type="hidden" name="commentableItemType" value="${newsItem.class.name}"/>
+            <ul class="uiList uiUfi focus_target wUfi">
+                <li class="ufiNub uiListItem uiListVerticalItemBorder">
+                    <i></i>
+                    <input type="hidden" value="1" name="xhp_ufi" autocomplete="off">
+                </li>
+                <li class="hidden_elem uiFiLike uiListItem uiListVerticalItemBorder"></li>
+                <li class="uiUfiComments uiListItem uiListVerticalItemBorder">
+                    <ul id="comments${newsItem.id}" class="commentList">
+                      <g:each var="comment" in="${newsItem.comments}">
+                          <g:render template="/comment/comment" model="[comment : comment]"/>
+                      </g:each>
+                    </ul>
+                </li>
                 <g:if test="${newsItem.comments.size() > 0}">
-                  <g:render template="/comment/comments" model="[comments : newsItem.comments, commentsListId : newsItem.id]"/>
+                  <li class="uiUfiAddComment clearfix ufiItem uiListItem uiListVerticalItemBorder uiUfiAddCommentCollapsed">
+                      <textarea id="ta${newsItem.id}" class="uiTextareaNoResize uiTextareaAutogrow textBox textBoxContainer" name="content" defaulttext="What do you think?">What do you think?</textarea>
+                      <label class="mts commentBtn stat_elem uiButton uiButtonConfirm uiButtonMedium">
+                        <g:submitToRemote value="Comment"
+                                          url="[controller: 'newsItem', action: 'addCommentAjax']"
+                                          update="comments${newsItem.id}"
+                                          onSuccess="clearComment('ta${newsItem.id}')"
+                                          onLoading="showSpinner(true, 'spinner${newsItem.id}')"
+                                          onComplete="showSpinner(false, 'spinner${newsItem.id}')"/>
+                      </label>
+                      <img id="spinner${newsItem.id}" class="spinner" style="display: none" src="<g:createLinkTo dir='/images' file='spinner.gif' alt=''/>"/>
+                  </li>
                 </g:if>
+                <g:else>
+                  <li class="uiUfiAddComment clearfix ufiItem uiListItem uiListVerticalItemBorder uiUfiAddCommentCollapsed hide-with-script">
+                      <textarea id="ta${newsItem.id}" class="uiTextareaNoResize uiTextareaAutogrow textBox textBoxContainer" name="content" defaulttext="What do you think?">What do you think?</textarea>
+                      <label class="mts commentBtn stat_elem uiButton uiButtonConfirm uiButtonMedium">
+                        <g:submitToRemote value="Comment"
+                                          url="[controller: 'newsItem', action: 'addCommentAjax']"
+                                          update="comments${newsItem.id}"
+                                          onSuccess="clearComment('ta${newsItem.id}')"
+                                          onLoading="showSpinner(true, 'spinner${newsItem.id}')"
+                                          onComplete="showSpinner(false, 'spinner${newsItem.id}')"/>
+                      </label>
+                      <img id="spinner${newsItem.id}" class="spinner" style="display: none" src="<g:createLinkTo dir='/images' file='spinner.gif' alt=''/>"/>
+                  </li>
+                </g:else>
+            </ul>
         </g:form>
     </div>
 </div>

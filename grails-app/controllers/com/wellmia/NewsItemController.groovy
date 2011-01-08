@@ -1,10 +1,11 @@
-
-
 package com.wellmia
+
+import com.wellmia.security.SecUser
 
 class NewsItemController {
     
     def newsItemService
+    def springSecurityService
 
     def index = { redirect(action:list,params:params) }
 
@@ -120,4 +121,40 @@ class NewsItemController {
 		flash.message = "Completed news update method"
 		redirect(action: 'list')
 	}
+
+    def addCommentAjax = {
+      //TODO:  Move this code and create code into a a reusable Service
+      if(springSecurityService.isLoggedIn()) {
+        def principal = springSecurityService.principal
+
+        def secuser = SecUser.get(principal.id)
+        ConsumerProfile thisConsumer = secuser.consumerProfile
+        def paramsList = params
+
+        def commentableItemType = Class.forName(params.commentableItemType)
+        def commentableItemid = params.commentableItemId
+        def List<Comment> commentList
+        def newsItem
+        def commentInstance
+
+        Comment.withTransaction {
+          newsItem = NewsItem.get(commentableItemid)
+          commentInstance = new Comment(content: params.content,
+                                            memberCreatorId: thisConsumer.id,
+                                            memberCreatorUsername: secuser.username,
+                                            commentableItemId: commentableItemid,
+                                            commentableItemType: commentableItemType)
+          newsItem.getComments().add(commentInstance)
+        }
+
+        //newsItem = NewsItem.get(commentableItemid)
+
+        render(template:"/comment/comments", model: [newsItem: newsItem])
+        //render(template:"/comment/comment", model: [comment: commentInstance])
+
+      } else  {
+        redirect(uri: '/login')
+      }
+    }
+
 }

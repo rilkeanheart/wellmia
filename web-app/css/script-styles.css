@@ -1,0 +1,12 @@
+/*
+Screen style sheet (browsers)
+Author:   Michael Green
+Version:  2009.01
+*/
+
+/* 
+GENERAL STYLES FOR BROWSERS WITH JAVASCRIPT ---------------------------- */
+
+.hide-with-script {
+	display: none;
+}

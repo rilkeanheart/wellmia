@@ -60,13 +60,39 @@
                 </span>
                 <span class="saveAction">
                     | <button class="news_actions_save isaLink" name="save" type="button" title="Save this item?">
-                        <strong>SAVE</strong>
+                        <strong>SAVE-TEST</strong>
                     </button>
                 </span>
             </span>
-                <g:if test="${newsItem.comments.size() > 0}">
-                  <g:render template="/comment/comments" model="[comments : newsItem.comments, commentsListId : newsItem.id]"/>
-                </g:if>
+            <ul class="uiList uiUfi focus_target wUfi">
+                <li class="ufiNub uiListItem uiListVerticalItemBorder">
+                    <i></i>
+                    <input type="hidden" value="1" name="xhp_ufi" autocomplete="off">
+                </li>
+                <li class="hidden_elem uiFiLike uiListItem uiListVerticalItemBorder"></li>
+                <li class="uiUfiComments uiListItem uiListVerticalItemBorder">
+                    <ul id="comment${newsItem.id}" class="commentList">
+                      <g:each var="comment" in="${newsItem.comments}">
+                          <g:render template="/comment/comment" model="[comment : comment]"/>
+                      </g:each>
+                    </ul>
+                </li>
+                <li class="uiUfiAddComment clearfix ufiItem uiListItem uiListVerticalItemBorder uiUfiAddCommentCollapsed">
+                    <textarea class="uiTextareaNoResize uiTextareaAutogrow textBox textBoxContainer" defaulttext="What do you think?">What do you think?</textarea>
+                    <label class="mts commentBtn stat_elem uiButton uiButtonConfirm uiButtonMedium">
+                      <g:submitToRemote value="Comment"
+                                        url="[controller: 'comment', action: 'addCommentAjax']"
+                                        onSuccess="addComment(comment${commentListId},e)"
+                                        onLoading="showSpinner(true)"
+                                        onComplete="showSpinner(false)"
+                                        action="submit" update="[success:'message',failure:'error']" />
+                    </label>
+                    <img id="spinner" style="display: none" src="<g:createLinkTo dir='/images' file='spinner.gif' alt=''/>"/>
+                </li>
+            </ul>
         </g:form>
     </div>
 </div>
+                <g:if test="${newsItem.comments.size() > 0}">
+                  <g:render template="/comment/comments" model="[comments : newsItem.comments, commentsListId : newsItem.id]"/>
+                </g:if>

@@ -11,7 +11,9 @@
     <head>
         <title>Wellmia Newspage</title>
         <meta name="layout" content="wellmia" />
-     </head>
+        <script type="text/javascript" src="/js/script-styles.js"></script>
+        <g:javascript library="jquery" plugin="jquery"/>
+    </head>
     <body>
         <!-- your primary primary content goes here -->
         <div id="pagelet_composer">
@@ -30,15 +32,6 @@
                                         <a class="uiIconLink uiComposerAttachment"  data-endpoint="/ajax/composer/attachment/status/status.php">
                                           <img class="img uiComposerImg" src="${resource(dir:'images',file:'question.png')}"/>
                                             <strong class="attachmentName">
-                                                Status
-                                                <i class="nub showWhenOpen"></i>
-                                            </strong>
-                                        </a>
-                                    </li>
-                                   <li>
-                                        <a class="uiIconLink uiComposerAttachment" >
-                                            <img class="img uiComposerImg" src="${resource(dir:'images',file:'question.png')}"/>
-                                            <strong class="attachmentName">
                                                 Question
                                                 <i class="nub showWhenOpen"></i>
                                             </strong>
@@ -48,7 +41,16 @@
                                         <a class="uiIconLink uiComposerAttachment" >
                                             <img class="img uiComposerImg" src="${resource(dir:'images',file:'question.png')}"/>
                                             <strong class="attachmentName">
-                                                Link
+                                                Quick Thought
+                                                <i class="nub showWhenOpen"></i>
+                                            </strong>
+                                        </a>
+                                    </li>
+                                   <li>
+                                        <a class="uiIconLink uiComposerAttachment" >
+                                            <img class="img uiComposerImg" src="${resource(dir:'images',file:'question.png')}"/>
+                                            <strong class="attachmentName">
+                                                Blog Entry
                                                 <i class="nub showWhenOpen"></i>
                                             </strong>
                                         </a>
@@ -114,5 +116,36 @@
               </g:each>
             </div>
         </div>
+        <jq:jquery>
+
+            jQuery(".uiUfiAddComment textarea").focus(function () {
+              $(this).parent().removeClass('uiUfiAddCommentCollapsed');
+              if($(this).val() == $(this).attr('defaulttext'))
+                $(this).val("");
+            });
+
+            jQuery(".uiUfiAddComment textarea").blur(function () {
+              if($(this).val() == "") {
+                $(this).val($(this).attr('defaulttext'));
+                $(this).parent().addClass('uiUfiAddCommentCollapsed');
+              }
+            });
+
+            jQuery(".commentAction button").click(function () {
+              $(this).parent().parent().parent().find(".uiUfiAddComment").removeClass('hide-with-script');
+            });
+        </jq:jquery>
+        <g:javascript>
+          function clearComment(e) {
+            $("#"+e).val('');
+          }
+
+          function showSpinner(visible, e) {
+            if(visible == true)
+              $("#"+e).show();
+            else
+              $("#"+e).hide();
+          }
+        </g:javascript>
     </body>
 </html>

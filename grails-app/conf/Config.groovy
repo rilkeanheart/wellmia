@@ -96,9 +96,18 @@ grails.plugins.springsecurity.userLookup.userDomainClassName = 'com.wellmia.secu
 grails.plugins.springsecurity.authority.className = 'com.wellmia.security.SecRole'
 grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'com.wellmia.security.SecUserSecRole'
 
+//grails.plugins.springsecurity.auth.loginFormUrl = "/"
+grails.plugins.springsecurity.successHandler.defaultTargetUrl = "/newsFeed/listItems"
+
 // Static Map For Security Settings
 grails.plugins.springsecurity.securityConfigType = SecurityConfigType.InterceptUrlMap
 grails.plugins.springsecurity.interceptUrlMap = [
+      '/'                  : ['IS_AUTHENTICATED_ANONYMOUSLY'],
+      '/login/**'        : ['IS_AUTHENTICATED_ANONYMOUSLY'],
+      '/js/**'             : ['IS_AUTHENTICATED_ANONYMOUSLY'],
+      '/css/**'            : ['IS_AUTHENTICATED_ANONYMOUSLY'],
+      '/images/**'         : ['IS_AUTHENTICATED_ANONYMOUSLY'],
+      '/plugins/**'        : ['IS_AUTHENTICATED_ANONYMOUSLY'],
       '/categoryProfile/**': ['ROLE_ADMIN'],
       '/categoryTag/**'    : ['ROLE_ADMIN'],
       '/comment/**'        : ['ROLE_ADMIN'],
@@ -106,10 +115,11 @@ grails.plugins.springsecurity.interceptUrlMap = [
       '/comment/show'      : ['ROLE_USER,ROLE_ADMIN'],
       '/newsSource/**'     : ['ROLE_ADMIN'],
       '/newsItem/**'       : ['ROLE_ADMIN'],
+      '/index.gsp'         : ['ROLE_ADMIN'],
 //      '/newsItem/list'     : ['ROLE_USER,ROLE_ADMIN'],
 //       '/newsItem/index'    : ['ROLE_ADMIN'],
-      '/member/*'          : ['IS_AUTHENTICATED_REMEMBERED'],
-      '/post/followAjax'   : ['ROLE_USER'],
-      '/post/addPostAjax'  : ['ROLE_USER', 'IS_AUTHENTICATED_FULLY'],
-      '/**'                : ['IS_AUTHENTICATED_ANONYMOUSLY']
+//      '/member/*'          : ['IS_AUTHENTICATED_REMEMBERED'],
+//      '/post/followAjax'   : ['ROLE_USER'],
+//      '/post/addPostAjax'  : ['ROLE_USER', 'IS_AUTHENTICATED_FULLY'],
+      '/**'                : ['IS_AUTHENTICATED_REMEMBERED']
 ]

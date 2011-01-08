@@ -11,19 +11,19 @@
 	margin:0px auto;
 	text-align:left;
 	padding:10px;
-	border-top:1px dashed #499ede;
-	border-bottom:1px dashed #499ede;
-	background-color:#EEF;
+    border: 1px solid #000000;
+	background-color:#CEE3F6;
+    -moz-border-radius: 1em 1em 1em 1em;
 }
 #login .inner .fheader {
-	padding:4px;margin:3px 0px 3px 0;color:#2e3741;font-size:14px;font-weight:bold;
+	padding:4px;margin:3px 0px 3px 0;color:#2e3741;font-size:14px;font-weight:bold;font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
 }
 #login .inner .cssform p {
 	clear: left;
 	margin: 0;
 	padding: 5px 0 8px 0;
 	padding-left: 105px;
-	border-top: 1px dashed gray;
+
 	margin-bottom: 10px;
 	height: 1%;
 }
@@ -48,7 +48,7 @@
 			<g:if test='${flash.message}'>
 			<div class='login_message'>${flash.message}</div>
 			</g:if>
-			<div class='fheader'>Please Login..</div>
+			<div class='fheader'>User Login</div>
 			<form action='${postUrl}' method='POST' id='loginForm' class='cssform' autocomplete='off'>
 				<p>
 					<label for='username'>Login ID</label>
