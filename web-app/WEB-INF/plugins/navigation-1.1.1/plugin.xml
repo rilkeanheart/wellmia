@@ -1,0 +1,21 @@
+<plugin name='navigation' version='1.1.1' grailsVersion='1.2-RC2 &gt; *'>
+  <author>Marc Palmer</author>
+  <authorEmail>marc@anyware.co.uk</authorEmail>
+  <title>Site Menu Navigation</title>
+  <description>Tags for doing site navigation and menus by convention
+</description>
+  <documentation>http://grails.org/Navigation+Plugin</documentation>
+  <resources>
+    <resource>DataSource</resource>
+    <resource>UrlMappings</resource>
+    <resource>NavigationService</resource>
+    <resource>NavigationTagLib</resource>
+  </resources>
+  <dependencies>
+    <plugin name='controllers' version='1.0 &gt; *' />
+    <resolvers>
+      <resolver type='grailsPlugins' name='grailsPlugins' />
+    </resolvers>
+  </dependencies>
+  <behavior />
+</plugin>

@@ -1,0 +1,1399 @@
+"category","thresholdSensitivity","categoryType","feedExpirationDate","feedIsStale"
+"Allergies",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Alzheimers",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Arthritis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Asthma",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Cholesterol",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Chronic Pain",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Crohn's Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Depression",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Diabetes Type 1",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Diabetes Type 2",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hearing Loss",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hepatitis C",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Liver",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Lungs",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Menopause",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Migraine",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Osteoporosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Rheumatoid Arthritis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Sleep Limitations",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Thyroid",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Urology",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Abdominal Aortic Aneurysm",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Achalasia",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Achondroplasia",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Acne",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Actinic Keratosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Addison Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Alcohol Abuse and Alcoholism",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Alkaptonuria",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Allergic Cascade",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Allergy",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Alopecia Areata",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Alpha 1 Antitrypsin Deficiency",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Alpha Thalassemia",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Alzheimer's Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Amyloidosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Amyotrophic Lateral Sclerosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Anaphylaxis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Anemia",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Angina",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Ankle Pain and Tendinitis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Ankylosing Spondylitis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Anorexia Nervosa",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Anthrax",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Antiemetics",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Antiphospholipid Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Anxiety",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Aortic Stenosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Appendicitis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Arthritis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Aseptic Necrosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Asthma",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Atopic Dermatitis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Atrial Fibrillation",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Attention Deficit Hyperactivity Disorder (ADHD)",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Autism",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Bacterial Vaginosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Baker Cyst",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Barrett's Esophagus",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Behcet's Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Benign Prostatic Hyperplasia",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Bernard-Soulier Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Beta Thalassemia",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Biological Therapy",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Bipolar Disorder",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Bladder Cancer",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Boils",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Bone Cancer",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Botulism",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Brain Aneurysm",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Brain Tumor",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Branchial Cyst",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Breast Cancer",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Bruises",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Bulimia",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Bullous Pemphigoid",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Bunions",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Bursitis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Canavan Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Cancer",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Canker Sores",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Cataracts",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Cauliflower Ear",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Celiac Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Cerebral Palsy",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Cervical Cancer",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Chalazion",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Chronic Fatigue Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"COPD",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Chronic Pain",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Chronic Rhinitis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Churg-Strauss Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Cirrhosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Claudication",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Cleidocranial Dysplasia",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Clostridium Difficile Colitis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Coccydynia",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Colon Cancer",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Colon Cancer Screening",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Colon Polyps",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Congestive Heart Failure",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Connective Tissue Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Corns",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Costochondritis and Tietze Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Coxsackie Virus",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Creutzfeldt-Jakob Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Crohn's Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Cushing's Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Cuts, Scrapes and Puncture Wounds",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Cystic Fibrosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Cystinuria",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"De Quervain's Tenosynovitis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Deafness",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Deep Vein Thrombosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Degenerative Disc",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Dementia",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Diabetes",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Diabetes Insipidus",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Diffuse Idiopathic Skeletal Hyperostosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Diverticulosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Down Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Dupuytren Contracture",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Dyslexia",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Dyspepsia",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Dystonia",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Edema",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Ehlers-Danlos Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Encephalitis and Meningitis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Endocarditis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Endometriosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Enteroinvasive E. Coli",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Eosinophilic Fasciitis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Epilepsy",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Erythema Nodosum",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Esophageal Cancer",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Essential Mixed Cryoglobulinemia",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Eustachian Tube Problems",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Exercise and Activity",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Fabry's Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Fainting",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Fatty Liver",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Felty's Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Fibrocystic Breast Condition",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Fibromyalgia",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Gallstones",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Ganglion",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Gardner Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Gastroenteritis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Gastroesophageal Reflux Disease (GERD)",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Gastroparesis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Gaucher Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Genetic Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Herpes",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"German Measles",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Giardia Lamblia",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Gilbert Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Glaucoma",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Gonorrhea",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Gout",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Group B Strep",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Guillain-Barre Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Gum Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hair Loss",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hamstring Injury",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hand-Foot-And-Mouth Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hay Fever",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Head Lice",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Headache",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Heart Attack",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Heart Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Heat Cramps",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Heat Exhaustion",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Heat Stroke",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Heel Spurs",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Helicobacter Pylori",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hemolytic Uremic Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hemorrhoids",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Henoch-Schonlein Purpura",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hepatic Hemangioma",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hepatitis B",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hepatitis C",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hepatitis Immunizations",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hernia",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Herpes",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hiatal Hernia",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hip Bursitis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hirschsprung Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hives",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hoarseness",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hodgkins Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"HIV/AIDS",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Huntington Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hydrocephalus",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hydronephrosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hydroxyapatite",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hyperkalemia",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hypermobility Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hyperparathyroidism",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hypersensitivity Pneumonitis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hyperthermia",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hyperthyroidism",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hypoglycemia",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hypoparathyroidism",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hypothyroidism",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"ICU Psychosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Impetigo",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Infectious Mononucleosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Inflammatory Bowel Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Influenza",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Insect Sting Allergies",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Insulin Resistance",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Interstitial Cystitis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Interstitial Pneumonia",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Intestinal Gas",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Intussusception",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Iron Overload",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Irritable Bowel Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Jaundice",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Juvenile Arthritis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Kawasaki Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Keloid",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Kidney Cancer",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Kidney Failure",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Kidney Stone",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Klinefelter Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Klippel-Trenaunay-Weber Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Knee Bursitis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Knee Pain",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Larynx Cancer",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Latex Allergy",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Legionnaire Disease and Pontiac Fever",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Leptospirosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Leukemia",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Lichen Planus",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Liver Cancer",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Low Back Pain",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Low Blood Pressure",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Lung Cancer",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Lungs Design And Purpose",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Lyme Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Lymphocytic Colitis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Macular Degeneration",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Malaria",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Marfan Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Measles (Rubeola)",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Melanoma",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Melanosis Coli",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"MELAS Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Melioidosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Meniere Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Meningococcemia",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Menopause",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Menstrual Cramps",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Meralgia Paresthetica",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Mesothelioma",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Microcephaly",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Microsporidiosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Migraine Headache",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Miscarriage",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Mitral Valve Prolapse",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Mixed Connective Tissue Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Monkeypox",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Morton's Neuroma",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Multiple Myeloma",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Multiple Sclerosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Mumps",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Muscle Cramps",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Myasthenia Gravis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Mycobacterium Marinum",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Myocarditis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Narcolepsy",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Nasal Allergy Medications",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Neck Pain",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Neutropenia",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Hearing Loss",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Non-Hodgkins Lymphomas",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Nonsteroidal Anti-inflammatory Drugs and Ulcers",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Noonan Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Norovirus Infection",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Obesity",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Oral Cancer",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Osgood-Schlatter Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Osteoarthritis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Osteochondritis Dissecans",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Osteodystrophy",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Osteoporosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Otitis Externa",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Otitis Media",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Ovarian Cancer",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Ovarian Cysts",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Overactive Bladder",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Paget's Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Palpitations",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Pancreas Divisum",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Pancreatic Cancer",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Pancreatitis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Panic Disorder",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Parkinson's Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Paroxysmal Atrial Tachycardia",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Patellofemoral Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Pendred Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Penis Cancer",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Peptic Ulcer",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Pericarditis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Peripheral Neuropathy",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Peripheral Vascular Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Pernicious Anemia",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Pertussis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Phenylketonuria",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Pheochromocytoma",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Pick Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Pink Eye",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Pinworm Infection",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Pleurisy",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Pneumococcal Vaccination",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Pneumonia",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Pneumothorax",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Poison Control Centers",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Poison Ivy",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Poland Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Polyarteritis Nodosa",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Polycystic Kidney Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Polycystic Ovary",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Polymyalgia Rheumatica",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Polymyositis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Post-Polio Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Posttraumatic Stress Disorder",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Pregnancy Drug Dangers",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Pregnancy Induced Hypertension",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Pregnancy Planning",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Premature Ventricular Contractions",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Premenstrual Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Primary Biliary Cirrhosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Primary Sclerosing Cholangitis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Prolactinoma",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Prostate Cancer",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Prostatitis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Pseudogout",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Pseudotumor Cerebri",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Pseudoxanthoma Elasticum",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Psoriasis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Psoriatic Arthritis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Pulmonary Fibrosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Pulmonary Hypertension",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Pycnodysostosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Rabies",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Ramsay Hunt Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Rash",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Raynaud's Phenomenon",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Reactive Arthritis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Rectal Bleeding",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Reflex Sympathetic Dystrophy Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Reflux Laryngitis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Relapsing Polychondritis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Renal Artery Stenosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Respiratory Syncytial Virus",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Restless Leg Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Retinal Detachment",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Reye Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Rheumatoid Arthritis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Rhinoplasty",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Ringworm",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Rosacea",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Roseola",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Rotator Cuff",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Rotavirus",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Rothmund-Thomson Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"SAPHO Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Sarcoidosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Scabies",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Schatzki Ring",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Schizophrenia",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Sciatica",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Scleroderma",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Scoliosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Seasonal Affective Disorder (SAD)",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Seborrhea",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Seizure",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Sever Condition",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Severe Acute Respiratory Syndrome (SARS)",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Shin Splints",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Shingles",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Shoulder Bursitis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Sickle Cell",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Sinusitis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Sjogren's Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Skin Cancer",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Skin Tag",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Sleep",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Sleep Apnea",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Smoking",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Sore Throat",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Spina Bifida and Anencephaly",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Sporotrichosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Staph Infection",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Steroid Withdrawal",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Still's Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Stomach Cancer",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Strep Throat",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Stress",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Stroke",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Superior Vena Cava Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Swallowing",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Syphilis In Women",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Takayasu Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Temporomandibular Joint  Disorder",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Testicular Cancer",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Tetanus",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Thalassemia Syndromes",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Thoracic Outlet Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Thrush",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Thyroid Cancer",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Thyroiditis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Tinea Versicolor",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Tinnitus",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Tourette Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Toxoplasmosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Tremor",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Trichinosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Tuberculosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Turner Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Typhoid Fever",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Ulcerative Colitis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Urinary Incontinence",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Urine Infection",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Usher Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Uterine Cancer",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Uterine Fibroids",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Vaginitis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Varicose Veins",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Vasculitis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Ventricular Septal Defect",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Vestibular Balance Disorders",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Viral Hepatitis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Vitiligo",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Warts (Common Warts)",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Weber-Christian Disease",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Wegener's Granulomatosis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"West Nile Encephalitis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Wolff-Parkinson-White Syndrome",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Wrinkles",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Yaws",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Yeast Vaginitis",0.35,"Condition",12/13/10 10:55 PM,FALSE
+"Abacavir Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Abacavir Sulfate; Lamivudine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Acarbose",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Acebutolol Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Acetaminophen",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Acetazolamide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Acetazolamide Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Acetohexamide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Acetylcysteine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Acyclovir",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Acyclovir Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Adapalene",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Adenosine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Albuterol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Albuterol Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Albuterol Sulfate; Ipratropium Bromide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Alclometasone Dipropionate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Alendronate Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Alfuzosin Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Allopurinol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Allopurinol Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Almotriptan Malate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Alprazolam",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Alprostadil",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Amantadine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Amcinonide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Amifostine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Amikacin Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Amiloride Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Aminocaproic Acid",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Aminohippurate Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Aminophylline",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Amiodarone Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Amitriptyline Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Amlexanox",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Amlodipine Besylate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Amlodipine Besylate And Benazepril Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Amlodipine Besylate; Benazepril Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Amlodipine Maleate; Benazepril Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Amlodipine; Valsartan",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ammonium Chloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ammonium Lactate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Amoxapine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Amoxicillin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Amphetamine Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Amphotericin B",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ampicillin Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Anagrelide Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Anastrozole",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Anisotropine Methylbromide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Apraclonidine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Argatroban",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Arsenic Trioxide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Atazanavir Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Atenolol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Atomoxetine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Atracurium Besylate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Atropine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Atropine Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Azathioprine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Azathioprine Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Azelastine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Azithromycin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Aztreonam",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Bacitracin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Baclofen",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Balsalazide Disodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Benazepril Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Benoxinate Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Benzonatate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Benzphetamine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Benzthiazide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Benztropine Mesylate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Benzyl Benzoate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Betamethasone Dipropionate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Betamethasone Sodium Phosphate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Betamethasone Valerate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Betaxolol Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Bethanechol Chloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Bicalutamide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Bimatoprost",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Bisoprolol Fumarate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Bleomycin Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Bretylium Tosylate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Brimonidine Tartrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Brimonidine Tartrate; Timolol Maleate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Bromocriptine Mesylate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Brompheniramine Maleate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Budesonide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Bumetanide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Bupivacaine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Buprenorphine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Bupropion Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Buspirone Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Butabarbital Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Butorphanol Tartrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cabergoline",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Caffeine Citrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Calcipotriene",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Calcitriol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Calcium Acetate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Calcium Gluceptate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Candesartan Cilexetil",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Captopril",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Carbachol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Carbamazepine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Carbidopa; Levodopa; Entacapone",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Carbinoxamine Maleate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Carboplatin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Carisoprodol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Carteolol Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Carvedilol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cefaclor",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cefazolin Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cefdinir",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cefepime Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cefotaxime Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cefpiramide Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cefpodoxime Proxetil",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cefprozil",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ceftazidime",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cefuroxime",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cefuroxime Axetil",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cefuroxime Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cephalexin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cephalothin Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cephapirin Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cephradine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cetirizine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Chenodiol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Chloramphenicol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Chloramphenicol Sodium Succinate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Chlordiazepoxide Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Chlorhexidine Gluconate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Chloroprocaine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Chloroquine Phosphate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Chlorothiazide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Chlorothiazide Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Chlorotrianisene",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Chlorpheniramine Maleate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Chlorpromazine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Chlorpropamide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Chlorthalidone",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Chlorzoxazone",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cholestyramine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Chromic Chloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ciclopirox",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cilostazol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cimetidine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cimetidine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cinacalcet Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cinoxacin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ciprofloxacin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ciprofloxacin Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cisplatin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Citalopram Hydrobromide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cladribine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Clarithromycin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Clemastine Fumarate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Clindamycin Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Clindamycin Palmitate Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Clindamycin Phosphate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Clobetasol Propionate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Clofibrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Clomiphene Citrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Clomipramine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Clonazepam",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Clonidine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Clonidine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Clopidogrel",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Clopidogrel Bisulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Clorazepate Dipotassium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Clotrimazole",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cloxacillin Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Clozapine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Codeine Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Colestipol Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Colistimethate Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Corticotropin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cortisone Acetate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cosyntropin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cromolyn Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cupric Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cyanocobalamin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cyclacillin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cyclobenzaprine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cyclopentolate Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cyclophosphamide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cyclosporine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cyproheptadine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cysteine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cytarabine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Dacarbazine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Dactinomycin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Danazol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Dantrolene Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Dapsone",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Daunorubicin Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Deferoxamine Mesylate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Demeclocycline Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Desipramine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Desloratadine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Desmopressin Acetate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Desogestrel; Ethinyl Estradiol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Desonide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Desoximetasone",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Dexamethasone",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Dexamethasone Acetate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Dexamethasone Sodium Phosphate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Dexchlorpheniramine Maleate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Dexmethylphenidate Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Dexrazoxane Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Dextroamphetamine Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Diatrizoate Meglumine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Diazepam",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Diazoxide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Diclofenac Potassium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Diclofenac Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Dicloxacillin Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Dicumarol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Dicyclomine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Didanosine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Dienestrol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Diethylpropion Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Diethylstilbestrol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Diflorasone Diacetate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Diflunisal",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Digoxin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Dihydroergotamine Mesylate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Diltiazem Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Dimenhydrinate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Dimethyl Sulfoxide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Diphenhydramine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Dipivefrin Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Dipyridamole",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Disopyramide Phosphate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Disulfiram",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Divalproex Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Dobutamine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Docetaxel",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Donepezil Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Dopamine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Dorzolamide Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Doxapram Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Doxazosin Mesylate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Doxepin Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Doxercalciferol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Doxorubicin Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Doxycycline",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Doxycycline Hyclate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Doxylamine Succinate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Dronabinol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Droperidol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Duloxetine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Dutasteride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Econazole Nitrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Edetate Disodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Edrophonium Chloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Efavirenz",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Efavirenz; Emtricitabine; Tenofovir Disoproxil Fumarate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Emtricitabine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Emtricitabine; Tenofovir Disoproxil Fumarate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Enalapril Maleate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Enalaprilat",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Enflurane",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Epinastine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Epinephrine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Epirubicin Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Eplerenone",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Epoprostenol Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ergocalciferol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ergoloid Mesylates",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Erlotinib Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Erythromycin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Erythromycin Estolate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Erythromycin Ethylsuccinate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Erythromycin Lactobionate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Erythromycin Stearate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Escitalopram Oxalate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Esmolol Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Esomeprazole Magnesium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Estazolam",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Estradiol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Estradiol Cypionate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Estradiol Valerate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Estrone",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Estropipate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Eszopiclone",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ethambutol Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ethchlorvynol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ethosuximide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Etidronate Disodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Etodolac",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Etomidate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Etoposide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Evans Blue",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Exemestane",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ezetimibe",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Famciclovir",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Famotidine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Felodipine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Fenofibrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Fenoldopam Mesylate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Fenoprofen Calcium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Fentanyl",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Fentanyl Citrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Fexofenadine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Fexofenadine Hydrochloride; Pseudoephedrine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Finasteride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Flavoxate Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Flecainide Acetate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Floxuridine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Fluconazole",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Fludarabine Phosphate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Fludrocortisone Acetate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Flumazenil",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Flunisolide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Fluocinolone Acetonide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Fluocinonide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Fluorouracil",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Fluoxetine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Fluoxymesterone",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Fluphenazine Decanoate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Fluphenazine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Flurandrenolide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Flurazepam Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Flurbiprofen",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Flurbiprofen Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Flutamide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Fluticasone Propionate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Fluvastatin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Fluvastatin Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Fluvoxamine Maleate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Folic Acid",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Fomepizole",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Foscarnet Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Fosinopril Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Fosphenytoin Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Furosemide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Gabapentin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Galantamine Hydrobromide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ganciclovir Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Gatifloxacin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Gemcitabine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Gemcitabine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Gemfibrozil",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Gemifloxacin Mesylate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Gentamicin Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Glimepiride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Glipizide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Glutethimide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Glyburide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Glycopyrrolate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Granisetron Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Griseofulvin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Guanabenz Acetate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Guanethidine Monosulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Guanfacine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Guanidine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Halobetasol Propionate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Haloperidol Decanoate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Haloperidol Lactate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Halothane",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Heparin Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Histamine Phosphate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Hydralazine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Hydrochlorothiazide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Hydrocortisone",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Hydrocortisone Acetate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Hydrocortisone Butyrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Hydrocortisone Sodium Phosphate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Hydrocortisone Sodium Succinate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Hydrocortisone Valerate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Hydroflumethiazide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Hydromorphone Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Hydroxocobalamin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Hydroxychloroquine Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Hydroxyprogesterone Caproate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Hydroxystilbamidine Isethionate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Hydroxyurea",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Hydroxyzine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Hydroxyzine Pamoate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ibandronate Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ibuprofen",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ibutilide Fumarate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Idarubicin Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ifosfamide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Imatinib Mesylate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Imipramine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Imipramine Pamoate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Imiquimod",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Indapamide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Indium In-111 Oxyquinoline",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Indocyanine Green",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Indomethacin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Indomethacin Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Iopamidol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ipratropium Bromide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Irbesartan",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Irbesartan; Hydrochlorothiazide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Irinotecan Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Iron Dextran",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Isoetharine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Isoetharine Mesylate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Isoflurane",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Isoniazid",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Isoproterenol Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Isosorbide Dinitrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Isosorbide Mononitrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Isosulfan Blue",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Isradipine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Itraconazole",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Kanamycin Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ketamine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ketoconazole",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ketoprofen",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ketorolac Tromethamine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ketotifen Fumarate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Labetalol Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Lactulose",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Lamivudine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Lamivudine And Zidovudine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Lamivudine; Nevirapine; Zidovudine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Lamivudine; Stavudine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Lamivudine; Stavudine; Nevirapine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Lamivudine; Tenofovir Disoproxil Fumarate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Lamivudine; Zidovudine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Lamivudine; Zidovudine; Abacavir",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Lamivudine; Zidovudine; Efavirenz",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Lamivudine; Zidovudine; Nevirapine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Lamotrigine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Lansoprazole",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Latanoprost",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Leflunomide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Letrozole",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Leucovorin Calcium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Leuprolide Acetate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Levalbuterol Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Levetiracetam",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Levobunolol Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Levocarnitine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Levocetirizine Dihydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Levofloxacin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Levofloxacin; Dextrose",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Levonorgestrel",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Levonorgestrel; Ethinyl Estradiol; Ethinyl Estradiol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Levorphanol Tartrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Levothyroxine Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Lidocaine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Lidocaine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Lincomycin Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Lindane",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Linezolid",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Liothyronine Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Lisinopril",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Lithium Carbonate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Lithium Citrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Loperamide Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Lopinavir; Ritonavir",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Loratadine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Lorazepam",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Losartan Potassium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Lovastatin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Loxapine Succinate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Magnesium Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Malathion",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Manganese Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Maprotiline Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Mebendazole",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Meclizine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Meclofenamate Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Medroxyprogesterone Acetate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Mefenamic Acid",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Mefloquine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Megestrol Acetate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Meloxicam",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Melphalan Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Memantine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Memantine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Menadione",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Meperidine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Mepivacaine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Meprobamate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Mercaptopurine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Meropenem",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Mesalamine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Mesna",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Metaproterenol Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Metaraminol Bitartrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Metaxalone",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Metformin Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Methadone Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Methamphetamine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Methazolamide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Methdilazine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Methenamine Hippurate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Methimazole",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Methocarbamol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Methotrexate Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Methoxsalen",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Methscopolamine Bromide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Methyclothiazide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Methyldopa",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Methyldopate Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Methylergonovine Maleate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Methylphenidate Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Methylprednisolone",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Methylprednisolone Acetate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Methylprednisolone Sodium Succinate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Methyltestosterone",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Metoclopramide Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Metocurine Iodide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Metolazone",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Metoprolol Succinate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Metoprolol Tartrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Metronidazole",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Metronidazole Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Mexiletine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Miconazole Nitrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Midazolam Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Midodrine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Milrinone Lactate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Minocycline Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Minoxidil",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Mirtazapine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Misoprostol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Mitomycin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Mitoxantrone Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Mivacurium Chloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Modafinil",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Moexipril Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Mometasone Furoate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Montelukast Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Morphine Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Moxifloxacin Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Mupirocin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Mycophenolate Mofetil",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Mycophenolate Mofetil Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Nabumetone",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Nadolol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Nafcillin Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Nalbuphine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Nalidixic Acid",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Naloxone Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Naltrexone Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Nandrolone Decanoate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Nandrolone Phenpropionate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Naphazoline Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Naproxen",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Naproxen Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Naratriptan",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Nateglinide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Nedocromil Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Nefazodone Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Neomycin Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Nevirapine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Niacin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Nicardipine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Nicotine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Nicotine Polacrilex",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Nifedipine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Nimodipine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Nisoldipine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Nitrofurantoin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Nitrofurazone",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Nitroglycerin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Nizatidine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Norepinephrine Bitartrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Norethindrone Acetate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Norethindrone Acetate; Ethinyl Estradiol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Norethindrone And Ethinyl Estradiol; Ferrous Fumarate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Norethindrone; Ethinyl Estradiol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Norfloxacin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Nortriptyline Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Nystatin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Octreotide Acetate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ofloxacin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Olanzapine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Olanzapine; Fluoxetine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Olmesartan Medoxomil",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Olmesartan Medoxomil; Hydrochlorothiazide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Olopatadine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Omeprazole",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Omeprazole Magnesium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Omeprazole; Clarithromycin; Amoxicillin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ondansetron",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ondansetron Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Orphenadrine Citrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Oxacillin Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Oxaliplatin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Oxandrolone",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Oxaprozin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Oxazepam",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Oxcarbazepine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Oxtriphylline",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Oxybutynin Chloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Oxycodone Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Oxymorphone Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Oxyphenbutazone",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Oxytetracycline Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Oxytocin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Paclitaxel",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Pamidronate Disodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Pancuronium Bromide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Pantoprazole Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Paricalcitol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Paromomycin Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Paroxetine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Pemetrexed",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Pemoline",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Penicillin G Potassium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Penicillin G Procaine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Penicillin G Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Penicillin V Potassium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Pentamidine Isethionate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Pentetate Calcium Trisodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Pentetate Zinc Trisodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Pentobarbital Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Pentostatin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Pentoxifylline",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Pergolide Mesylate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Perindopril Erbumine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Permethrin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Perphenazine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Phendimetrazine Tartrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Phenelzine Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Phentermine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Phentolamine Mesylate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Phenylbutazone",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Phenytoin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Phenytoin Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Phytonadione",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Pilocarpine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Pindolol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Piperazine Citrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Piroxicam",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Podofilox",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Polyethylene Glycol 3350",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Polyethylene Glycol 3350; Sodium Chloride; Sodium Bicarbonate; Potassium Chloride; Bisacodyl",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Polyethylene Glycol 3350; Sodium Sulfate; Sodium Chloride; Potassium Chloride; Sodium Ascorbate; Ascorbic Acid",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Polymyxin B Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Potassium Aminosalicylate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Potassium Chloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Potassium Citrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Potassium Iodide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Pralidoxime Chloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Pramipexole Dihydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Pravastatin Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Prazepam",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Prazosin Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Prednicarbate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Prednisolone",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Prednisolone Acetate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Prednisolone Sodium Phosphate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Prednisolone Tebutate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Prednisone",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Prilocaine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Primidone",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Probenecid",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Procainamide Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Procaine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Prochlorperazine Edisylate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Prochlorperazine Maleate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Progesterone",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Promazine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Promethazine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Promethazine Hydrochloride; Codeine Phosphate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Propafenone Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Propantheline Bromide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Proparacaine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Propofol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Propoxyphene Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Propranolol Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Propylthiouracil",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Protamine Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Protriptyline Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Pseudoephedrine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Pyrazinamide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Pyridostigmine Bromide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Pyridoxine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Pyrilamine Maleate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Quetiapine Fumarate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Quinapril Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Quinidine Gluconate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Quinidine Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Rabeprazole Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Raloxifene Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ramipril",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ranitidine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ranitidine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Repaglinide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Reserpine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ribavirin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Rifampin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Riluzole",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Rimantadine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Risedronate Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Risperidone",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ritodrine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Rivastigmine Tartrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Rizatriptan Benzoate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Rocuronium Bromide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ropinirole Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ropivacaine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Rosiglitazone Maleate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Rosiglitazone Maleate; Glimepiride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Rosiglitazone Maleate; Metformin Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Rosuvastatin Calcium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Secobarbital Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Selegiline Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Selenium Sulfide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Sertraline Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Sevoflurane",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Sildenafil Citrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Simvastatin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Sodium Bicarbonate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Sodium Chloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Sodium Fluoride F 18",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Sodium Iodide I-131",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Sodium Nitroprusside",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Sodium Phosphate, Dibasic Anhydrous; Sodium Phosphate, Monobasic, Monohydrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Sodium Polystyrene Sulfonate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Sodium Succinate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Sodium Thiosulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Sotalol Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Spironolactone",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Stavudine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Stavudine; Lamivudine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Stavudine; Lamivudine; Efavirenz",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Stavudine; Lamivudine; Nevirapine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Sterile Water",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Streptomycin Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Strontium Chloride Sr-89",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Succinylcholine Chloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Sucralfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Sufentanil Citrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Sulfacetamide Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Sulfadiazine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Sulfadiazine Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Sulfamethoxazole",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Sulfanilamide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Sulfapyridine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Sulfasalazine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Sulfinpyrazone",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Sulfisoxazole",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Sulfisoxazole Diolamine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Sulindac",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Sumatriptan Succinate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Sumatriptan; Naproxen Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Tacrolimus",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Talc",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Tamoxifen Citrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Tamsulosin Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Technetium (99M Tc) Fanolesomab; Neutrospec",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Technetium Tc-99M Pentetate Kit",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Telmisartan",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Temazepam",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Temozolomide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Tenofovir Disoproxil Fumarate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Terazosin Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Terbinafine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Terbutaline Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Terconazole",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Testosterone",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Testosterone Cypionate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Testosterone Enanthate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Testosterone Propionate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Tetracycline Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Theophylline",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Thiamine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Thioguanine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Thioridazine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Thiotepa",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Thiothixene",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Thiothixene Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Thyroglobulin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Tiagabine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ticlopidine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Timolol Maleate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Tioconazole",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Tiopronin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Tizanidine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Tobramycin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Tobramycin Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Tolazamide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Tolbutamide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Tolmetin Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Tolterodine Tartrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Topiramate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Topotecan",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Topotecan Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Torsemide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Tramadol Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Trandolapril",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Tranylcypromine Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Trazodone Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Tretinoin",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Triamcinolone",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Triamcinolone Acetonide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Triamcinolone Diacetate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Triazolam",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Trichlormethiazide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Trifluoperazine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Trifluridine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Trihexyphenidyl Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Trimeprazine Tartrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Trimethobenzamide Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Trimethoprim",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Trimipramine Maleate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Tripelennamine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Triprolidine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Tropicamide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Trospium Chloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Tubocurarine Chloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Uracil Mustard",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ursodiol",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Valacyclovir Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Valganciclovir Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Valproate Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Valproic Acid",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Valsartan",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Vancomycin Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Vecuronium Bromide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Venlafaxine Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Verapamil Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Vinblastine Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Vincristine Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Vinorelbine Tartrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Vitamin A Palmitate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Voriconazole",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Warfarin Sodium",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Xylose",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Zafirlukast",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Zaleplon",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Zidovudine",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Zinc Sulfate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ziprasidone Hydrochloride",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Zoledronic Acid",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Zolpidem Tartrate",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Zonisamide",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Acupuncture",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Alpha-fetoprotein Blood Test",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Amniocentesis",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Antimitochondrial Antibodies",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Antinuclear Antibody",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Antro-duodenal Motility Study",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Appendectomy",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Arthroscopy",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Barium Enema",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Blood Transfusion",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Bone Density Scan",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Breast Augmentation",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Breast Biopsy",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Bronchoscopy",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Carcinoembryonic Antigen",0.35,"Test",12/13/10 10:55 PM,FALSE
+"CAT Scan",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Chemo Infusion and Chemoembolization of Liver",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Chest X-ray",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Cholecystectomy",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cholescintigraphy",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Circumcision",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Citrulline Antibody",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Colonoscopy",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Colostomy",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Colposcopy",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Coronary Angiogram",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Coronary Angioplasty",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Coronary Artery Bypass Graft",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Cortisone Injection",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Creatinine Blood Test",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Dialysis",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Dilatation and Curettage",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Duodenal Biliary Drainage",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Ear Tubes",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Electrocardiogram (ECG or EKG)",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Electroconvulsive Therapy",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Electrogastrogram",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Electromyogram",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Electroretinography",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Endometrial Biopsy",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Endoscopic Ultrasound",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Endotracheal Intubation",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Episiotomy",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Esophageal Manometry",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Esophageal pH Monitoring",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Esophagogastroduodenoscopy",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Fecal Occult Blood Tests",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Flexible Sigmoidoscopy",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Fundoplication",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Gastric Emptying Study",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Hemapheresis",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Hematocrit",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Hemoglobin",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Hemoglobin A1c",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Homocysteine",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Hydrogen Breath Test",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Hysterectomy",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Implantable Cardiac Defibrillator",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Insulin Pump For Diabetes Mellitus",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Intravenous Cholangiogram",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Joint Aspiration",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Joint Replacement Surgery Of The Hand",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Lactose Tolerance Test",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Laparoscopically Assisted Vaginal Hysterectomy",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Laparoscopy",0.35,"Test",12/13/10 10:55 PM,FALSE
+"LASIK Eye Surgery",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Liver Biopsy",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Liver Blood Tests",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Liver Resection",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Loop Electrosurgical Excision Procedure",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Mammogram",0.35,"Test",12/13/10 10:55 PM,FALSE
+"MRI Scan",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Nasal Airway Surgery",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Nerve Conduction Velocity Test",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Oral Cholecystogram",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Otoplasty",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Oximetry",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Pap Smear",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Parathyroidectomy",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Pediatric Epilepsy Surgery",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Percutaneous Endoscopic Gastrostomy",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Peripheral Blood Stem Cell Transplant",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Pinworm Test",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Prostate Specific Antigen",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Proton Beam Therapy of Liver",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Radiation Therapy",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Radiofrequency Ablation",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Rapid Strep Test",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Rheumatoid Factor",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Sedimentation Rate",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Sentinel Lymph Node Biopsy",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Sinus Surgery",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Skin Biopsy",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Skin Test For Allergy",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Somnoplasty",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Stool Acidity Test",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Sweat Chloride Test",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Thyroid Blood Tests",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Thyroid Peroxidase Test",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Thyroid Scan",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Tilt-table Test",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Tonometry",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Tonsillectomy",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Total Hip Replacement",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Total Knee Replacement",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Tracheostomy",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Transjugular Intrahepatic Portosystemic Shunt",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Triglyceride Test",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Tuberculosis Skin Test (PPD Skin Test)",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Ultrasound",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Upper GI Series",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Urea Breath Test",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Urinalysis",0.35,"Test",12/13/10 10:55 PM,FALSE
+"Vasectomy",0.35,"Therapy",12/13/10 10:55 PM,FALSE
+"Visual Field Test",0.35,"Test",12/13/10 10:55 PM,FALSE
