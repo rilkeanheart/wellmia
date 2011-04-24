@@ -2,9 +2,18 @@
   <resources>
     <resource>org.grails.appengine.AppEngineReloadController</resource>
     <resource>JQueryConfig</resource>
+    <resource>JQueryPluginResources</resource>
     <resource>JQueryService</resource>
     <resource>JQueryResourceTagLib</resource>
     <resource>JQueryTagLib</resource>
+    <resource>JqueryUiPluginResources</resource>
+    <resource>com.grailsrocks.jqueryui.JqueryUiTagLib</resource>
+    <resource>NavigationService</resource>
+    <resource>NavigationTagLib</resource>
+    <resource>com.megatome.grails.MailhideService</resource>
+    <resource>com.megatome.grails.RecaptchaService</resource>
+    <resource>com.megatome.grails.RecaptchaTagLib</resource>
+    <resource>com.megatome.grails.util.URLSafeBase64Codec</resource>
     <resource>DefaultSecurityConfig</resource>
     <resource>grails.plugins.springsecurity.SpringSecurityService</resource>
     <resource>grails.plugins.springsecurity.SecurityTagLib</resource>
@@ -12,17 +21,41 @@
     <resource>BuildConfig</resource>
     <resource>Config</resource>
     <resource>DataSource</resource>
+    <resource>RecaptchaConfig</resource>
     <resource>resources</resource>
     <resource>UrlMappings</resource>
+    <resource>com.wellmia.AnswerController</resource>
     <resource>com.wellmia.CategoryProfileController</resource>
     <resource>com.wellmia.CategoryTagController</resource>
+    <resource>com.wellmia.ClassDumperController</resource>
     <resource>com.wellmia.CommentController</resource>
+    <resource>com.wellmia.CommunityController</resource>
     <resource>com.wellmia.ConsumerProfileController</resource>
+    <resource>com.wellmia.CronController</resource>
+    <resource>com.wellmia.EmailNotifyController</resource>
+    <resource>com.wellmia.FeedEdgeController</resource>
+    <resource>com.wellmia.HealthProfileController</resource>
+    <resource>com.wellmia.HomeController</resource>
+    <resource>com.wellmia.MyResultsController</resource>
+    <resource>com.wellmia.MyStoryController</resource>
     <resource>com.wellmia.NewsFeedController</resource>
     <resource>com.wellmia.NewsItemController</resource>
     <resource>com.wellmia.NewsSourceController</resource>
+    <resource>com.wellmia.PostLaunchLoaderController</resource>
+    <resource>com.wellmia.PrivacyController</resource>
+    <resource>com.wellmia.QuestionController</resource>
+    <resource>com.wellmia.RecommendController</resource>
+    <resource>com.wellmia.security.RegisterController</resource>
+    <resource>com.wellmia.security.RegistrationCodeController</resource>
+    <resource>com.wellmia.security.SecRoleController</resource>
+    <resource>com.wellmia.security.SecurityInfoController</resource>
+    <resource>com.wellmia.security.SecUserController</resource>
+    <resource>com.wellmia.StatusController</resource>
+    <resource>com.wellmia.TermsController</resource>
+    <resource>com.wellmia.TopicsController</resource>
     <resource>LoginController</resource>
     <resource>LogoutController</resource>
+    <resource>com.wellmia.Answer</resource>
     <resource>com.wellmia.CategoryProfile</resource>
     <resource>com.wellmia.CategoryTag</resource>
     <resource>com.wellmia.Comment</resource>
@@ -36,23 +69,39 @@
     <resource>com.wellmia.NewsSource</resource>
     <resource>com.wellmia.Post</resource>
     <resource>com.wellmia.PostType</resource>
+    <resource>com.wellmia.Question</resource>
+    <resource>com.wellmia.security.RegistrationCode</resource>
     <resource>com.wellmia.security.SecRole</resource>
     <resource>com.wellmia.security.SecUser</resource>
     <resource>com.wellmia.security.SecUserSecRole</resource>
+    <resource>com.wellmia.Status</resource>
     <resource>com.wellmia.Symptom</resource>
     <resource>com.wellmia.SymptomType</resource>
+    <resource>com.wellmia.TopicFeedEdge</resource>
     <resource>com.wellmia.Treatment</resource>
     <resource>com.wellmia.TreatmentCategoryType</resource>
     <resource>com.wellmia.TreatmentType</resource>
+    <resource>com.wellmia.BootstrapConditionTypeService</resource>
+    <resource>com.wellmia.BootstrapNewsSourceService</resource>
+    <resource>com.wellmia.BootstrapTreatmentTypeService</resource>
+    <resource>com.wellmia.CategorizeService</resource>
     <resource>com.wellmia.CategoryProfileService</resource>
+    <resource>com.wellmia.CategoryTagStatService</resource>
+    <resource>com.wellmia.GarbageCollectorService</resource>
+    <resource>com.wellmia.mail.MailService</resource>
     <resource>com.wellmia.NewsFeedService</resource>
     <resource>com.wellmia.NewsItemService</resource>
+    <resource>com.wellmia.security.WellmiaSecurityService</resource>
     <resource>com.wellmia.DateTagLib</resource>
+    <resource>com.wellmia.security.SecurityUiTagLib</resource>
   </resources>
   <plugins>
     <plugin>AppEngineGrailsPlugin</plugin>
     <plugin>GormJpaGrailsPlugin</plugin>
     <plugin>JqueryGrailsPlugin</plugin>
+    <plugin>JqueryUiGrailsPlugin</plugin>
+    <plugin>NavigationGrailsPlugin</plugin>
+    <plugin>RecaptchaGrailsPlugin</plugin>
     <plugin>SpringSecurityCoreGrailsPlugin</plugin>
   </plugins>
 </grails>

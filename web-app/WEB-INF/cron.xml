@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cronentries>
+  <cron>
+    <url>/cron/doNewsUpdateService</url>
+    <description>Update the news every 30 minutes</description>
+    <schedule>every 30 minutes</schedule>
+    <timezone>America/Los_Angeles</timezone>
+  </cron>
+</cronentries>

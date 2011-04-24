@@ -187,16 +187,25 @@ a img{
 }
 #mainmiddle table{
     margin:0 auto;
-    /*width: 900px;*/
-	padding:40px 0 0;
+    width: 900px;
+	padding:40px 20px 10px;
 }
-/*#mainmiddle td{
+*#mainmiddle td{
 	width:180px;
-}   */
+}
+
+#mainmiddle .title{
+	color:#636363;
+	font-weight:bold;
+	font-size:20px;
+    padding:1% 1% 2% 9%;
+}
+
 #mainmiddle .title td{
     font-size: 20px;
     padding: 20px 10px 10px 15px;
 }
+
 #mainmiddle td .registration-help{
     width:250px;
 }
@@ -660,6 +669,12 @@ img{
     border-bottom-width: 3px;
 }
 
+#postQuestion #questionSubject,
+#postQuestion #questionContent,
+#postQuestion #questionTags {
+    color: #BDBDBD;
+}
+
 #postStatus{
     display: none;
     border-bottom-width: 3px;
@@ -732,9 +747,14 @@ img{
 }
 
 .feedItem .headline {
-	font-size:24px;
+	font-size:20px;
 	color:#2085BB;
     font-weight:bold;
+    text-decoration:underline;
+}
+
+.feedItem .headline:hover {
+    color:#333333;
 }
 
 .feedItem .subheadline{
@@ -750,6 +770,15 @@ img{
 }
 
 .feedItem .teaser{
+    color:#333333;
+}
+
+.feedItem .link {
+    color:#2E93C9;
+    text-decoration: none;
+}
+
+.feedItem .link:hover{
     color:#333333;
 }
 
@@ -876,3 +905,61 @@ img{
 }
 
 /* End of News Feed Comments */
+
+/* Health Profile Style*/
+#profileMain .profileBasicText{
+    font-size: 16px;
+}
+
+#profileMain .profileFormText{
+    font-size: 14px;
+}
+
+#profileMain .profileBasicText strong{
+    font-size: 20px;
+    color: #2084BA;
+}
+
+#profilMain p {
+    padding-bottom: 5px;
+}
+#profileMainHeader {
+    color: #2084BA;
+    font-size: 36px;
+    padding-bottom: 15px;
+}
+
+#profileMain fieldset {
+  padding: 1em;
+  /*font:80%/1 sans-serif;*/
+    border: 1px solid #000000;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+#profileMain  legend {
+  font-size: 26px;
+}
+
+#profileMain .fieldset-sub-header {
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+#profileMain #addCategories {
+  margin: 10px 10px 10px 10px;
+}
+
+#profileMain #addInterestBlock {
+    width: 100%;
+}
+#profileMain .textField {
+    width: 75%;
+}
+
+#profileMain #healthInterestUpdateSubmit {
+    float: right;
+    margin-top: 10px;
+}
+
+/* End of Health Profile Style*/

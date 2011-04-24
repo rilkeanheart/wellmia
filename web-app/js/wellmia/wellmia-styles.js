@@ -234,7 +234,29 @@ $(function(){
             }
         });
 
-
+        //Below here for newsItem/question showDetails Page
+        $('.follow_button').button().click(function () {
+           //Call get feedItemId
+            var feedItemId = $(this).parent().find("#itemId").val();
+            var bShouldFollow = $(this).parent().find("#itemId").val();
+           //Call ajax function on ConsumerProfile
+            $.ajax({
+                type: "POST",
+                url: "/consumerProfile/followFeedItemAjax",
+                data: { "feedItemId" : feedItemId, "bShouldFollow" : bShouldFollow},
+                dataType: "json",
+                success: function(jsonData, textStatus) {
+                    //Change Button Color & Text & next toggle value
+                    if(bShouldFollow == "false") {
+                        $(this).addClass("done");
+                        $(this).addClass("done");
+                    } else {
+                        $(this).addClass("done");
+                        $(this).addClass("done");
+                    }
+                }
+            });
+        });
 
 });
 

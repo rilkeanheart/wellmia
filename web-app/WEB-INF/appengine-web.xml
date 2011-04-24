@@ -3,8 +3,9 @@
   <application>@app.name@</application>
   <version>@app.version@</version>
   <sessions-enabled>true</sessions-enabled> 
-    <ssl-enabled>true</ssl-enabled>
+  <ssl-enabled>true</ssl-enabled>
   <precompilation-enabled>true</precompilation-enabled>
+  <warmup-requests-enabled>true</warmup-requests-enabled>
   <system-properties>
      <property name="stringchararrayaccessor.disabled" value="true" />
      <property name="grails.full.stacktrace" value="true" />
