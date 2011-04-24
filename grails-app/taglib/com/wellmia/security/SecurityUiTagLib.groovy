@@ -18,7 +18,7 @@ class SecurityUiTagLib {
 		out << """
 		<tr class="prop">
 			<td valign="top" class="name">
-			<label for="${name}">${message(code: labelCode, default: labelCodeDefault)}</label>
+			<label for="${name.encodeAsHTML()}">${message(code: labelCode, default: labelCodeDefault)}</label>
 			</td>
 			<td valign="top" class="value ${hasErrors(bean: bean, field: name, 'errors')}">
 			${checkBox(fieldAttributes)}
@@ -39,7 +39,7 @@ class SecurityUiTagLib {
 		out << """
 		<tr class="prop">
 			<td valign="top" class="name">
-			<label for="${name}">${message(code: labelCode, default: labelCodeDefault)}</label>
+			<label for="${name.encodeAsHTML()}">${message(code: labelCode, default: labelCodeDefault)}</label>
 			</td>
 			<td valign="top" class="value ${hasErrors(bean: bean, field: name, 'errors')}">
 			${textField(fieldAttributes)}
@@ -59,7 +59,7 @@ class SecurityUiTagLib {
 		def fieldAttributes = [name: name, value: value] + attrs
 		out << """
 			<th valign="top" class="name title">
-			<label for="${name}">${message(code: labelCode, default: labelCodeDefault)}</label>
+			<label for="${name.encodeAsHTML()}">${message(code: labelCode, default: labelCodeDefault)}</label>
 			</th>
 			<td valign="top" type="text" class="value ${hasErrors(bean: bean, field: name, 'errors')}">
 			${textField(fieldAttributes)}
@@ -89,7 +89,7 @@ class SecurityUiTagLib {
         out << """
         <tr class="prop">
             <th valign="top" class="name title">
-            <label for="${name}">${message(code: labelCode, default: labelCodeDefault)}</label>
+            <label for="${name.encodeAsHTML()}">${message(code: labelCode, default: labelCodeDefault)}</label>
             </th>
             <td valign="top" type="text" class="value ${hasErrors(bean: bean, field: name, 'errors')}">
             ${textField(fieldAttributes)}
@@ -114,7 +114,7 @@ class SecurityUiTagLib {
         def fieldAttributes = [name: name, value: value] + attrs
         out << """
             <th valign="top" class="name title">
-            <label for="${name}">${message(code: labelCode, default: labelCodeDefault)}</label>
+            <label for="${name.encodeAsHTML()}">${message(code: labelCode, default: labelCodeDefault)}</label>
             </th>
             <td valign="top" class="value ${hasErrors(bean: bean, field: name, 'errors')}">
             ${passwordField(fieldAttributes)}
@@ -140,7 +140,7 @@ class SecurityUiTagLib {
         out << """
         <tr class="prop">
             <th valign="top" class="name title">
-            <label for="${name}">${message(code: labelCode, default: labelCodeDefault)}</label>
+            <label for="${name.encodeAsHTML()}">${message(code: labelCode, default: labelCodeDefault)}</label>
             </th>
             <td valign="top" type="text" class="value ${hasErrors(bean: bean, field: name, 'errors')}">
             ${passwordField(fieldAttributes)}
@@ -166,7 +166,7 @@ class SecurityUiTagLib {
 		out << """
 		<tr class="prop">
 			<td valign="top" class="name">
-			<label for="${name}">${message(code: labelCode, default: labelCodeDefault)}</label>
+			<label for="${name.encodeAsHTML()}">${message(code: labelCode, default: labelCodeDefault)}</label>
 			</td>
 			<td valign="top" class="value ${hasErrors(bean: bean, field: name, 'errors')}">
 			${passwordField(fieldAttributes)}
@@ -191,7 +191,7 @@ class SecurityUiTagLib {
 		out << """
 		<tr class="prop">
 			<td valign="top" class="name">
-			<label for="${name}">${message(code: labelCode, default: labelCodeDefault)}</label>
+			<label for="${name.encodeAsHTML()}">${message(code: labelCode, default: labelCodeDefault)}</label>
 			</td>
 			<td valign="top" class="value ${hasErrors(bean: bean, field: name, 'errors')}">
 			${textField(fieldAttributes)}
@@ -209,10 +209,10 @@ class SecurityUiTagLib {
 		String text = resolveText(attrs)
 
 		def writer = getOut()
-		writer << """<a id="${elementId}" """
+		writer << """<a id="${elementId.encodeAsHTML()}" """
 		writeRemainingAttributes writer, attrs
 		writer << ">${text}</a>\n"
-		writer << "<input type='submit' value=' ' id='${elementId}_submit' class='s2ui_hidden_button' />\n"
+		writer << "<input type='submit' value=' ' id='${elementId.encodeAsHTML()}_submit' class='s2ui_hidden_button' />\n"
 
 		String javascript = """
 			\$('#${elementId}').button();
@@ -229,7 +229,7 @@ class SecurityUiTagLib {
 		String elementId = getRequiredAttribute(attrs, 'elementId', 'linkButton')
 
 		def writer = getOut()
-		writer <<  """<a href="${createLink(attrs).encodeAsHTML()}" id="${elementId}" """
+		writer <<  """<a href="${createLink(attrs).encodeAsHTML()}" id="${elementId.encodeAsHTML()}" """
 
 		writeRemainingAttributes writer, attrs
 		writer << ">${text}</a>"
@@ -245,10 +245,10 @@ class SecurityUiTagLib {
 		def height = getRequiredAttribute(attrs, 'height', 'tabs')
 
 		def writer = getOut()
-		writer << """<div style='display: none' id="${id}">\n"""
+		writer << """<div style='display: none' id="${id.encodeAsHTML()}">\n"""
 		writer << "<ul>\n"
 		for (element in data) {
-			writer << """<li><a href="#tab-${element.name}" class="icon ${element.icon}">\n"""
+			writer << """<li><a href="#tab-${element.name.encodeAsHTML()}" class="icon ${element.icon.encodeAsHTML()}">\n"""
 			writer << message(code: element.messageCode)
 			writer << '</a></li>\n'
 		}
@@ -269,7 +269,7 @@ class SecurityUiTagLib {
 		def height = getRequiredAttribute(attrs, 'height', 'tab')
 
 		out << """
-		<div id="tab-${name}">
+		<div id="tab-${name.encodeAsHTML()}">
 			<div class="s2ui_section" style="height: ${height}px; overflow: auto">
 			${body()}
 			</div>
@@ -285,7 +285,7 @@ class SecurityUiTagLib {
 
 		out << """
 			<form action='${createLink(attrs)}' method='POST' name='deleteForm'>
-				<input type="hidden" name="id" value="${id}" />
+				<input type="hidden" name="id" value="${id.encodeAsHTML()}" />
 			</form>
 			<div id="deleteConfirmDialog" title="Are you sure?"></div>
 
@@ -402,8 +402,8 @@ class SecurityUiTagLib {
 		String title = titleCodeArgs ? message(code: titleCode, args: titleCodeArgs) : message(code: titleCode)
 
 		out << """
-		<div class="$classes" id="${elementId}"
-		     style="width: ${width}; height: ${height}px; padding: 5px; text-align: center; position: relative;">
+		<div class="${classes.encodeAsHTML()}" id="${elementId.encodeAsHTML()}"
+		     style="width: ${width.encodeAsHTML()}; height: ${height.encodeAsHTML()}px; padding: 5px; text-align: center; position: relative;">
 
 		<div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix s2ui_center" style='padding: 10px'>
 		<span style="-moz-user-select: none;" unselectable="on" class="ui-dialog-title">
