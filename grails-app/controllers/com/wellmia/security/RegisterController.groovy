@@ -67,15 +67,18 @@ class RegisterController {
 		String salt = saltSource instanceof NullSaltSource ? null : command.username
 		String password = springSecurityService.encodePassword(command.password, salt)
         def gender = params.getProperty("gender")
+        def accept = command.accept
+        def optIn = command.emailOptIn
 
         lookupUserClass().withTransaction {
 
             def userProfile = new ConsumerProfile(gender: command.gender)
             def user = lookupUserClass().newInstance(email: command.email, username: command.username,
                     gender: command.gender, country: command.country, password: password,
-                    consumerProfile:  userProfile, accountLocked: true, enabled: true)
-            if (user.validate()) {
-                if(user.save()) {
+                    consumerProfile:  userProfile, termsAndPrivacyAccepted : command.accept,
+                    emailOptIn : command.emailOptIn, accountLocked: true, enabled: true)
+            if (user.validate() && userProfile.validate()) {
+                if(user.save() && userProfile.save()) {
                     def registrationCode = new RegistrationCode(username: user.username).save()
                     String url = generateLink('verifyRegistration', [t: registrationCode.token])
 
@@ -341,24 +344,29 @@ class RegisterCommand {
 	String password2
     String gender
     String country
-    String accept
+    boolean accept
+    boolean emailOptIn
 
 	static constraints = {
 		username blank: false, validator: { value, command ->
-			if (value) {
-				def User = AH.application.getDomainClass(
-					SpringSecurityUtils.securityConfig.userLookup.userDomainClassName).clazz
-				if (User.findByUsername(value)) {
-					return 'registerCommand.username.unique'
-				}
+            boolean isValid = false
+            if (value) {
+                if(!value.find("[;?', ]")) {
+                    def User = AH.application.getDomainClass(
+                        SpringSecurityUtils.securityConfig.userLookup.userDomainClassName).clazz
+                    if (!User.findByUsername(value)) {
+                        isValid = true
+                    }
+                }
 			}
+            return isValid
 		}
 		email blank: false, email: true, validator: { value, command ->
 			if (value) {
 				def User = AH.application.getDomainClass(
 					SpringSecurityUtils.securityConfig.userLookup.userDomainClassName).clazz
 				if (User.findByEmail(value)) {
-					return 'registerCommand.username.unique'
+					return 'registerCommand.email.unique'
 				}
 			}
         }

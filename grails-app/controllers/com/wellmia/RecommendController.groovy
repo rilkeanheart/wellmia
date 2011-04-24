@@ -5,9 +5,11 @@ class RecommendController {
   static navigation = [
       group:'mainTabs',
       order:50,
-      title:'Recommend',
+      title:'Feedback',
       action:'index'
   ]
 
-  def index = { }
+  def index = {
+    redirect (url: "http://www.getsatisfaction.com/wellmia")
+  }
 }

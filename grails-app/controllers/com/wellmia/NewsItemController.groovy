@@ -1,13 +1,20 @@
 package com.wellmia
 
+import grails.converters.JSON
 import com.wellmia.security.SecUser
+import org.codehaus.groovy.grails.plugins.springsecurity.SpringSecurityUtils
+import com.google.appengine.api.taskqueue.Queue;
+import com.google.appengine.api.taskqueue.QueueFactory;
+import com.google.appengine.api.taskqueue.TaskOptions;
+import org.codehaus.groovy.grails.commons.ApplicationHolder
 
 class NewsItemController {
     
     def newsItemService
     def springSecurityService
 
-    def index = { redirect(action:list,params:params) }
+    def index = { redirect(action:list,params:params)
+    }
 
     // the delete, save and update actions only accept POST requests
     static allowedMethods = [delete:'POST', save:'POST', update:'POST']
@@ -97,7 +104,6 @@ class NewsItemController {
 
     def save = {
         def newsItemInstance = new NewsItem(params)
-        println params
 		NewsItem.withTransaction {
 	        if(newsItemInstance.save(flush:true)) {
 	            flash.message = "NewsItem ${newsItemInstance.id} created"
@@ -109,18 +115,51 @@ class NewsItemController {
 		}
     }
 
-	def doNewsUpdateService = {
-		def offset = params.int("offset")
-		def maxSourcesToProcess = params.int("max")
-        def categorize = params.boolean("categorize")
+    def showDetails = {
+        def newsItemId = params.id
+        def newsItemInstance
+        boolean bIsFollowed = false
 
-        if(categorize == null)
-          categorize = true
 
-		newsItemService.updateNewsItems(offset, maxSourcesToProcess, categorize)
-		flash.message = "Completed news update method"
-		redirect(action: 'list')
-	}
+        NewsItem.withTransaction {
+            if(newsItemId) {
+                newsItemInstance =  NewsItem.get(newsItemId)
+                if(newsItemInstance) {
+                    newsItemInstance.numberOfViews = newsItemInstance.numberOfViews + 1
+                }
+            }
+        }
+
+        if(springSecurityService.isLoggedIn()) {
+          def principal = springSecurityService.principal
+          ConsumerProfile thisConsumer = SecUser.get(principal.id).consumerProfile
+          def feedEdge = FeedEdge.findWhere(consumerId : thisConsumer?.id, feedItemId : newsItemId)
+          bIsFollowed = feedEdge?.isFollowed
+        }
+
+        render(view:'showDetails',model:[newsItem:newsItemInstance, bIsFollowed:bIsFollowed])
+    }
+
+    def showLink = {
+
+        def newsItemId = params.id
+        def newsItemInstance
+
+        NewsItem.withTransaction {
+            if(newsItemId) {
+                newsItemInstance =  NewsItem.get(newsItemId)
+                if(newsItemInstance) {
+                    newsItemInstance.numberOfViews = newsItemInstance.numberOfViews + 1
+                }
+            }
+        }
+
+        if(newsItemInstance)
+            redirect(url: newsItemInstance.urlLink)
+        else
+            redirect(action:list,params:params)
+    }
+
 
     def addCommentAjax = {
       //TODO:  Move this code and create code into a a reusable Service
@@ -129,7 +168,6 @@ class NewsItemController {
 
         def secuser = SecUser.get(principal.id)
         ConsumerProfile thisConsumer = secuser.consumerProfile
-        def paramsList = params
 
         def commentableItemType = Class.forName(params.commentableItemType)
         def commentableItemid = params.commentableItemId
@@ -148,13 +186,66 @@ class NewsItemController {
         }
 
         //newsItem = NewsItem.get(commentableItemid)
+        //Update all interested users
+        def ctx = ApplicationHolder.application.mainContext.servletContext
+        def contextPath = ctx.contextPath
 
-        render(template:"/comment/comments", model: [newsItem: newsItem])
+        def notifyList = newsItem.notifyList
+        notifyList.remove(secuser.email)
+        notifyList.add("michael.green@wellmia.com")
+        String strSubject = SpringSecurityUtils.securityConfig.wellmia.ui.notifyUserOnUpdate.emailSubjectStarter
+        strSubject += "\"" + newsItem.title + "\""
+        String strMessageBody = strSubject + "<br/>"
+        strMessageBody += secuser.username + ":<br/>"
+        strMessageBody += "<br/>" + params.content + "<br/>"
+        strMessageBody += "<br/>" + "To View Item:  " + "<a href=\"${contextPath}/newsItem/showDetail/${newsItem.id}\">Click Here</a><br/>"
+        Queue queue = QueueFactory.getDefaultQueue();
+        TaskOptions taskOptions = TaskOptions.Builder.withUrl("/emailNotify/sendGroupMail")
+                                  .param("emailFrom",URLEncoder.encode(SpringSecurityUtils.securityConfig.wellmia.ui.notifyUserOnUpdate.emailFrom))
+                                  .param("subject",URLEncoder.encode(strSubject))
+                                  .param("msgBody",URLEncoder.encode(strMessageBody))
+                                  .param("emailTo",notifyList.encodeAsURL())
+        queue.add(taskOptions)
+
+        render(template:"/comment/comments", model: [commentableItem: newsItem])
         //render(template:"/comment/comment", model: [comment: commentInstance])
 
       } else  {
-        redirect(uri: '/login')
+          //TODO:  redirect user, but capture comment and targetURL
+        redirect(uri: '/home')
       }
     }
+
+    def addAddToNotifyListAjax = {
+        //TODO:  Move this code and create code into a a reusable Service
+        def jsonData = []
+        boolean bIsSaved = false
+
+        if(springSecurityService.isLoggedIn()) {
+            def principal = springSecurityService.principal
+
+            def secuser = SecUser.get(principal.id)
+
+            def newsItemid = params.newsItemId
+            def newsItem
+
+            NewsItem.withTransaction {
+              newsItem = NewsItem.get(newsItemid)
+              newsItem.notifyList.add(secuser.email)
+              if(newsItem.save())
+                bIsSaved = true
+            }
+        }
+
+        if (bIsSaved)
+            jsonData << [isSaved: "true"]
+        else
+            jsonData << [isSaved: "false"]
+
+
+        render text: jsonData as JSON, contentType: 'text/plain'
+
+    }
+
 
 }

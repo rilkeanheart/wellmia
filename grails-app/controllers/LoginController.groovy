@@ -9,6 +9,7 @@ import org.springframework.security.authentication.LockedException
 import org.springframework.security.core.context.SecurityContextHolder as SCH
 import org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter
+import org.springframework.security.web.WebAttributes
 
 class LoginController {
 
@@ -30,12 +31,12 @@ class LoginController {
 			redirect uri: SpringSecurityUtils.securityConfig.successHandler.defaultTargetUrl
 		}
 		else {
-			redirect action: auth, params: params
+			redirect action: authUISplash, params: params
 		}
 	}
 
 	/**
-	 * Show the login page.
+	 * Show the protected version of the login page.
 	 */
 	def auth = {
 
@@ -46,13 +47,52 @@ class LoginController {
 			return
 		}
 
-		String view = 'auth'
-		String postUrl = "${request.contextPath}${config.apf.filterProcessesUrl}"
-		render view: view, model: [postUrl: postUrl,
-		                           rememberMeParameter: config.rememberMe.parameter]
+		//String view = 'auth'
+		//String postUrl = "${request.contextPath}${config.apf.filterProcessesUrl}"
+		//render view: view, model: [postUrl: postUrl,
+		//                           rememberMeParameter: config.rememberMe.parameter]
+        redirect(controller:'home')
 	}
 
 	/**
+	 * Show the UI version of the login page.
+	 */
+	def authUI = {
+
+		def config = SpringSecurityUtils.securityConfig
+
+		if (springSecurityService.isLoggedIn()) {
+			redirect uri: config.successHandler.defaultTargetUrl
+			return
+		}
+
+		//String view = 'auth'
+		//String postUrl = "${request.contextPath}${config.apf.filterProcessesUrl}"
+		//render view: view, model: [postUrl: postUrl,
+		//                           rememberMeParameter: config.rememberMe.parameter]
+        redirect(controller:'home')
+	}
+
+  /**
+   * Show the Splash UI version of the login page.
+   */
+  def authUISplash = {
+
+      def config = SpringSecurityUtils.securityConfig
+
+      if (springSecurityService.isLoggedIn()) {
+          redirect uri: config.successHandler.defaultTargetUrl
+          return
+      }
+
+		//String view = 'auth'
+		//String postUrl = "${request.contextPath}${config.apf.filterProcessesUrl}"
+		//render view: view, model: [postUrl: postUrl,
+		//                           rememberMeParameter: config.rememberMe.parameter]
+        redirect(controller:'home')
+  }
+
+     /**
 	 * Show denied page.
 	 */
 	def denied = {
@@ -80,7 +120,8 @@ class LoginController {
 
 		def username = session[UsernamePasswordAuthenticationFilter.SPRING_SECURITY_LAST_USERNAME_KEY]
 		String msg = ''
-		def exception = session[AbstractAuthenticationProcessingFilter.SPRING_SECURITY_LAST_EXCEPTION_KEY]
+        def thisSession = session
+		def exception = session[WebAttributes.AUTHENTICATION_EXCEPTION]
 		if (exception) {
 			if (exception instanceof AccountExpiredException) {
 				msg = SpringSecurityUtils.securityConfig.errors.login.expired

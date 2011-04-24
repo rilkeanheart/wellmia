@@ -1,9 +1,11 @@
 package com.wellmia
 
+import javax.servlet.http.HttpServletResponse
 
 class CronController {
 
     def newsItemService
+    def categoryTagStatService
 
     def doNewsUpdateService = {
         def offset = (params.int("offset") != null) ? params.int("offset") : 0
@@ -15,8 +17,14 @@ class CronController {
           categorize = true
 
         newsItemService.updateNewsItems(offset, maxSourcesToProcess, categorize)
-        flash.message = "Completed news update method"
-        redirect(controller: 'newsItem', action: 'list')
+        response.outputStream << "OK"
+        response.setStatus(HttpServletResponse.SC_OK)
+    }
+
+    def updateCategoryTagRank = {
+        categoryTagStatService.updateCategoryStats()
+        response.outputStream << "OK"
+        response.setStatus(HttpServletResponse.SC_OK)
     }
 
 }

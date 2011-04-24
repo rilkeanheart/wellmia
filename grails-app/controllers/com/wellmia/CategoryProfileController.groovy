@@ -2,7 +2,7 @@
 
 package com.wellmia
 
-class CategoryProfileController {
+class  CategoryProfileController {
 
     def categoryProfileService
     def index = { redirect(action:list,params:params) }

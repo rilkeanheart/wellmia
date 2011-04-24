@@ -6,10 +6,21 @@ import com.wellmia.security.SecUser
 
 class TopicsController {
 
+  static defaultAction = "topCategories"
+
   def springSecurityService
   def newsFeedService
+  def categoryTagStatService
 
-  def timeline = {
+
+
+  def topCategories = {
+      // Get top categories
+      def topCategories = categoryTagStatService.topCategoryStats()
+      return [topCategories : topCategories]
+  }
+
+  def timeLine = {
 
     // Determine if there is a categoryTag for the $id
     def categoryTagId = params.id
@@ -30,10 +41,10 @@ class TopicsController {
     }
 
     if(categoryTag) {
-        feedList = newsFeedService.updateTopicNewsFeed(categoryTag)
+        feedList = newsFeedService.getTimeLineFeed(categoryTag)
         return [consumer : thisConsumer, feedList : feedList, categoryTag : categoryTag ]
     } else {
-        redirect(controller: 'home', action: 'index')
+        redirect(action: 'index')
     }
 
     return [consumer : thisConsumer, feedList : feedList, categoryTag : categoryTag ]
@@ -60,13 +71,23 @@ class TopicsController {
     }
 
     if(categoryTag) {
-        feedList = newsFeedService.updateTopicNewsFeed(categoryTag)
+        feedList = newsFeedService.getTopItemsFeed(categoryTag)
 
         //TODO:  Sort the feedlist based on feed Item ratings
         feedList = new TreeSet(feedList)
     }
 
     return [consumer : thisConsumer, feedList : feedList, categoryTag : categoryTag ]
+  }
+
+  def showCategories = {
+      //Takes two parameters categoryType and beginsWith
+      //displays a list of categories (up to 1000) matching those parameters
+      String categoryType = params.get("categoryType")
+      String beginsWith = params.get("beginsWith")
+
+      def categoryList = categoryTagStatService.getCategories(categoryType,beginsWith)
+      return [categoryList: categoryList, beginsWith:beginsWith]
   }
 
 }

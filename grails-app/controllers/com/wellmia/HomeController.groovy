@@ -3,6 +3,7 @@ package com.wellmia
 import grails.converters.JSON
 
 import org.codehaus.groovy.grails.plugins.springsecurity.SpringSecurityUtils
+import com.wellmia.security.SecUser
 
 import org.springframework.security.authentication.AccountExpiredException
 import org.springframework.security.authentication.CredentialsExpiredException
@@ -35,8 +36,19 @@ class HomeController {
 		def config = SpringSecurityUtils.securityConfig
 
 		if (springSecurityService.isLoggedIn()) {
-			redirect uri: config.successHandler.defaultTargetUrl
-			return
+
+            def principal = springSecurityService.principal
+            def secUser = SecUser.get(principal.id);
+            ConsumerProfile thisConsumer = secUser?.consumerProfile
+            if(thisConsumer.getInterestTags()?.isEmpty()) {
+                //If the user has no interest tags, direct them to the "Health Profile" tab
+                boolean firstLogin = (secUser.lastLogin == secUser.dateCreated)
+                redirect(controller: 'healthProfile', action:"index", model: [firstLogin : firstLogin])
+                return
+            } else {
+                redirect uri: config.successHandler.defaultTargetUrl
+                return
+            }
 		}
 
 		String view = 'index'
