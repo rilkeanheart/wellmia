@@ -9,7 +9,7 @@
 <%--<%@ page contentType="text/html;charset=UTF-8" %>  --%>
 <html>
     <head>
-        <title>Wellmia:  ${categoryTag.category}</title>
+        <title>${categoryTag.category} News & Questions - Wellmia</title>
         <meta name="layout" content="wellmia" />
         <g:javascript library="jquery" plugin="jquery"/>
     </head>
@@ -20,6 +20,7 @@
                     <div class="yui-ge">
                         <div class="yui-u first">
                             <div id="maincenter" class="mystory">
+                                 <sec:ifLoggedIn>
                                  <div id="postContent">
                                       <div class="topimage">
                                           <input type="image" id="postQuestionAction"class="postContentActionImage" src="${resource(dir:'images',file:'question1.png')}" alt="question"/>
@@ -28,7 +29,7 @@
                                           </g:if>
                                       </div>
                                       <div id="postQuestion" class="postContentInputArea">
-                                          <g:form>
+                                          <g:form url="[action:'saveQuestionAjax',controller:'question']">
                                               <g:textField id = "questionSubject" class="textField subjectField" name="subject" default="Give your question a headline e.g., Diabetics and desserts" value="Give your question a headline e.g., Diabetics and desserts"/>
                                               <textarea id="questionContent" class="textEditor" name="content" default="What exactly would you like to know? e.g., How do other diabetics handle dessert time?  I take Metformin.  What tastes good to you that doesn't spike your blood sugar levels?">What exactly would you like to know? e.g., How do other diabetics handle dessert time?  I take Metformin.  What tastes good to you that doesn't spike your blood sugar levels?</textarea>
                                               <textarea id="questionTags"class="textEditor" name="tags" default="add tags (categories) for your question...e.g., Diabetes Type II, Metformin">add tags (categories) for your question...e.g., Diabetes Type II, Metformin</textarea>
@@ -45,8 +46,9 @@
                                           <img id="postQuestionSpinner" class="spinner" style="display: none" src="<g:createLinkTo dir='/images' file='spinner.gif' alt=''/>"/>
                                           <br class="clear"/>
                                       </div>
+                                      <g:if test="${false}">
                                       <!--<div id="postStatus" class="postContentInputArea">
-                                         <g:form>
+                                         <g:form url="[action:'addQuestionAjax',controller:'post']">
                                              <textarea class="textEditor" name="content">what is happening with your health?</textarea>
                                              <g:submitToRemote value="Send"
                                                                url="[controller: 'post', action: 'addQuestionAjax']"
@@ -58,8 +60,11 @@
                                          </g:form>
                                          <br class="clear"/>
                                       </div>-->
+                                      </g:if>
                                 </div>
-                                <h1>${categoryTag.category} Timeline</h1>
+                                </sec:ifLoggedIn>
+                                <h1>${categoryTag.category} News & Questions - Timeline</h1>
+                                <h2>Member Questions and the latest ${categoryTag.category} News for your Health Interests</h2>
                                 <hr />
                                 <div id="pagelet_news_stream_dep" class="news_list_container_dep">
                                     <div id="news_stream_items_dep" class="news_list_dep">
@@ -84,6 +89,7 @@
                 </div>
             </div>
             <div id="user" role="sidebar" class="yui-b">
+                <sec:ifLoggedIn>
                 <img class="sidebarAvatar" src="${resource(dir:'images',file:'user.png')}" alt="user"/>
                 <div class="username">
                     <sec:loggedInUserInfo field="username"/>
@@ -111,6 +117,9 @@
                 <div class="usertab">
                   <a href="#">Manage My Medications</a>
                 </div>-->
+                </sec:ifLoggedIn>
+                <sec:ifNotLoggedIn>
+                </sec:ifNotLoggedIn>
             </div>
         </div>
     <g:javascript >
