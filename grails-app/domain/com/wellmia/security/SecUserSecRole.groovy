@@ -41,7 +41,14 @@ class SecUserSecRole implements Serializable {
 	//}
 
 	static SecUserSecRole create(SecUser secUser, SecRole secRole, boolean flush = false) {
-		new SecUserSecRole(secUser: secUser, secRoleId: secRole.id).save(flush: flush)
+        SecUser.withTransaction {
+		    def newSecUserSecRole = new SecUserSecRole(secUser: secUser, secRoleId: secRole.id) //.save(flush: flush)
+            secUser.authorities.add(newSecUserSecRole)
+            if(secUser.merge())
+                newSecUserSecRole.save()
+        }
+
+
 	}
 
 	static boolean remove(SecUser secUser, SecRole secRole, boolean flush = false) {

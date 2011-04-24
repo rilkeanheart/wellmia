@@ -19,6 +19,7 @@ class ConditionType implements Serializable {
 
     @Basic
     Set<String> associatedEndpointIds = new HashSet<String>()
+    Set<String> interestCategories = new HashSet<String>()
 
     static constraints = {
     	id visible:false

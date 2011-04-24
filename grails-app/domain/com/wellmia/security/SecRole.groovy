@@ -22,4 +22,20 @@ class SecRole {
 	static constraints = {
 		authority blank: false, unique: true
 	}
+
+    boolean equals(Object obj) {
+      boolean isEqual = false
+
+      if (obj?.getProperty("authority")?.equals(this.authority))
+         isEqual = true
+
+      return isEqual
+    }
+
+    int hashCode() {
+      int returnValue = 1
+      if(this.authority)
+         returnValue = 39 * this.authority?.hashCode()
+    }
+
 }

@@ -21,8 +21,10 @@ class NewsSource implements Serializable {
 	Date   mostRecentNewsDate
 	Long newsSourceRank
 
+    @Basic(fetch = FetchType.EAGER)
     Set<String> defaultCategories = new HashSet<String>()
 	boolean isActive = true
+    boolean isGeneral = true
 
 	@Basic
 	@OneToMany(cascade=CascadeType.ALL,	mappedBy="newsSource")

@@ -15,7 +15,8 @@ class Comment implements Serializable, Comparable {
 	@Extension(vendorName = "datanucleus", key = "gae.encoded-pk", value = "true")
 	String id
 
-	String content
+	String subject
+    String content
 	Date dateCreated = new Date()
     String memberCreatorUsername
 
@@ -39,6 +40,7 @@ class Comment implements Serializable, Comparable {
 		"${content}"
 	}
 
+    // TODO:  Use an interface to define a class of sortable domains by date (use for Status, Question, etc.)
     int compareTo(Object o) {
       int returnValue = 0
 

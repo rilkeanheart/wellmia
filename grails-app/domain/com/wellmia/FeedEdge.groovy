@@ -18,6 +18,7 @@ class FeedEdge implements Serializable {
     String consumerId
     String feedItemId
     Date   sortedDate
+    boolean isFollowed = false
 
     String feedItemClassName
 

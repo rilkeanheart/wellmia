@@ -15,6 +15,8 @@ class SecUser {
 	String id
 
     Date dateCreated = new Date()
+    Date lastLogin = new Date()
+    Date priorLogin = new Date()
 
     //TODO:  Track last login date - need to also update the userdetailsservice
     //Date lastLoginDate = new Date()
@@ -26,11 +28,16 @@ class SecUser {
     String email
 
     String country
+    String gender
+
+    boolean termsAndPrivacyAccepted = false
+    boolean emailOptIn = false
 
     boolean enabled
 	boolean accountExpired
 	boolean accountLocked
 	boolean passwordExpired
+
 
     @Basic
     @OneToOne(cascade=CascadeType.ALL)
@@ -52,6 +59,7 @@ class SecUser {
         email(email: true, nullable: false)
 
         country(blank: false)
+        gender(inList:["Male","Female"])
 	}
 
 

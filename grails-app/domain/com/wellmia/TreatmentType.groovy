@@ -18,12 +18,28 @@ class TreatmentType implements Serializable {
     String treatmentTypeName
 
     String treatmentCategoryTypeId
-    boolean isDosable = true
-    boolean isInjectable = false
+    boolean isDrug
+
+    // The following fields only apply if isDrug is TRUE
+    String applicationNumber
+    String productNumber
+    String form
+    String dosage
+    String productMarketStatus
+    String tecCode
+    boolean isReferenceDrug
+    String activeIngredients
+
+    //@Basic
+    //Set<String> interestCategories = new HashSet<String>()
 
     static constraints = {
     	id visible:false
-        treatmentTypeName(blank:false, unique:true)
-        treatmentCategoryTypeId(blank:false)
+        treatmentTypeName(blank:false, unique:false)
+        isDrug(nullable:false)
+	}
+
+    String toString() {
+		"$treatmentTypeName" + (activeIngredients == treatmentTypeName) ? "" : "  ($activeIngredients)"
 	}
 }

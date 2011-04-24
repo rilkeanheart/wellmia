@@ -22,13 +22,15 @@ class ConsumerProfile implements Serializable {
 
     String gender
     Date   birthDate
-    Blob photo
+    Blob avatar
+    String avatarMIMEType
 
     @Basic
     Set<String> interestTags = new HashSet<String>()
 
     @Basic
-    Date feedExpirationDate = new Date() - 100
+    Date feedExpirationDate = new Date() - 10
+    boolean feedIsStale = false
 
     @Basic
     @OneToMany(cascade=CascadeType.ALL,
@@ -46,7 +48,9 @@ class ConsumerProfile implements Serializable {
 
     static constraints = {
     	id visible:false
-        birthDate(blank: false, max:new Date())
+        birthDate(blank: true, max:new Date())
         gender(inList:["Male","Female"])
+        avatar(nullable:true, maxSize: 16384 /* 16K */)
+        avatarMIMEType(nullable:true)
 	}
 }
