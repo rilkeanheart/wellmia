@@ -1,7 +1,7 @@
 grails.project.class.dir = "target/classes"
 grails.project.test.class.dir = "target/test-classes"
 grails.project.test.reports.dir = "target/test-reports"
-google.appengine.sdk = "/Users/mike/Development/appengine-java-sdk-1.4.0"
+google.appengine.sdk = "/Users/mike/Development/appengine-java-sdk-1.4.3"
 //grails.project.war.file = "target/${appName}-${appVersion}.war"
 grails.project.dependency.resolution = {
     // inherit Grails' default dependencies
