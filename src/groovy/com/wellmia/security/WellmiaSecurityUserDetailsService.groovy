@@ -79,6 +79,8 @@ class WellmiaSecurityUserDetailsService implements GrailsUserDetailsService {
 
     List authorities = (grantedAuthorities.size() >= 0) ? grantedAuthorities : NO_ROLES
 
+    // Update secUser's login time
+
     return new WellmiaSecurityUserDetails(secUser.username, secUser.password, secUser.enabled,
                                           !secUser.accountExpired, !secUser.passwordExpired,
                                           !secUser.accountLocked, authorities, secUser.id, "placeholder")
