@@ -27,8 +27,13 @@ transformers:
 - kind: CategoryTag
   connector: csv
   connector_options:
-    encoding: utf-8
+    # TODO: Add connector options here--these are specific to each connector.
   property_map:
+    - property: __key__
+      external_name: key
+      export_transform: transform.key_id_or_name_as_string
+      import_transform: transform.create_foreign_key('Kind', key_is_id=True)
+
     - property: alias
       external_name: alias
       import_transform:  "lambda x: len(x) > 0 and eval(x) or ''"
@@ -74,7 +79,7 @@ transformers:
 - kind: Comment
   connector: csv
   connector_options:
-    encoding: utf-8
+    # TODO: Add connector options here--these are specific to each connector.
   property_map:
     - property: __key__
       external_name: key
@@ -106,7 +111,7 @@ transformers:
 - kind: ConditionType
   connector: csv
   connector_options:
-    encoding: utf-8
+    # TODO: Add connector options here--these are specific to each connector.
   property_map:
     - property: __key__
       external_name: key
@@ -128,7 +133,7 @@ transformers:
 - kind: ConsumerProfile
   connector: csv
   connector_options:
-    encoding: utf-8
+    # TODO: Add connector options here--these are specific to each connector.
   property_map:
     - property: __key__
       external_name: key
@@ -163,7 +168,7 @@ transformers:
 - kind: FeedEdge
   connector: csv
   connector_options:
-    encoding: utf-8
+    # TODO: Add connector options here--these are specific to each connector.
   property_map:
     - property: __key__
       external_name: key
@@ -191,7 +196,7 @@ transformers:
 - kind: NewsItem
   connector: csv
   connector_options:
-    encoding: utf-8
+    # TODO: Add connector options here--these are specific to each connector.
   property_map:
     - property: __key__
       external_name: key
@@ -248,7 +253,7 @@ transformers:
 - kind: NewsSource
   connector: csv
   connector_options:
-    encoding: utf-8
+    # TODO: Add connector options here--these are specific to each connector.
   property_map:
     - property: __key__
       external_name: key
@@ -294,7 +299,7 @@ transformers:
 - kind: RegistrationCode
   connector: csv
   connector_options:
-    encoding: utf-8
+    # TODO: Add connector options here--these are specific to each connector.
   property_map:
     - property: __key__
       external_name: key
@@ -318,7 +323,7 @@ transformers:
 - kind: SecRole
   connector: csv
   connector_options:
-    encoding: utf-8
+    # TODO: Add connector options here--these are specific to each connector.
   property_map:
     - property: __key__
       external_name: key
@@ -332,7 +337,7 @@ transformers:
 - kind: SecUserSecRole
   connector: csv
   connector_options:
-    encoding: utf-8
+    # TODO: Add connector options here--these are specific to each connector.
   property_map:
     - property: __key__
       external_name: key
@@ -350,7 +355,7 @@ transformers:
 - kind: SecUser
   connector: csv
   connector_options:
-    encoding: utf-8
+    # TODO: Add connector options here--these are specific to each connector.
   property_map:
     - property: __key__
       external_name: key
@@ -428,7 +433,7 @@ transformers:
 - kind: TreatmentType
   connector: csv
   connector_options:
-    encoding: utf-8
+    # TODO: Add connector options here--these are specific to each connector.
   property_map:
     - property: __key__
       external_name: key
@@ -487,7 +492,7 @@ transformers:
 - kind: _ah_SESSION
   connector: csv
   connector_options:
-    encoding: utf-8
+    # TODO: Add connector options here--these are specific to each connector.
   property_map:
     - property: __key__
       external_name: key
@@ -499,12 +504,12 @@ transformers:
 
     - property: _expires
       external_name: _expires
-      # Type: Integer Stats: 383 properties of this type in this kind.
+      # Type: Integer Stats: 378 properties of this type in this kind.
       import_transform: transform.none_if_empty(int)
 
     - property: _values
       external_name: _values
-      # Type: Blob Stats: 383 properties of this type in this kind.
+      # Type: Blob Stats: 378 properties of this type in this kind.
       import_transform: transform.blobproperty_from_base64
       export_transform: base64.b64encode
 

@@ -56,6 +56,16 @@ transformers:
       # Type: Boolean Stats: 48 properties of this type in this kind.
       import_transform: transform.regexp_bool('true', re.IGNORECASE)
 
+    - property: numberOfFollowers
+      external_name: numberOfFollowers
+      # Type: Integer 
+      import_transform: transform.none_if_empty(int)
+
+    - property: previousInterestRank
+      external_name: previousInterestRank
+      # Type: Integer 
+      import_transform: transform.none_if_empty(int)
+
     - property: version
       external_name: version
       # Type: String Stats: 986 properties of this type in this kind.
