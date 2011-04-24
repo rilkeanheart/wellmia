@@ -46,7 +46,7 @@ class BootstrapConditionTypeService {
         }
 
         // Create CategoryTags for all condition types
-        /*def conditions = ConditionType.list()
+        def conditions = ConditionType.list()
         conditions.each {conditiontype ->
             if(CategoryTag.findWhere(category: conditiontype.conditionName,
                                      categoryType: "Condition") == null) {
@@ -56,7 +56,7 @@ class BootstrapConditionTypeService {
                                                categoryType: "Condition").save(failOnError: true, flush: true)
                 }
             }
-        }*/
+        }
     }
 
 }

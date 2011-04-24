@@ -32,5 +32,16 @@ class CategorizeService {
         return categories
     }
 
+    def validateCategories(Set<String> categories) {
+        def Set<String> validatedCategories = new HashSet()
+
+        categories.each { category ->
+            if(CategoryTag.findWhere(category: category) != null)
+                 validatedCategories << category
+        }
+
+        return validatedCategories
+    }
+
 
 }

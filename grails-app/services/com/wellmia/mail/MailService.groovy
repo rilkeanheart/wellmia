@@ -29,4 +29,31 @@ class MailService {
    }
 
  }
+
+ def sendGroupMail(emailTo, emailFrom, subject, msgBody) {
+
+   try {
+       def service = MailServiceFactory.getMailService()
+       System.out.println("Mail Service:  ${emailTo}")
+       emailTo.each { recipient ->
+           System.out.println("Sending to:  ${recipient}")
+           System.out.println("Sending from:  ${emailFrom}")
+           System.out.println("Re:  ${subject}")
+           System.out.println("Content:  ${msgBody}")
+           def msg = new com.google.appengine.api.mail.MailService.Message()
+           msg.setSender(emailFrom)
+           msg.setTo(recipient)
+           msg.setSubject(subject)
+           msg.setHtmlBody(msgBody)
+           service.send(msg)
+       }
+
+
+   } catch (AddressException e) {
+       System.out.println("Address Exception:  ${e}")
+   } catch (MessagingException e) {
+       System.out.println("Messaging Exception:  ${e}")
+   }
+
+ }
 }
