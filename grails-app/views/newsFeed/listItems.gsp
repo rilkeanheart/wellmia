@@ -9,143 +9,137 @@
 <%--<%@ page contentType="text/html;charset=UTF-8" %>  --%>
 <html>
     <head>
-        <title>Wellmia Newspage</title>
+        <title>Wellmia News:  </title>
         <meta name="layout" content="wellmia" />
-        <script type="text/javascript" src="/js/script-styles.js"></script>
         <g:javascript library="jquery" plugin="jquery"/>
     </head>
     <body>
-        <!-- your primary primary content goes here -->
-        <div id="pagelet_composer">
-            <div class="padded_bottom_margin padded_top_margin">
-                <div class="uiComposer">
-                    <form method="get" action="/" ajaxify="1">
-                        <ul class="uiList uiListHorizontal clearfix">
-                            <li>
-                                <span class="fsm fwn fcg">
-                                    <strong>Post:</strong>
-                                </span>
-                            </li>
-                            <li>
-                                <ul class="uiList uiListHorizontal clearfix">
-                                    <li>
-                                        <a class="uiIconLink uiComposerAttachment"  data-endpoint="/ajax/composer/attachment/status/status.php">
-                                          <img class="img uiComposerImg" src="${resource(dir:'images',file:'question.png')}"/>
-                                            <strong class="attachmentName">
-                                                Question
-                                                <i class="nub showWhenOpen"></i>
-                                            </strong>
-                                        </a>
-                                    </li>
-                                   <li>
-                                        <a class="uiIconLink uiComposerAttachment" >
-                                            <img class="img uiComposerImg" src="${resource(dir:'images',file:'question.png')}"/>
-                                            <strong class="attachmentName">
-                                                Quick Thought
-                                                <i class="nub showWhenOpen"></i>
-                                            </strong>
-                                        </a>
-                                    </li>
-                                   <li>
-                                        <a class="uiIconLink uiComposerAttachment" >
-                                            <img class="img uiComposerImg" src="${resource(dir:'images',file:'question.png')}"/>
-                                            <strong class="attachmentName">
-                                                Blog Entry
-                                                <i class="nub showWhenOpen"></i>
-                                            </strong>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <input type="hidden" value="2123424" name="targetid" autocomplete="off"/>
-                        <input class="hidden_elem" type="submit"  name="xhpc"/>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div id="pagelet_stream_header">
-            <div class="clearfix padded_bottom_margin padded_top_margin UIInernationalStreamTop">
-                <div class="uiHeader uiHeaderWithImage uiHeaderPage wm_stream_header">
-                    <div class="clearfix uiHeaderTop">
-                        <div class="UIHeaderActions rfloat fsl fwb fcb">
-                            Top News
-                            <a href="www.cnn.com">
-                                <span class="fwn">
-                                    Most Recent
-                                    <span class="uiBubbleCount mls">
-                                        <span class="numberContainer">
-                                            <span class="number countValue fsm">${feedList.size()}</span>
-                                            <span class="maxCountIndicator"></span>
-                                        </span>
-                                    </span>
-                                </span>
-                            </a>
-                            <div class="uiStreamHeaderSelect">
-                                <form  action="/" method="get">
-                                    <select name="newsfeed_subject">
-                                        <option value="1">All Conditions</option>
-                                        <option value="2">High Blood Pressure</option>
-                                        <option value="3">Hypertension</option>
-                                        <option value="4">Obesity</option>
-                                        <option value="4">Saved</option>
-                                    </select>
-                                </form>
-                                <input class="hidden_elem" type="submit" name="xhpc"/>
+        <div id="bd" role="main">
+            <div id="yui-main">
+                <div class="yui-b">
+                    <div class="yui-ge">
+                        <div class="yui-u first">
+                            <div id="maincenter" class="mystory">
+                                 <div id="postContent">
+                                      <div class="topimage">
+                                          <input type="image" id="postQuestionAction"class="postContentActionImage" src="${resource(dir:'images',file:'question1.png')}" alt="question"/>
+                                          <g:if test="${false}">
+                                                <input type="image" id="postStatusAction"class="postContentActionImage" src="${resource(dir:'images',file:'quickthoughts.png')}" alt="status"/>
+                                          </g:if>
+                                      </div>
+                                      <div id="postQuestion" class="postContentInputArea">
+                                          <g:form>
+                                              <g:textField id = "questionSubject" class="textField subjectField" name="subject" default="Give your question a headline e.g., Diabetics and desserts" value="Give your question a headline e.g., Diabetics and desserts"/>
+                                              <textarea id="questionContent" class="textEditor" name="content" default="What exactly would you like to know? e.g., How do other diabetics handle dessert time?  I take Metformin.  What tastes good to you that doesn't spike your blood sugar levels?">What exactly would you like to know? e.g., How do other diabetics handle dessert time?  I take Metformin.  What tastes good to you that doesn't spike your blood sugar levels?</textarea>
+                                              <textarea id="questionTags"class="textEditor" name="tags" default="add tags (categories) for your question...e.g., Diabetes Type II, Metformin">add tags (categories) for your question...e.g., Diabetes Type II, Metformin</textarea>
+                                              <g:submitToRemote value="Ask"
+                                                                url="[controller: 'question', action: 'saveQuestionAjax']"
+                                                                update=""
+                                                                onSuccess="postQuestionOK(data,textStatus)"
+                                                                onFailure="postQuestionFailure(XMLHttpRequest,textStatus,errorThrown)"
+                                                                onLoading="showSpinner(true, 'postQuestionSpinner')"
+                                                                onComplete="showSpinner(false, 'postQuestionSpinner')"
+                                                                id = "askQuestionButton"/>
+
+                                          </g:form>
+                                          <img id="postQuestionSpinner" class="spinner" style="display: none" src="<g:createLinkTo dir='/images' file='spinner.gif' alt=''/>"/>
+                                          <br class="clear"/>
+                                      </div>
+                                      <!--<div id="postStatus" class="postContentInputArea">
+                                         <g:form>
+                                             <textarea class="textEditor" name="content">what is happening with your health?</textarea>
+                                             <g:submitToRemote value="Send"
+                                                               url="[controller: 'post', action: 'addQuestionAjax']"
+                                                               update=""
+                                                               onSuccess=""
+                                                               onLoading=""
+                                                               onComplete=""
+                                                               id = "submitStatusButton"/>
+                                         </g:form>
+                                         <br class="clear"/>
+                                      </div>-->
+                                </div>
+                                <h1>My Feed</h1>
+                                <hr />
+                                <div id="pagelet_news_stream_dep" class="news_list_container_dep">
+                                    <div id="news_stream_items_dep" class="news_list_dep">
+                                      <g:each var="feedItem" in="${feedList}">
+                                        <g:if test="${com.wellmia.NewsItem.class.isInstance(feedItem)}">
+                                          <g:render template="/newsItem/newsItemSummary" model="[newsItem : feedItem]"/>
+                                        </g:if>
+                                        <g:if test="${com.wellmia.Question.class.isInstance(feedItem)}">
+                                          <g:render template="/question/questionSummary" model="[question : feedItem]"/>
+                                        </g:if>
+                                      </g:each>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            <h2 class="uiHeaderTitle">
-                                <i class="uiHeaderImage img spritemap"></i>
-                                My News
-                            </h2>
+                        <div role="complementary" class="yui-u">
+                            <g:if test="${false}">
+                                <g:render template="/addsection" />
+                            </g:if>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="pagelet_news_stream" class="news_list_container">
-            <div id="news_stream_items" class="news_list">
-              <g:each var="feedItem" in="${feedList}">
-                <g:if test="${com.wellmia.NewsItem.class.isInstance(feedItem)}">
-                  <g:render template="/newsItem/newsItem" model="[newsItem : feedItem]"/>
-                </g:if>
-                <g:if test="${com.wellmia.Post.class.isInstance(feedItem)}">
-                  <g:render template="/post/post" model="[post : post]"/>
-                </g:if>
-              </g:each>
+            <div id="user" role="sidebar" class="yui-b">
+                <img class="sidebarAvatar" src="${resource(dir:'images',file:'user.png')}" alt="user"/>
+                <div class="username">
+                    <sec:loggedInUserInfo field="username"/>
+                </div>
+                <!--<div class="usertab">
+                  Connect with others
+                </div>
+                   <ul>
+                       <li><a href="#">View My News</a></li>
+                       <li><a href="#">View My Messages</a></li>
+                       <li><a href="#">See who is on-line</a></li>
+                       <li><a href="#">View Groups</a></li>
+                       <li><a href="#">Search/Read Questions</a></li>
+                   </ul>
+                <div class="usertab">
+                  Manage My Wellness
+                </div>
+                   <ul>
+                       <li><a href="#">Manage My Wellness</a></li>
+                       <li><a href="#"> Manage My Conditions</a></li>
+                       <li><a href="#">Obesity</a></li>
+                       <li><a href="#">Hypertension</a></li>
+                       <li><a href="#">High Cholesterol</a></li>
+                   </ul>
+                <div class="usertab">
+                  <a href="#">Manage My Medications</a>
+                </div>-->
             </div>
         </div>
-        <jq:jquery>
-
-            jQuery(".uiUfiAddComment textarea").focus(function () {
-              $(this).parent().removeClass('uiUfiAddCommentCollapsed');
-              if($(this).val() == $(this).attr('defaulttext'))
-                $(this).val("");
-            });
-
-            jQuery(".uiUfiAddComment textarea").blur(function () {
-              if($(this).val() == "") {
-                $(this).val($(this).attr('defaulttext'));
-                $(this).parent().addClass('uiUfiAddCommentCollapsed');
-              }
-            });
-
-            jQuery(".commentAction button").click(function () {
-              $(this).parent().parent().parent().find(".uiUfiAddComment").removeClass('hide-with-script');
-            });
-        </jq:jquery>
-        <g:javascript>
-          function clearComment(e) {
+    <g:javascript >
+        function clearComment(e) {
             $("#"+e).val('');
-          }
+        }
 
-          function showSpinner(visible, e) {
-            if(visible == true)
-              $("#"+e).show();
-            else
-              $("#"+e).hide();
-          }
-        </g:javascript>
+        function showSpinner(visible, e) {
+        if(visible == true)
+            $("#"+e).show();
+        else
+            $("#"+e).hide();
+        }
+
+        function postQuestionOK(data,textStatus) {
+            $('#pagelet_news_stream_dep').prepend(data);
+        }
+
+        function postQuestionFailure(XMLHttpRequest,textStatus,errorThrown) {
+            //TODO:  all error handling here
+        }
+
+        function split( val ) {
+          return val.split( /,\s*/ );
+        }
+
+        function extractLast( term ) {
+          return split( term ).pop();
+    }
+    </g:javascript>
     </body>
 </html>

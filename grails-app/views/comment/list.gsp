@@ -7,7 +7,7 @@
     </head>
     <body>
         <div class="nav">
-            <span class="menuButton"><a class="home" href="${resource(dir:'/index.gsp')}">Home</a></span>
+            <span class="menuButton"><a class="home" href="${resource(dir:'/controllers.gsp')}">Home</a></span>
             <span class="menuButton"><g:link class="create" action="create">New Comment</g:link></span>
         </div>
         <div class="body">

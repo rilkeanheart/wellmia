@@ -1,80 +1,46 @@
-<div class="news_item clearfix">
-    <a class="hidable hide_link has_tooltip" title="Hide News Item"></a>
-    <div class="news_context group">
-        <div class="news_popularity_box">
-            <span class="news_popularity_count">
-                45
-            </span>
-            <span class="news_popularity_label">LIKED</span>
+<div class="feedItem">
+    <div class="feedItemHeader">
+        <div class="feedItemImage">
+            <img src="${resource(dir:'images',file:'news.png')}" alt="news"/>
         </div>
-        <div class="thumbnail">
-            <a href="${newsItem.urlLink}">
-                <img class="thumbnail-inner" alt="${newsItem.title}" src="${resource(dir:'images',file:'mediaimage.png')}"/>
-            </a>
+        <div class="feedItemInfo">
+            <a class="news_title_dep headline" target="_blank" href="/newsItem/showLink/${newsItem.id}">${newsItem.title}</a>
+          <span class="subheadline">
+              <wellmia:dateFromNow date="${newsItem.publishDate}"/>
+          </span>
         </div>
+        <div class="clear"></div>
     </div>
-    <div class="news_details">
-        <div class="news_headline">
-            <a class="news_title" target="_blank" href="${newsItem.urlLink}">${newsItem.title}</a>
-        </div>
-        <div class="news_age">
-            <wellmia:dateFromNow date="${newsItem.publishDate}"/>
-        </div>
-        <div class="news_description">
-            <a class="news_source" href="${newsItem.newsSource.sourceHomeURL}">
-                <span class="news_source_border">${newsItem.newsSource.name}</span>
+    <div class="feedItemContent">
+      <div class="news_description_dep">
+          <a class="news_source_dep source" target="_blank" href="${newsItem.newsSource.sourceHomeURL}">
+              <span class="news_source_border_dep"><strong>${newsItem.newsSource.name}</strong></span>
+          </a>&mdash; ${newsItem.content}
+          <a class="news_teaser_dep link" target="_blank" href="/newsItem/showLink/${newsItem.id}">
+              (read more...)
+          </a>
+      </div>
+    </div>
+    <div class='feedItemFooter'>
+        <span class="feedItemTag"><strong>Tags:</strong>
+              <g:each status="i" var="category" in="${newsItem.category}">
+                  ${ (i > 0) ? ',    ' : ''}
+                  <a href="/topics/${category.replace(' ','_')}">${category}</a>
+              </g:each>
+        </span>
+        <span class="feedItemCommentSummary">
+            <a class="source responseLink" href="" name="comment" title="View or Make Comments">
+              <g:if test="${newsItem.comments.size() > 0}">${newsItem.comments.size()} Comments</g:if>
+              <g:else>Comment</g:else>
             </a>
-            <a class="news_teaser" href="${newsItem.urlLink}">
-                &mdash; ${newsItem.content}
-            </a>
-        </div>
-        <div class="health_tab_list">
-            <g:each var="category" in="${newsItem.category}">
-              <div class="news_health_theme_box">
-                  <span class="news_health_theme">
-                      ${category}
-                  </span>
-              </div>
-            </g:each>
-        </div>
+        </span>
+    </div>
+    <div class="commentsbox">
         <g:form action="ajaxAdd">
-            <span class="news_actions uiActionLinks uiActionLinks_bottom">
-                <span class="commentAction">
-                    <i class="comments_icon"></i>
-                    <button class="news_actions_comment isaLink" name="comment" type="button" title="View or Make Comments">
-                      <g:if test="${newsItem.comments.size() > 0}">
-                        <strong>${newsItem.comments.size()} Comments</strong>
-                      </g:if>
-                      <g:else>
-                        <strong>Comment</strong>
-                      </g:else>
-                    </button>
-                </span>
-                <span class="voteAction">
-                    | <span class="news_actions_helpful">Helpful?</span>
-                    <button class="news_actions_like isaLink" name="like" type="button" title="Was this helpful?">
-                        <strong>YES</strong>
-                    </button>
-                     or
-                    <button class="news_actions_dislike isaLink" name="dislike" type="button" title="Was this not helpful?">
-                        <strong>NO</strong>
-                    </button>
-                </span>
-                <span class="saveAction">
-                    | <button class="news_actions_save isaLink" name="save" type="button" title="Save this item?">
-                        <strong>SAVE</strong>
-                    </button>
-                </span>
-            </span>
             <input type="hidden" name="commentableItemId" value="${newsItem.id}"/>
             <input type="hidden" name="commentableItemType" value="${newsItem.class.name}"/>
             <ul class="uiList uiUfi focus_target wUfi">
-                <li class="ufiNub uiListItem uiListVerticalItemBorder">
-                    <i></i>
-                    <input type="hidden" value="1" name="xhp_ufi" autocomplete="off">
-                </li>
-                <li class="hidden_elem uiFiLike uiListItem uiListVerticalItemBorder"></li>
-                <li class="uiUfiComments uiListItem uiListVerticalItemBorder">
+                <li class="commentsList">
                     <ul id="comments${newsItem.id}" class="commentList">
                       <g:each var="comment" in="${newsItem.comments}">
                           <g:render template="/comment/comment" model="[comment : comment]"/>
@@ -82,34 +48,57 @@
                     </ul>
                 </li>
                 <g:if test="${newsItem.comments.size() > 0}">
-                  <li class="uiUfiAddComment clearfix ufiItem uiListItem uiListVerticalItemBorder uiUfiAddCommentCollapsed">
-                      <textarea id="ta${newsItem.id}" class="uiTextareaNoResize uiTextareaAutogrow textBox textBoxContainer" name="content" defaulttext="What do you think?">What do you think?</textarea>
-                      <label class="mts commentBtn stat_elem uiButton uiButtonConfirm uiButtonMedium">
-                        <g:submitToRemote value="Comment"
-                                          url="[controller: 'newsItem', action: 'addCommentAjax']"
-                                          update="comments${newsItem.id}"
-                                          onSuccess="clearComment('ta${newsItem.id}')"
-                                          onLoading="showSpinner(true, 'spinner${newsItem.id}')"
-                                          onComplete="showSpinner(false, 'spinner${newsItem.id}')"/>
-                      </label>
-                      <img id="spinner${newsItem.id}" class="spinner" style="display: none" src="<g:createLinkTo dir='/images' file='spinner.gif' alt=''/>"/>
-                  </li>
+                    <li class="addComment addCommentCollapsed displayItem">
+                        <div class="commentContainer commentEditorContainer clear">
+                            <img class="postCommentAvatar" src="${resource(dir:'images',file:'suer.png')}" alt="avatar"/>
+                                <div class="textAreaEditorContainer">
+                                    <div class="postCommentTextAreaWrapper">
+                                        <textarea id="ta${newsItem.id}" class="textEditor" name="content" defaulttext="What do you think?">What do you think?</textarea>
+                                    </div>
+                                    <label class="mts commentBtn stat_elem uiButton uiButtonConfirm uiButtonMedium">
+                                        <g:submitToRemote value="Comment"
+                                                          url="[controller: 'newsItem', action: 'addCommentAjax']"
+                                                          update="comments${newsItem.id}"
+                                                          onSuccess="clearComment('ta${newsItem.id}')"
+                                                          onLoading="showSpinner(true, 'spinner${newsItem.id}')"
+                                                          onComplete="showSpinner(false, 'spinner${newsItem.id}')"
+                                                          class="submitCommentButton"/>
+                                    </label>
+                                    <img id="spinner${newsItem.id}" class="spinner" style="display: none" src="<g:createLinkTo dir='/images' file='spinner.gif' alt=''/>"/>
+                                    <br class="clear"/>
+                                </div>
+                        </div>
+                    </li>
                 </g:if>
                 <g:else>
-                  <li class="uiUfiAddComment clearfix ufiItem uiListItem uiListVerticalItemBorder uiUfiAddCommentCollapsed hide-with-script">
-                      <textarea id="ta${newsItem.id}" class="uiTextareaNoResize uiTextareaAutogrow textBox textBoxContainer" name="content" defaulttext="What do you think?">What do you think?</textarea>
-                      <label class="mts commentBtn stat_elem uiButton uiButtonConfirm uiButtonMedium">
-                        <g:submitToRemote value="Comment"
-                                          url="[controller: 'newsItem', action: 'addCommentAjax']"
-                                          update="comments${newsItem.id}"
-                                          onSuccess="clearComment('ta${newsItem.id}')"
-                                          onLoading="showSpinner(true, 'spinner${newsItem.id}')"
-                                          onComplete="showSpinner(false, 'spinner${newsItem.id}')"/>
-                      </label>
-                      <img id="spinner${newsItem.id}" class="spinner" style="display: none" src="<g:createLinkTo dir='/images' file='spinner.gif' alt=''/>"/>
-                  </li>
+                    <li class="addComment addCommentCollapsed displayItem" style="display: none;">
+                        <div class="commentContainer commentEditorContainer clear">
+                          <img class="postCommentAvatar" src="${resource(dir:'images',file:'suer.png')}" alt="avatar"/>
+
+                              <div class="textAreaEditorContainer">
+                                  <div class="postCommentTextAreaWrapper">
+                                      <textarea id="ta${newsItem.id}" class="textEditor" name="content" defaulttext="What do you think?">What do you think?</textarea>
+                                  </div>
+
+                                  <label class="mts commentBtn stat_elem uiButton uiButtonConfirm uiButtonMedium">
+                                      <g:submitToRemote value="Comment"
+                                                        url="[controller: 'newsItem', action: 'addCommentAjax']"
+                                                        update="comments${newsItem.id}"
+                                                        onSuccess="clearComment('ta${newsItem.id}')"
+                                                        onLoading="showSpinner(true, 'spinner${newsItem.id}')"
+                                                        onComplete="showSpinner(false, 'spinner${newsItem.id}')"
+                                                        class="submitCommentButton"/>
+                                  </label>
+                                  <img id="spinner${newsItem.id}" class="spinner" style="display: none" src="<g:createLinkTo dir='/images' file='spinner.gif' alt=''/>"/>
+                                  <br class="clear"/>
+                              </div>
+
+                        </div>
+                    </li>
                 </g:else>
             </ul>
         </g:form>
     </div>
+    <div class="clear"></div>
 </div>
+

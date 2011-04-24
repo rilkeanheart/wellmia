@@ -9,7 +9,7 @@
 <%--<%@ page contentType="text/html;charset=UTF-8" %>  --%>
 <html>
     <head>
-        <title>Wellmia:  ${categoryTag.category} Top Items</title>
+        <title>${categoryTag.category} News & Questions - Wellmia</title>
         <meta name="layout" content="wellmia" />
         <g:javascript library="jquery" plugin="jquery"/>
     </head>
@@ -20,6 +20,7 @@
                     <div class="yui-ge">
                         <div class="yui-u first">
                             <div id="maincenter" class="mystory">
+                                 <sec:ifLoggedIn>
                                  <div id="postContent">
                                       <div class="topimage">
                                           <input type="image" id="postQuestionAction"class="postContentActionImage" src="${resource(dir:'images',file:'question1.png')}" alt="question"/>
@@ -59,7 +60,9 @@
                                          <br class="clear"/>
                                       </div>-->
                                 </div>
-                                <h1>${categoryTag.category} Top Items</h1>
+                                </sec:ifLoggedIn>
+                                <h1>${categoryTag.category} News & Questions - Top Items</h1>
+                                <h2>Top Member Questions and ${categoryTag.category} News for your Health Interests</h2>
                                 <hr />
                                 <div id="pagelet_news_stream_dep" class="news_list_container_dep">
                                     <div id="news_stream_items_dep" class="news_list_dep">

@@ -1,70 +1,85 @@
 <html>
     <head>
-        <title><g:layoutTitle default="Wellmia Newpage" /></title>
-        <link rel="stylesheet" href="<g:createLinkTo dir='css' file='wellmia.css' />" />
-        <g:layoutHead />
+        <title><g:layoutTitle default="Wellmia" /></title>
+
+        <link rel="shortcut icon" href="${resource(dir:'images',file:'favicon.ico')}" type="image/x-icon"/>
+        <link rel="stylesheet" href="http://yui.yahooapis.com/2.8.0r4/build/reset-fonts-grids/reset-fonts-grids.css" type="text/css">
+        <style type="text/css">#custom-doc { width:82.69em;*width:80.7em;min-width:1075px; margin:auto; text-align:left; }</style>
+        <link rel="stylesheet" href="<g:createLinkTo dir='css' file='style.css' />" />
+        <link rel="stylesheet" href="<g:createLinkTo dir='css' file='jquery.multiselect.css' />" />
         <g:javascript library="jquery" plugin="jquery"/>
+        <nav:resources override="true"/>
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-21722315-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
+        <g:layoutHead />
     </head>
     <body>
-        <div class="wrapper">
-            <!-- <div id="topbar" class=""></div> -->
-            <div class="header">
-                <div id="pageLogo">
-                   <a title="Home" href="http://www.wellmia.com/?ref=logo">Home logo</a>
-                </div>
-            </div>
-            <div class="content">
-                <div class="primary">
-                    <div class="primary">
-                      <g:layoutBody />
-                    </div>
-                    <div class="secondary">
-                        <!-- your secondary primary goes here -->
-                        <h1>primary secondary content</h1>
-                    </div>
-                </div>
-                <div class="secondary">
-                    <!-- your secondary content goes here -->
-                    <div class="userIDBlock">
-                        <div class="userIcon">
+        <div id="custom-doc" class="yui-t2">
+            <div id="wrapper">
+                <div id="hd" role="banner">
+                    <div id="logo"><a href="/home"><img src="${resource(dir:'images',file:'logo.png')}" alt="Wellmia" /></a></div>
+                    <sec:ifLoggedIn>
+                        <div id="logout">
+                            <a href="#"><sec:username/></a><a href="#">my account</a><g:link controller="logout">logout</g:link>
                         </div>
-                        <div class="userName">
-                            <h1>rilkeanheart</h1>
+                        <div class="clear"></div>
+                        <div id="nav">
+                            <div id="menu">
+                                <nav:render group="mainTabs"/>
+                            </div>
+                            <!--<div class="search">
+                                <form action="#" method="post">
+                                    <div class="searchinput"><input type="text" /></div>
+                                    <input type="image" src="${resource(dir:'images',file:'search.png')}" />
+                                </form>
+                            </div>-->
+                        </div>
+                    </sec:ifLoggedIn>
+                    <sec:ifNotLoggedIn>
+                        <g:link controller='login' action='auth'>Login</g:link>
+                    </sec:ifNotLoggedIn>
+                </div>
+                <g:layoutBody/>
+                <div id="ft" role="contentinfo">
+                    <div id="footernav">
+                        <div style="float: left">
+                            &copy; 2011
+                            <a href="#">Wellmia</a></div>
+                        <div style="float: right">
+                            <!--<a href="#">About Us</a>
+                            <a href="#">Contact</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Status</a>
+                            <a href="#">Resources</a>
+                            <a href="#">API</a>
+                            <a href="#">Business</a>
+                            <a href="#">Help</a>
+                            <a href="#">Jobs</a>-->
+                            <a target="_blank" href="http://www.getsatisfaction.com/wellmia">Feedback</a>
+                            <a href="/terms">Terms</a>
+                            <a href="/privacy">Privacy</a>
                         </div>
                     </div>
-                    <div class="leftNavSection">
-                        <h2>Connect with others</h2>
-                        <ul>
-                            <li>View My News</li>
-                            <li>View My Messages</li>
-                            <li>See who is on-line</li>
-                            <li>View Groups</li>
-                            <li>Search / read questions</li>
-                        </ul>
-                    </div>
-                    <div class="leftNavSection">
-                        <h2>Manage My Wellness</h2>
-                        <ul>
-                            <li>Manage My Wellness</li>
-                            <li>Manage My Conditions</li>
-                            <li>Obesity</li>
-                            <li>Hypertension</li>
-                            <li>High Cholesterol</li>
-                        </ul>
-                    </div>
-                    <div class="leftNavSection">
-                        <h2>Manage My Medications</h2>
-                        <ul>
-                        </ul>
-                    </div>
                 </div>
-            </div>
-            <div class="footer">
-                <!-- your footer content here-->
             </div>
         </div>
-
-
-
+        <g:javascript src='jquery/jquery.jgrowl.js'/>
+        <g:javascript src='jquery/jquery.checkbox.js'/>
+        <g:javascript src='jquery/jquery.password_strength.js'/>
+        <jqui:resources />
+        <g:javascript src='spring-security-ui.js'/>
+        <g:javascript src='jquery.multiselect.js'/>
+        <g:javascript src='wellmia/wellmia-styles.js'/>
     </body>
 </html>

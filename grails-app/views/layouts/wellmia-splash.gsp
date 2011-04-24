@@ -5,7 +5,7 @@
 
         <title><g:layoutTitle default='wellmia'/></title>
 
-        <link rel="shortcut icon" href="${resource(dir:'images',file:'faviconn.ico')}" type="image/x-icon"/>
+        <link rel="shortcut icon" href="${resource(dir:'images',file:'favicon.ico')}" type="image/x-icon"/>
         <link rel="stylesheet" href="http://yui.yahooapis.com/2.8.0r4/build/reset-fonts-grids/reset-fonts-grids.css" type="text/css">
         <style type="text/css">#custom-doc { width:82.69em;*width:80.7em;min-width:1075px; margin:auto; text-align:left; }</style>
         <g:javascript library='jquery' plugin='jquery' />
@@ -20,7 +20,7 @@
         <script type="text/javascript">
 
           var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-20906112-1']);
+          _gaq.push(['_setAccount', 'UA-21722315-1']);
           _gaq.push(['_trackPageview']);
 
           (function() {
@@ -37,7 +37,7 @@
         <div id="custom-doc" class="yui-t7">
             <div id="wrapper">
                 <div id="hd">
-                    <div id="logo"><img src="${resource(dir:'images',file:'logo.png')}" alt="" /></div>
+                    <div id="logo"><a href="/home"><img src="${resource(dir:'images',file:'logo.png')}" alt="Wellmia" /></a></div>
                     <div id="login">
                         <form action='${postUrl}' method='POST' id="loginForm" name="loginForm" autocomplete='off'>
                             <table cellpadding="0" cellspacing="0" border="0">
@@ -76,10 +76,12 @@
             <g:javascript src='spring-security-ui.js'/>
             <g:layoutBody/>
             <div id="ft">
-                <!--<div id="footernav">
+                <div id="footernav">
+                    <div style="float: left">
                     &copy; 2011
-                    <a href="#">Wellmia</a>
-                    <a href="#">About Us</a>
+                    <a href="#">Wellmia</a></div>
+                    <div style="float: right">
+                    <!--<a href="#">About Us</a>
                     <a href="#">Contact</a>
                     <a href="#">Blog</a>
                     <a href="#">Status</a>
@@ -87,9 +89,13 @@
                     <a href="#">API</a>
                     <a href="#">Business</a>
                     <a href="#">Help</a>
-                    <a href="#">Jobs</a>
-                    <a href="#">Terms</a>
-                    <a href="#">Privacy</a> -->
+                    <a href="#">Jobs</a>-->
+                    <g:if test="${true}">
+                        <a target="_blank" href="http://www.getsatisfaction.com/wellmia">Feedback</a>
+                        <a href="/terms">Terms</a>
+                        <a href="/privacy">Privacy</a>
+                    </g:if>
+                    </div>
                 </div>
             </div>
         </div>
@@ -113,7 +119,6 @@
                                 window.location.replace("${defaultTargetURL}");
                             }
                             else {
-                                alert(jsonData.error);
                                 $('#loginErrorMessage').val(jsonData.error);
                                 $('#loginErrorContainer').show();
                             }

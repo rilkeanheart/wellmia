@@ -15,7 +15,7 @@
     </div>
     <div class="news_details">
         <div class="news_headline">
-            <a class="news_title" target="_blank" href="${newsItem.link}">${newsItem.title}</a>
+            <a class="news_title" target="_blank" href="/newsItem/${newsItem.id}">${newsItem.title}</a>
         </div>
         <div class="news_age">
             <wellmia:dateFromNow date="${newsItem.publishDate}"/>
@@ -23,9 +23,9 @@
         <div class="news_description">
             <a class="news_source" href="${newsItem.newsSource.sourceHomeURL}">
                 <span class="news_source_border">${newsItem.newsSource.name}</span>
-            </a>
-            <a class="news_teaser" href="${newsItem.link}">
-                &mdash; ${newsItem.content}
+            </a>&mdash; ${newsItem.content}
+            <a class="news_teaser" href="/newsItem/${newsItem.id}">
+             (read more)
             </a>
         </div>
         <div class="health_tab_list">

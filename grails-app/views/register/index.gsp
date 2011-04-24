@@ -15,6 +15,9 @@
                       <div id="wellmia-welcome" class="title"><g:message code='wellmia.security.ui.register.welcome'/></div>
                       <div class="sub-title"><g:message code='wellmia.security.ui.register.sent'/> to ${email}</div>
                       <div class="sub-title-light"><g:message code='wellmia.security.ui.register.sent.sub'/></div>
+                        <g:if test='${grails.util.Environment.getCurrent() == grails.util.Environment.DEVELOPMENT}'>
+                            <div class="sub-title">${body}</div>
+                        </g:if>
                     </g:if>
                     <g:else>
                         <div class="title">SHARE IN THE HEALTH WISDOM OF CROWDS...</div>
@@ -72,13 +75,13 @@
                                 <tr>
                                     <th class="title">Country</th>
                                     <td colspan="2">
-                                        <g:countrySelect id="country" name="country"/>
+                                        <g:countrySelect id="country" name="country" default="usa"/>
                                   </td>
                                 </tr>
                                 <tr>
                                     <td></td>
                                     <td colspan="2">
-                                         <input type="checkbox" name="accept" value="1" checked="checked"/>I have read and agree to the wellmia.com <a href="">Terms of Service</a>
+                                         <input type="checkbox" name="accept" value="1" checked="checked"/>I have read and agree to the wellmia.com <g:link controller="privacy" target="_blank">Privacy Policy</g:link> and <g:link controller="terms" target="_blank">Terms and Conditions</g:link>.
                                     </td>
                                 </tr>
                                 <tr>
@@ -184,12 +187,14 @@ $(document).ready(function() {
       }
     }).keyup(function() {
       if($(this).val().length > 3) {
-        validateUsernameUniqueness($(this));
+        if(validateUsernameCharacters($(this)))
+            validateUsernameUniqueness($(this));
       }
     }).blur(function() {
       $(this).removeClass("selected");
       if($(this).val().length > 3) {
-        validateUsernameUniqueness($(this));
+        if(validateUsernameCharacters($(this)))
+            validateUsernameUniqueness($(this));
       } else {
         $(this).parent().parent().find('div.error').val("username too short");
         $(this).parent().parent().find('div.error').css('display', 'block');
@@ -344,6 +349,23 @@ $(document).ready(function() {
       }
 
     );
+  }
+
+  function validateUsernameCharacters(inputValue) {
+    var isValid = false;
+    var match = inputValue.val().match(/[;?', ]/g);
+    if(!match) {
+        $(inputValue).parent().parent().find('div.error').css('display', 'none');
+        $(inputValue).parent().parent().find('div.good').css('display', 'block');
+        $(inputValue).parent().parent().find('div.info').css('display', 'none');
+        isValid = true;
+    } else {
+        //$(inputValue).parent().parent().find('div.error').val("username already taken");
+        $(inputValue).parent().parent().find('div.error').css('display', 'block').text("username contains an invalid character");
+        $(inputValue).parent().parent().find('div.good').css('display', 'none');
+        $(inputValue).parent().parent().find('div.info').css('display', 'none');
+    }
+    return isValid;
   }
 
   function validatePassword(inputValue) {
