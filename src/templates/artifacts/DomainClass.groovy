@@ -1,16 +1,5 @@
-@artifact.package@
-
-import javax.persistence.*;
-// import com.google.appengine.api.datastore.Key;
-
-@Entity
-class @artifact.name@ implements Serializable {
-
-    @Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	Long id
+@artifact.package@class @artifact.name@ {
 
     static constraints = {
-    	id visible:false
-	}
+    }
 }
