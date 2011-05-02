@@ -27,6 +27,12 @@ environments {
       publicKey = "6LfO7sASAAAAAJNBpeJ-Zf_DTnlAUT6RGFbiiy8p"
       privateKey = "6LfO7sASAAAAAEE8AS0uIgrx2B7RO2Weahgxgyp7"
 
+      //remote dev server
+      //publicKey = "6LdtAsQSAAAAAJFk54ZPezsKrbL_Ttc2Rmd7zJ67"
+      //privateKey = "6LdtAsQSAAAAANOaDJ5yl41OlqFdpyxEC8tArML1"
+
+
+
       // Set to false to disable the display of captcha
       enabled = true
 
