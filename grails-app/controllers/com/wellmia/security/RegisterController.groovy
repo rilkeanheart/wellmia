@@ -6,6 +6,7 @@ import groovy.text.SimpleTemplateEngine
 
 import org.codehaus.groovy.grails.commons.ApplicationHolder as AH
 import org.codehaus.groovy.grails.plugins.springsecurity.NullSaltSource
+import com.google.appengine.api.datastore.Blob
 
 import grails.converters.JSON
 
@@ -72,7 +73,26 @@ class RegisterController {
 
         lookupUserClass().withTransaction {
 
-            def userProfile = new ConsumerProfile(gender: command.gender)
+            Blob userAvatar
+            File avatarFile
+            DataInputStream inputStream
+            try {
+                if(command.gender == "Male") {
+                    avatarFile = new File ('WEB-INF/defaultAvatars/avatarm.png')
+                    inputStream =  avatarFile.newDataInputStream()
+                    userAvatar = new Blob(inputStream.bytes)
+                } else {
+                    avatarFile = new File ('WEB-INF/defaultAvatars/avatarf.png')
+                    inputStream =  avatarFile.newDataInputStream()
+                    userAvatar = new Blob(inputStream.bytes)
+                }
+            } catch(IOException e) {
+                log.error(e)
+            } finally {
+                inputStream?.close()
+            }
+
+            def userProfile = new ConsumerProfile(gender: command.gender, avatar: userAvatar, avatarMIMEType: "image/png")
             def user = lookupUserClass().newInstance(email: command.email, username: command.username,
                     gender: command.gender, country: command.country, password: password,
                     consumerProfile:  userProfile, termsAndPrivacyAccepted : command.accept,

@@ -3,6 +3,7 @@ package com.wellmia
 import grails.converters.JSON
 import org.codehaus.groovy.grails.plugins.springsecurity.SpringSecurityUtils
 import com.wellmia.security.SecUser
+import com.google.appengine.api.datastore.Blob
 
 class ConsumerProfileController {
 
@@ -10,6 +11,14 @@ class ConsumerProfileController {
     def categorizeService
 
     def index = { redirect(action:list,params:params) }
+
+	/*static navigation = [
+		[group:'accountSettings', title:'Account', action:'editAccount', order: 0],
+		[title:'Password', action:'editPassword', order: 10],
+		[title:'Profile', action:'editProfile', order: 20]
+		[title:'Privacy', action:'editPrivacy', order: 30]
+		[title:'Notifications', action:'editNotifications', order: 40]
+	]*/
 
     // the delete, save and update actions only accept POST requests
     static allowedMethods = [delete:'POST', save:'POST', update:'POST']
@@ -110,6 +119,81 @@ class ConsumerProfileController {
 		}
     }
 
+    def showAvatar = {
+        //TODO:  Move this code and create code into a a reusable Service
+        if(springSecurityService.isLoggedIn()) {
+            def principal = springSecurityService.principal
+
+            def secuser = SecUser.get(principal.id)
+            ConsumerProfile thisConsumer = secuser.consumerProfile
+
+            def userAvatar = thisConsumer.avatar
+            def userAvatarMIMEType = thisConsumer.avatarMIMEType
+
+            //TODO:  Implement exception handling to close file & stream handles
+            response.setContentType(userAvatarMIMEType)
+            response.setContentLength(userAvatar.getBytes().length)
+            OutputStream out = response.getOutputStream()
+            try {
+                out.write(userAvatar.getBytes())
+            } catch(IOException e) {
+                log.error(e)
+            } finally {
+                out.close();
+            }
+        }
+    }
+
+    def upload_avatar = {
+
+        if(springSecurityService.isLoggedIn()) {
+            def principal = springSecurityService.principal
+
+            def secuser = SecUser.get(principal.id)
+            ConsumerProfile thisConsumer = secuser.consumerProfile
+
+              //Get the avatar file from the multi-part request
+              def f = request.getFile('avatar')
+
+              // List of OK mime-types
+              def okcontents = ['image/png', 'image/jpeg', 'image/gif']
+              if (! okcontents.contains(f.getContentType())) {
+                  flash.message = "Avatar must be one of: ${okcontents}"
+                  render(view:'select_avatar', model:[user:user])
+              return;
+              }
+
+	        render(view:'basicProfile',model:[consumerProfileInstance:thisConsumer])
+        }
+
+        def user = User.current(session)  // or however you select the current user
+
+          //Get the avatar file from the multi-part request
+          def f = request.getFile('avatar')
+
+          // List of OK mime-types
+          def okcontents = ['image/png', 'image/jpeg', 'image/gif']
+          if (! okcontents.contains(f.getContentType())) {
+              flash.message = "Avatar must be one of: ${okcontents}"
+              render(view:'select_avatar', model:[user:user])
+              return;
+          }
+
+          // Save the image and mime type
+          user.avatar = f.getBytes()
+          user.avatarType = f.getContentType()
+          log.info("File uploaded: " + user.avatarType)
+
+          // Validation works, will check if the image is too big
+          if (!user.save()) {
+              render(view:'select_avatar', model:[user:user])
+              return;
+          }
+
+            flash.message = "Avatar (${user.avatarType}, ${user.avatar.size()} bytes) uploaded."
+            redirect(action:'show')
+    }
+
     def updateInterestTags = {
 	  def config = SpringSecurityUtils.securityConfig
 
@@ -158,7 +242,7 @@ class ConsumerProfileController {
 
         redirect uri: config.successHandler.defaultTargetUrl
       } else  {
-        redirect(uri: '/login')
+        redirect(uri: '/home')
       }
 
       return
@@ -210,4 +294,102 @@ class ConsumerProfileController {
         render text: jsonData as JSON, contentType: 'text/plain'
 
     }
+
+    def editAccount = {
+        //TODO:  Move this code and create code into a a reusable Service
+        if(springSecurityService.isLoggedIn()) {
+            def principal = springSecurityService.principal
+
+            def secuser = SecUser.get(principal.id)
+            ConsumerProfile thisConsumer = secuser.consumerProfile
+	        render(view:'editAccount',model:[consumer:thisConsumer, user:secuser])
+        } else {
+            redirect(uri: '/home')
+        }
+    }
+
+    def updateAccount = {
+
+    }
+
+    def editPassword = {
+        //TODO:  Move this code and create code into a a reusable Service
+        if(springSecurityService.isLoggedIn()) {
+            def principal = springSecurityService.principal
+
+            def secuser = SecUser.get(principal.id)
+            ConsumerProfile thisConsumer = secuser.consumerProfile
+	        render(view:'editPassword',model:[consumer:thisConsumer, user:secuser])
+        } else {
+            redirect(uri: '/home')
+        }
+    }
+
+    def updatePassword = {
+
+    }
+
+    def editProfile = {
+        //TODO:  Move this code and create code into a a reusable Service
+        if(springSecurityService.isLoggedIn()) {
+            def principal = springSecurityService.principal
+
+            def secuser = SecUser.get(principal.id)
+            ConsumerProfile thisConsumer = secuser.consumerProfile
+	        render(view:'editProfile',model:[consumer:thisConsumer, user:secuser])
+        } else {
+            redirect(uri: '/home')
+        }
+    }
+
+    def updateProfile = {
+        if(springSecurityService.isLoggedIn()) {
+            def principal = springSecurityService.principal
+
+            def secuser = SecUser.get(principal.id)
+            ConsumerProfile thisConsumer = secuser.consumerProfile
+
+            //Get the avatar file from the multi-part request
+            def f = request.getFile('avatar')
+
+            // List of OK mime-types
+            def okcontents = ['image/png', 'image/jpeg', 'image/gif']
+            if (! okcontents.contains(f.getContentType())) {
+              flash.message = "Avatar must be one of: ${okcontents}"
+              render(view:'editProfile', model:[user:user])
+            } else {
+                // Save the image and mime type
+                ConsumerProfile.withTransaction {
+                    def consumer = ConsumerProfile.get(thisConsumer.id)
+                    byte[] avatarBytes = f.getBytes()
+                    consumer.avatar = new Blob(avatarBytes)
+                    consumer.avatarMIMEType = f.getContentType()
+                    if(!consumer.save()) {
+                        flash.message = "File too large: ${avatarBytes.length} bytes and maximum is 700K"
+                        render(view:'editProfile',model:[consumer:thisConsumer, user:secuser])
+                    } else {
+                        flash.message = "Avatar (${consumer.avatarMIMEType}, ${avatarBytes.length} bytes) uploaded."
+                        log.info("File uploaded: " + consumer.avatarMIMEType)
+                        render(view:'editProfile',model:[consumer:thisConsumer, user:secuser])
+                    }
+                }
+            }
+        }
+    }
+
+    def editPrivacy = {
+
+    }
+
+    def updatePrivacy = {
+
+    }
+    def editNotifications = {
+
+    }
+
+    def updateNotifications = {
+
+    }
+
 }

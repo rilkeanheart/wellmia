@@ -645,6 +645,28 @@ img{
     -moz-border-radius: 4px 4px 4px 4px;
     box-shadow: 3px 3px 6px #666;
 }
+
+img.avatar {
+  width: 6.0em;
+  height: 7.5em;
+  -webkit-box-shadow: 3px 3px #666;
+  -moz-box-shadow: 3px 3px 6px #666;
+  -moz-border-radius: 4px 4px 4px 4px;
+  box-shadow: 3px 3px 6px #666;
+}
+
+img.avatar_small {
+    -webkit-box-shadow: 3px 3px #666;
+    -moz-box-shadow: 3px 3px 6px #666;
+    -moz-border-radius: 4px 4px 4px 4px;
+    box-shadow: 3px 3px 6px #666;
+    width: 4em;
+    height: 5em;
+}
+
+img.avatar_tiny { width: 2em; height: 2.5em; }
+
+
 /* End Sidebar Area*/
 
 /* News Feed Actions (Post Questions and Quick Thoughts)*/

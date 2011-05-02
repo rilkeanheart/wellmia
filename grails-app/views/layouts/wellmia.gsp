@@ -31,7 +31,9 @@
                     <div id="logo"><a href="/home"><img src="${resource(dir:'images',file:'logo.png')}" alt="Wellmia" /></a></div>
                     <sec:ifLoggedIn>
                         <div id="logout">
-                            <a href="#"><sec:username/></a><a href="#">my account</a><g:link controller="logout">logout</g:link>
+                            <a href="/home"><sec:username/></a>
+                            <g:link controller="consumerProfile" action="editAccount">my account</g:link>
+                            <g:link controller="logout">logout</g:link>
                         </div>
                         <div class="clear"></div>
                         <div id="nav">

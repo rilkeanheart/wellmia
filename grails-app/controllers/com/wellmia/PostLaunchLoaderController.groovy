@@ -5,6 +5,7 @@ import com.google.appengine.api.taskqueue.QueueFactory;
 import com.google.appengine.api.taskqueue.TaskOptions;
 import com.google.appengine.api.taskqueue.TaskOptions.Method;
 import static com.google.appengine.api.taskqueue.TaskOptions.Builder.withUrl;
+import com.google.appengine.api.datastore.Blob
 
 
 class PostLaunchLoaderController {
@@ -97,4 +98,29 @@ class PostLaunchLoaderController {
 
 		redirect(uri: '/controllers.gsp')
 	}
+
+    def addDefaultAvatars = {
+
+        //get all Consumer Users
+        ConsumerProfile.withTransaction {
+            File avatarFileMale = new File ('WEB-INF/defaultAvatars/avatarm.png')
+            File avatarFileFemale = new File ('WEB-INF/defaultAvatars/avatarf.png')
+
+            def allConsumerProfiles = ConsumerProfile.list()
+            allConsumerProfiles.each { item ->
+                if(item.avatar == null) {
+                    if(item.getGender()=="Male") {
+                        item.avatar = new Blob(avatarFileMale.newDataInputStream().bytes)
+                    } else {
+                        item.avatar = new Blob(avatarFileFemale.newDataInputStream().bytes)
+                    }
+
+                    item.avatarMIMEType = "image/png"
+                    item.save()
+                }
+            }
+        }
+
+        redirect(uri: '/controllers.gsp')
+    }
 }
