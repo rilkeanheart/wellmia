@@ -73,20 +73,8 @@
     <orderEntry type="module-library" exported="">
       <library name="Grails User Library">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../appengine-java-sdk-1.4.0/lib/appengine-tools-api.jar!/" />
-          <root url="jar://$MODULE_DIR$/../../appengine-java-sdk-1.4.0/lib/user/orm/jdo2-api-2.3-eb.jar!/" />
-          <root url="jar://$MODULE_DIR$/../../appengine-java-sdk-1.4.0/lib/user/orm/geronimo-jta_1.1_spec-1.1.1.jar!/" />
-          <root url="jar://$MODULE_DIR$/../../appengine-java-sdk-1.4.0/lib/user/orm/geronimo-jpa_3.0_spec-1.1.1.jar!/" />
-          <root url="jar://$MODULE_DIR$/../../appengine-java-sdk-1.4.0/lib/user/orm/datanucleus-jpa-1.1.5.jar!/" />
-          <root url="jar://$MODULE_DIR$/../../appengine-java-sdk-1.4.0/lib/user/orm/datanucleus-core-1.1.5.jar!/" />
-          <root url="jar://$MODULE_DIR$/../../appengine-java-sdk-1.4.0/lib/user/orm/datanucleus-appengine-1.0.8.final.jar!/" />
-          <root url="jar://$MODULE_DIR$/../../appengine-java-sdk-1.4.0/lib/user/jsr107cache-1.1.jar!/" />
-          <root url="jar://$MODULE_DIR$/../../appengine-java-sdk-1.4.0/lib/user/appengine-jsr107cache-1.4.0.jar!/" />
-          <root url="jar://$MODULE_DIR$/../../appengine-java-sdk-1.4.0/lib/user/appengine-api-labs-1.4.0.jar!/" />
-          <root url="jar://$MODULE_DIR$/../../appengine-java-sdk-1.4.0/lib/user/appengine-api-1.0-sdk-1.4.0.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.springframework.security/org.springframework.security.web/jars/org.springframework.security.web-3.0.3.RELEASE.jar!/" />
           <root url="jar://$USER_HOME$/.ivy2/cache/org.springframework.security/org.springframework.security.core/jars/org.springframework.security.core-3.0.3.RELEASE.jar!/" />
-          <root url="jar://$MODULE_DIR$/../../appengine-java-sdk-1.4.0/lib/impl/appengine-local-runtime.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
