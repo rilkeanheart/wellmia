@@ -68,10 +68,10 @@
                                     <div id="news_stream_items_dep" class="news_list_dep">
                                       <g:each var="feedItem" in="${feedList}">
                                         <g:if test="${com.wellmia.NewsItem.class.isInstance(feedItem)}">
-                                          <g:render template="/newsItem/newsItem" model="[newsItem : feedItem]"/>
+                                          <g:render template="/newsItem/newsItemSummary" model="[newsItem : feedItem]"/>
                                         </g:if>
                                         <g:if test="${com.wellmia.Question.class.isInstance(feedItem)}">
-                                          <g:render template="/question/question" model="[question : feedItem]"/>
+                                          <g:render template="/question/questionSummary" model="[question : feedItem]"/>
                                         </g:if>
                                       </g:each>
                                     </div>
