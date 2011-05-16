@@ -5,6 +5,7 @@ import com.wellmia.security.SecUser
 class HealthProfileController {
 
   def springSecurityService
+  def categoryTagStatService
 
   static navigation = [
       group:'mainTabs',
@@ -18,8 +19,9 @@ class HealthProfileController {
       def principal = springSecurityService.principal
 
         ConsumerProfile thisConsumer = SecUser.get(principal.id).consumerProfile
+        def topCategories = categoryTagStatService.topCategoryStats(20)
 
-        return [consumer : thisConsumer]
+        return [consumer : thisConsumer, topCategories : topCategories]
 
     } else  {
       redirect(uri: '/login')

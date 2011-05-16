@@ -3,12 +3,18 @@ package com.wellmia
 import grails.converters.JSON
 import org.codehaus.groovy.grails.plugins.springsecurity.SpringSecurityUtils
 import com.wellmia.security.SecUser
+
 import com.google.appengine.api.datastore.Blob
+import com.google.appengine.api.blobstore.BlobKey;
+import com.google.appengine.api.blobstore.BlobstoreService;
+import com.google.appengine.api.blobstore.BlobstoreServiceFactory;
+
 
 class ConsumerProfileController {
 
     def springSecurityService
     def categorizeService
+    def blobstoreService = BlobstoreServiceFactory.getBlobstoreService()
 
     def index = { redirect(action:list,params:params) }
 
@@ -129,8 +135,15 @@ class ConsumerProfileController {
 
             def userAvatar = thisConsumer.avatar
             def userAvatarMIMEType = thisConsumer.avatarMIMEType
+            if(thisConsumer.avatar)
+                blobstoreService.serve(thisConsumer.avatar, response)
+            else if (thisConsumer.gender.equalsIgnoreCase("Male"))
+                redirect(url:"${resource(dir:'images',file:'avatarm.png')}")
+            else
+                redirect(url:"${resource(dir:'images',file:'avatarf.png')}")
 
-            //TODO:  Implement exception handling to close file & stream handles
+
+            /*//TODO:  Implement exception handling to close file & stream handles
             response.setContentType(userAvatarMIMEType)
             response.setContentLength(userAvatar.getBytes().length)
             OutputStream out = response.getOutputStream()
@@ -140,7 +153,7 @@ class ConsumerProfileController {
                 log.error(e)
             } finally {
                 out.close();
-            }
+            }*/
         }
     }
 
@@ -252,7 +265,7 @@ class ConsumerProfileController {
     def followFeedItemAjax = {
         //TODO:  Move this code and create code into a a reusable Service
         def jsonData = []
-        boolean bIsFollowed = false
+        boolean isEdgeUpdated = false
 
         if(springSecurityService.isLoggedIn()) {
             def principal = springSecurityService.principal
@@ -269,26 +282,26 @@ class ConsumerProfileController {
               feedEdgeItem = FeedEdge.findWhere(consumerId : thisConsumer.id, feedItemId : feedItemid)
               feedEdgeItem?.setIsFollowed(bShouldFollow)
               if(feedEdgeItem?.save())
-                bIsFollowed = true
+                isEdgeUpdated = true
             }
 
-            if(bIsFollowed && feedEdgeItem) {
-                bIsFollowed = false
+            if(isEdgeUpdated && feedEdgeItem) {
+                isEdgeUpdated = false
                 //Add the users e-mail to the feed items notify list
                 (feedEdgeItem.feedItemClassName as Class).withTransaction {
                   feedItem = (feedEdgeItem.feedItemClassName as Class).get(feedEdgeItem.feedItemId)
                   feedItem.notifyList.add(secuser.email)
                   if(feedItem.save())
-                    bIsFollowed = true
+                    isEdgeUpdated = true
                 }
             }
 
         }
 
-        if (bIsFollowed)
-            jsonData << [bIsFollowed: "true"]
-        else
-            jsonData << [bIsFollowed: "false"]
+        if (isEdgeUpdated)
+            jsonData << [bIsFollowed: params.bShouldFollow.asBoolean()]
+        //else
+        //    jsonData << [bIsFollowed: "false"]
 
 
         render text: jsonData as JSON, contentType: 'text/plain'
@@ -344,36 +357,83 @@ class ConsumerProfileController {
 
     def updateProfile = {
         if(springSecurityService.isLoggedIn()) {
+            def modelData
             def principal = springSecurityService.principal
-
             def secuser = SecUser.get(principal.id)
             ConsumerProfile thisConsumer = secuser.consumerProfile
 
+            Map<String, BlobKey> blobs = blobstoreService.getUploadedBlobs(request);
+            BlobKey blobKey = blobs.get("avatar");
+
+            // Save the image and mime type
+            ConsumerProfile.withTransaction {
+                def consumer = ConsumerProfile.get(thisConsumer.id)
+                //Delete existing blog if present
+                if(consumer.avatar)
+                    blobstoreService.delete(consumer.avatar)
+
+                consumer.avatar = blobKey
+                if(!consumer.save()) {
+                    //flash.message = "File too large: ${avatarBytes.length} bytes and maximum is 700K"
+                    modelData = [consumer:thisConsumer, user:secuser]
+                } else {
+                    //flash.message = "Avatar (${consumer.avatarMIMEType}, ${avatarBytes.length} bytes) uploaded."
+                    log.info("File uploaded: ")// + consumer.avatarMIMEType)
+                    modelData = [consumer:thisConsumer, user:secuser]
+                }
+            }
+            /*
             //Get the avatar file from the multi-part request
             def f = request.getFile('avatar')
 
-            // List of OK mime-types
-            def okcontents = ['image/png', 'image/jpeg', 'image/gif']
-            if (! okcontents.contains(f.getContentType())) {
-              flash.message = "Avatar must be one of: ${okcontents}"
-              render(view:'editProfile', model:[user:user])
-            } else {
-                // Save the image and mime type
-                ConsumerProfile.withTransaction {
-                    def consumer = ConsumerProfile.get(thisConsumer.id)
-                    byte[] avatarBytes = f.getBytes()
-                    consumer.avatar = new Blob(avatarBytes)
-                    consumer.avatarMIMEType = f.getContentType()
-                    if(!consumer.save()) {
-                        flash.message = "File too large: ${avatarBytes.length} bytes and maximum is 700K"
-                        render(view:'editProfile',model:[consumer:thisConsumer, user:secuser])
-                    } else {
-                        flash.message = "Avatar (${consumer.avatarMIMEType}, ${avatarBytes.length} bytes) uploaded."
-                        log.info("File uploaded: " + consumer.avatarMIMEType)
-                        render(view:'editProfile',model:[consumer:thisConsumer, user:secuser])
+            def InputStream stream;
+            if(ServletFileUpload.isMultipartContent(request)) {
+                try {
+
+                    System.out.println("File is Multipart")
+
+                    ServletFileUpload upload = new ServletFileUpload();
+
+                    FileItemIterator iterator = upload.getItemIterator(request);
+                    while (iterator.hasNext()) {
+                        System.out.println ("Reuest has item")
+                        FileItemStream item = iterator.next();
+                        if(!item.isFormField()) {
+                            // List of OK mime-types
+                            def okcontents = ['image/png', 'image/jpeg', 'image/gif']
+                            if (! okcontents.contains(item.contentType)) {
+                              flash.message = "Avatar must be one of: ${okcontents}"
+                              modelData = [user:user]
+                            } else {
+                                // Save the image and mime type
+                                ConsumerProfile.withTransaction {
+                                    def consumer = ConsumerProfile.get(thisConsumer.id)
+                                    stream = item.openStream()
+                                    byte[] avatarBytes = stream.bytes
+                                    consumer.avatar = new Blob(avatarBytes)
+                                    consumer.avatarMIMEType = f.getContentType()
+                                    if(!consumer.save()) {
+                                        flash.message = "File too large: ${avatarBytes.length} bytes and maximum is 700K"
+                                        modelData = [consumer:thisConsumer, user:secuser]
+                                    } else {
+                                        flash.message = "Avatar (${consumer.avatarMIMEType}, ${avatarBytes.length} bytes) uploaded."
+                                        log.info("File uploaded: " + consumer.avatarMIMEType)
+                                        modelData = [consumer:thisConsumer, user:secuser]
+                                    }
+                                }
+                            }
+                        }
                     }
+                } catch(IOException exception) {
+                  log.error("IOException Encountered updating consumer avatar")
+                  log.error(exception)
+                } finally{
+                  stream?.close()
                 }
-            }
+            }*/
+
+            //TODO:  If modelData == null, then there was an error and the output should be changed
+            render(view:'editProfile', model: modelData)
         }
     }
 

@@ -7,6 +7,13 @@
 --%>
 
 <%--<%@ page contentType="text/html;charset=UTF-8" %>  --%>
+<%@ page import="com.google.appengine.api.blobstore.BlobstoreServiceFactory" %>
+<%@ page import="com.google.appengine.api.blobstore.BlobstoreService" %>
+
+<%
+    BlobstoreService blobstoreService = BlobstoreServiceFactory.getBlobstoreService();
+%>
+
 <html>
     <head>
         <title><sec:loggedInUserInfo field="username"/> Profile Settings</title>
@@ -35,14 +42,14 @@
                                 <div div id="profileMain">
                                     <fieldset>
                                         <legend>Avatar Upload</legend>
-                                        <g:form controller="consumerProfile" action="updateProfile" method="post" enctype="multipart/form-data">
+                                        <form action="<%= blobstoreService.createUploadUrl("/consumerProfile/updateProfile") %>" method="post" enctype="multipart/form-data">
                                             <label for="avatar">Avatar (700K)</label>
                                             <input type="file" name="avatar" id="avatar" />
                                                 <div style="font-size:0.8em; margin: 1.0em;">
                                                     Maximum size of 700k. JPG, GIF, PNG.  Only use images that maintain your privacy!
                                                 </div>
                                             <input type="submit" class="buttons" value="Upload" />
-                                        </g:form>
+                                        </form>
                                     </fieldset>
                                 </div>
                             </div>

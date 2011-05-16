@@ -6,12 +6,14 @@ class CategoryTagStatService {
 
     static transactional = true
 
-    def List topCategoryStats() {
+    def List topCategoryStats(int listSize) {
 
-        // Get the top 100 categoryTags
+        // Get the top x categoryTags (max is 1000)
+        def maxListSize = Math.min(listSize,  1000)
         String query = "SELECT a from CategoryTag a ORDER BY a.numberOfFollowers desc"
-        Map params = [max : "100"]
-        List topCategories = CategoryTag.findAll(query,params)
+        Map params = [max : maxListSize]
+        //List topCategories = CategoryTag.findAll(query,params)
+        List topCategories = CategoryTag.list(max:maxListSize,sort:"numberOfFollowers",order:"desc")
 
         List topCategoriesStats = []
 

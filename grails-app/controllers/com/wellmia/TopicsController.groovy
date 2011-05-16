@@ -16,7 +16,7 @@ class TopicsController {
 
   def topCategories = {
       // Get top categories
-      def topCategories = categoryTagStatService.topCategoryStats()
+      def topCategories = categoryTagStatService.topCategoryStats(100)
       return [topCategories : topCategories]
   }
 

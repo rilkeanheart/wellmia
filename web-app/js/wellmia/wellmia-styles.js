@@ -238,7 +238,8 @@ $(function(){
         $('.follow_button').button().click(function () {
            //Call get feedItemId
             var feedItemId = $(this).parent().find("#itemId").val();
-            var bShouldFollow = $(this).parent().find("#itemId").val();
+            var bShouldFollow = $(this).attr('bShouldFollow');
+            var followButton = $(this);
            //Call ajax function on ConsumerProfile
             $.ajax({
                 type: "POST",
@@ -248,11 +249,15 @@ $(function(){
                 success: function(jsonData, textStatus) {
                     //Change Button Color & Text & next toggle value
                     if(bShouldFollow == "false") {
-                        $(this).addClass("done");
-                        $(this).addClass("done");
+                        $(followButton).attr('bShouldFollow','true');
+                        $(followButton).removeClass("followed");
+                        $(followButton).addClass("not_followed");
+                        $(followButton).button( "option", "label", "Follow This" );
                     } else {
-                        $(this).addClass("done");
-                        $(this).addClass("done");
+                        $(followButton).attr('bShouldFollow','false');
+                        $(followButton).removeClass("followed");
+                        $(followButton).addClass("not_followed");
+                        $(followButton).button( "option", "label", "Followed" );
                     }
                 }
             });

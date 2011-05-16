@@ -984,4 +984,21 @@ img.avatar_tiny { width: 2em; height: 2.5em; }
     margin-top: 10px;
 }
 
+#profileMain .column1 {
+    margin-left: 2em;
+    line-height: 1.2em;
+    list-style: decimal;
+}
+
+#profileMain .column2 {
+    margin-left: 30em;
+    line-height: 1.2em;
+    list-style: decimal;
+}
+
+#profileMain .reset
+{
+    margin-top: -13.2em;
+}
+
 /* End of Health Profile Style*/

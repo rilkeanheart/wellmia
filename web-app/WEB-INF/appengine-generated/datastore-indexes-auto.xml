@@ -1,34 +1,28 @@
-<!-- Indices written at Mon, 2 May 2011 23:39:26 UTC -->
+<!-- Indices written at Mon, 16 May 2011 16:22:11 UTC -->
 
 <datastore-indexes>
 
-    <!-- Used 9 times in query history -->
+    <!-- Used 4 times in query history -->
     <datastore-index kind="NewsItem" ancestor="false" source="auto">
         <property name="category" direction="asc"/>
         <property name="dateCreated" direction="asc"/>
     </datastore-index>
 
-    <!-- Used 9 times in query history -->
+    <!-- Used 4 times in query history -->
     <datastore-index kind="Question" ancestor="false" source="auto">
         <property name="category" direction="asc"/>
         <property name="dateCreated" direction="asc"/>
     </datastore-index>
 
-    <!-- Used 9 times in query history -->
+    <!-- Used 4 times in query history -->
     <datastore-index kind="Status" ancestor="false" source="auto">
         <property name="category" direction="asc"/>
         <property name="dateCreated" direction="asc"/>
     </datastore-index>
 
-    <!-- Used 2 times in query history -->
+    <!-- Used 1 time in query history -->
     <datastore-index kind="FeedEdge" ancestor="false" source="auto">
         <property name="consumerId" direction="asc"/>
-        <property name="sortedDate" direction="desc"/>
-    </datastore-index>
-
-    <!-- Used 1 time in query history -->
-    <datastore-index kind="TopicFeedEdge" ancestor="false" source="auto">
-        <property name="categoryTagId" direction="asc"/>
         <property name="sortedDate" direction="desc"/>
     </datastore-index>
 

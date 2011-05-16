@@ -33,11 +33,11 @@
                                 <div>
                                     ${newsItem.numberOfViews} Views
                                 </div>
-                                <g:if test="${bIsFollowed}==true">
-                                    <a class="follow_button" href="#" feedItemId="" bShouldFollow="${bIsFollowed}">Followed</a>
+                                <g:if test="${bIsFollowed == true}">
+                                    <a class="follow_button" href="#" feedItemId="" bShouldFollow="${!bIsFollowed}">Followed</a>
                                 </g:if>
                                 <g:else>
-                                    <a class="follow_button" href="#" feedItemId="" bShouldFollow="${bIsFollowed}">Follow This</a>
+                                    <a class="follow_button" href="#" feedItemId="" bShouldFollow="${!bIsFollowed}">Follow This</a>
                                 </g:else>
                                 <input id="itemId" type="hidden" name="feedItemId" value="${newsItem.id}"/>
                                 <input type="hidden" name="feedItemType" value="${newsItem.class.name}"/>

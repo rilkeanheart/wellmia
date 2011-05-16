@@ -50,7 +50,7 @@
                 <g:if test="${newsItem.comments.size() > 0}">
                     <li class="addComment addCommentCollapsed displayItem">
                         <div class="commentContainer commentEditorContainer clear">
-                            <img class="postCommentAvatar" src="${resource(dir:'images',file:'suer.png')}" alt="avatar"/>
+                            <img class="avatar_tiny" src="${createLink(controller:'consumerProfile', action:'showAvatar')}" />
                                 <div class="textAreaEditorContainer">
                                     <div class="postCommentTextAreaWrapper">
                                         <textarea id="ta${newsItem.id}" class="textEditor" name="content" defaulttext="What do you think?">What do you think?</textarea>
@@ -73,7 +73,7 @@
                 <g:else>
                     <li class="addComment addCommentCollapsed displayItem" style="display: none;">
                         <div class="commentContainer commentEditorContainer clear">
-                          <img class="postCommentAvatar" src="${resource(dir:'images',file:'suer.png')}" alt="avatar"/>
+                          <img class="avatar_tiny" src="${createLink(controller:'consumerProfile', action:'showAvatar')}" />
 
                               <div class="textAreaEditorContainer">
                                   <div class="postCommentTextAreaWrapper">

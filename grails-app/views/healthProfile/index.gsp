@@ -45,6 +45,34 @@
                                     <div id="profileMainHeader"><strong>What Matters to You?</strong></div><hr>
                                     <span class="profileBasicText">Use the fields below to add health interest categories.  <br><br> You can select from hundreds of <strong>conditions</strong> and thousands of <strong>therapies</strong> (drugs, surgical, etc.)</span>
                                     <span class="profileBasicText">The more you add, the easier it will be to connect, share, and learn.</span><br><br>
+                                    <div>
+                                        <span class="profileBasicText">Here are the most followed health categories:</span>
+                                        <hr/>
+                                        <ol>
+                                            <g:each status="i" var="category" in="${topCategories}">
+                                                <g:if test="${i < 10}">
+                                                    <li class="column1">
+                                                        <a class="news_teaser_dep link" href="/topics/${category.categoryTag.replace(' ','_')}">${category.categoryTag}</a>
+                                                        (  ${(category.lastInterestRank - category.interestRank) > 0 ? '+' : '-'} ${(category.lastInterestRank - category.interestRank)}  )
+                                                    </li>
+                                                </g:if>
+                                                <g:else>
+                                                    <g:if test="${i == 10}">
+                                                        <li class="column2 reset">
+                                                            <a class="news_teaser_dep link" href="/topics/${category.categoryTag.replace(' ','_')}">${category.categoryTag}</a>
+                                                            (  ${(category.lastInterestRank - category.interestRank) > 0 ? '+' : '-'} ${(category.lastInterestRank - category.interestRank)}  )
+                                                        </li>
+                                                    </g:if>
+                                                    <g:else>
+                                                        <li class="column2">
+                                                            <a class="news_teaser_dep link" href="/topics/${category.categoryTag.replace(' ','_')}">${category.categoryTag}</a>
+                                                            (  ${(category.lastInterestRank - category.interestRank) > 0 ? '+' : '-'} ${(category.lastInterestRank - category.interestRank)}  )
+                                                        </li>
+                                                    </g:else>
+                                                </g:else>
+                                            </g:each>
+                                        </ol>
+                                    </div><br>
                                     <g:form name="updateHealthInterests" url="[action:'updateInterestTags',controller:'consumerProfile']">
                                         <fieldset>
                                             <legend>Your Health Interests</legend>
@@ -93,7 +121,7 @@
                 </div>
             </div>
             <div id="user" role="sidebar" class="yui-b">
-                <img class="sidebarAvatar" src="${resource(dir:'images',file:'user.png')}" alt="user"/>
+                <img class="avatar" src="${createLink(controller:'consumerProfile', action:'showAvatar')}" />
                 <div class="username">
                     <sec:loggedInUserInfo field="username"/>
                 </div>

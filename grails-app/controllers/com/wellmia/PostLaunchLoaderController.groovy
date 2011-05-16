@@ -108,11 +108,11 @@ class PostLaunchLoaderController {
 
             def allConsumerProfiles = ConsumerProfile.list()
             allConsumerProfiles.each { item ->
-                if(item.avatar == null) {
+                if(item.avatar != null) {
                     if(item.getGender()=="Male") {
-                        item.avatar = new Blob(avatarFileMale.newDataInputStream().bytes)
+                        item.avatar = null // new Blob(avatarFileMale.newDataInputStream().bytes)
                     } else {
-                        item.avatar = new Blob(avatarFileFemale.newDataInputStream().bytes)
+                        item.avatar = null // Blob(avatarFileFemale.newDataInputStream().bytes)
                     }
 
                     item.avatarMIMEType = "image/png"

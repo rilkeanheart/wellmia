@@ -73,7 +73,7 @@ class RegisterController {
 
         lookupUserClass().withTransaction {
 
-            Blob userAvatar
+            /*Blob userAvatar
             File avatarFile
             DataInputStream inputStream
             try {
@@ -90,9 +90,9 @@ class RegisterController {
                 log.error(e)
             } finally {
                 inputStream?.close()
-            }
+            }*/
 
-            def userProfile = new ConsumerProfile(gender: command.gender, avatar: userAvatar, avatarMIMEType: "image/png")
+            def userProfile = new ConsumerProfile(gender: command.gender)
             def user = lookupUserClass().newInstance(email: command.email, username: command.username,
                     gender: command.gender, country: command.country, password: password,
                     consumerProfile:  userProfile, termsAndPrivacyAccepted : command.accept,

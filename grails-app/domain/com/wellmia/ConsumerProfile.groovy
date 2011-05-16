@@ -6,6 +6,7 @@ import com.wellmia.security.SecUser
 import javax.persistence.*
 import org.datanucleus.jpa.annotations.Extension
 import com.google.appengine.api.datastore.Blob
+import com.google.appengine.api.blobstore.BlobKey
 
 // import com.google.appengine.api.datastore.Key;
 
@@ -22,7 +23,7 @@ class ConsumerProfile implements Serializable {
 
     String gender
     Date   birthDate
-    Blob avatar
+    BlobKey avatar
     String avatarMIMEType
 
     @Basic
