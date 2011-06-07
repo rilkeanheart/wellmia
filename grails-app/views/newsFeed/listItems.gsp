@@ -20,6 +20,7 @@
                     <div class="yui-ge">
                         <div class="yui-u first">
                             <div id="maincenter" class="mystory">
+                                 <sec:ifLoggedIn>
                                  <div id="postContent">
                                       <div class="topimage">
                                           <input type="image" id="postQuestionAction"class="postContentActionImage" src="${resource(dir:'images',file:'question1.png')}" alt="question"/>
@@ -59,7 +60,14 @@
                                          <br class="clear"/>
                                       </div>-->
                                 </div>
-                                <h1>My Feed</h1>
+                                </sec:ifLoggedIn>
+                                <g:if test="${categoryTag?.category}">
+                                    <h1>${categoryTag.category} News & Questions - ${viewType}</h1>
+                                    <h2>Member Questions and the latest ${categoryTag.category} News for your Health Interests</h2>
+                                </g:if>
+                                <g:else>
+                                    <h1>My Feed</h1>
+                                </g:else>
                                 <hr />
                                 <div id="pagelet_news_stream_dep" class="news_list_container_dep">
                                     <div id="news_stream_items_dep" class="news_list_dep">

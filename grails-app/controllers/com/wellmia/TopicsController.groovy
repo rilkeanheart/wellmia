@@ -42,7 +42,8 @@ class TopicsController {
 
     if(categoryTag) {
         feedList = newsFeedService.getTimeLineFeed(categoryTag)
-        return [consumer : thisConsumer, feedList : feedList, categoryTag : categoryTag ]
+        def map = [consumer : thisConsumer, feedList : feedList, categoryTag : categoryTag, viewType : "Timeline"]
+        render(view: "/newsFeed/listItems",  model : map)
     } else {
         redirect(action: 'index')
     }
@@ -77,7 +78,8 @@ class TopicsController {
         feedList = new TreeSet(feedList)
     }
 
-    return [consumer : thisConsumer, feedList : feedList, categoryTag : categoryTag ]
+     def map = [consumer : thisConsumer, feedList : feedList, categoryTag : categoryTag, viewType : "Timeline"]
+    render(view : "/newsFeed/topItems", model : map)
   }
 
   def showCategories = {
