@@ -1,4 +1,4 @@
-<!-- Indices written at Mon, 16 May 2011 16:22:11 UTC -->
+<!-- Indices written at Wed, 15 Jun 2011 10:32:44 UTC -->
 
 <datastore-indexes>
 
@@ -23,6 +23,12 @@
     <!-- Used 1 time in query history -->
     <datastore-index kind="FeedEdge" ancestor="false" source="auto">
         <property name="consumerId" direction="asc"/>
+        <property name="sortedDate" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="TopicFeedEdge" ancestor="false" source="auto">
+        <property name="categoryTagId" direction="asc"/>
         <property name="sortedDate" direction="desc"/>
     </datastore-index>
 
