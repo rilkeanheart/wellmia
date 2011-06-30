@@ -16,17 +16,9 @@
             <title>Page Not Found - Wellmia</title>
         </g:else>
         <meta name="layout" content="wellmia" />
-        <g:javascript library="jquery" plugin="jquery"/>
     </head>
     <body>
-        <div id="bd" role="main">
-            <div id="yui-main">
-                <div class="yui-b">
-                    <div class="yui-ge">
-                        <div class="yui-u first">
-                            <div id="maincenter" class="mystory">
                                 <h1>${newsItem.title}</h1>
-                                <hr />
                                 <div>
                                     ${newsItem.rating} Votes
                                 </div>
@@ -46,47 +38,7 @@
                                         <g:render template="/newsItem/newsItem" model="[newsItem : newsItem]"/>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div role="complementary" class="yui-u">
-                            <g:if test="${false}">
-                                <g:render template="/addsection" />
-                            </g:if>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="user" role="sidebar" class="yui-b">
-                <g:render template="/userNav" />
-            </div>
-        </div>
-    <g:javascript >
-        function clearComment(e) {
-            $("#"+e).val('');
-        }
 
-        function showSpinner(visible, e) {
-        if(visible == true)
-            $("#"+e).show();
-        else
-            $("#"+e).hide();
-        }
 
-        function postQuestionOK(data,textStatus) {
-            $('#pagelet_news_stream_dep').prepend(data);
-        }
-
-        function postQuestionFailure(XMLHttpRequest,textStatus,errorThrown) {
-            //TODO:  all error handling here
-        }
-
-        function split( val ) {
-          return val.split( /,\s*/ );
-        }
-
-        function extractLast( term ) {
-          return split( term ).pop();
-    }
-    </g:javascript>
     </body>
 </html>

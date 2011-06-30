@@ -1,8 +1,5 @@
 <div class="feedItem">
     <div class="feedItemHeader">
-        <div class="feedItemImage">
-            <img src="${resource(dir:'images',file:'news.png')}" alt="news"/>
-        </div>
         <div class="feedItemInfo">
             <a class="news_title_dep headline" target="_blank" href="/newsItem/showLink/${newsItem.id}">${newsItem.title}</a>
           <span class="subheadline">
