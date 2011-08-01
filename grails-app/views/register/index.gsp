@@ -1,14 +1,8 @@
 <head>
-    <meta name='layout' content='wellmia-splash'/>
+    <meta name='layout' content='wellmia-no-sidebar'/>
 	<title><g:message code='wellmia.security.ui.register.title'/></title>
-    <g:javascript library="jquery" plugin="jquery"/>
 </head>
 <body>
-<div id="bd" role="main">
-    <div class="yui-g">
-        <div id="main">
-            <div id="maintop"></div>
-            <div id="mainmiddle">
                 <div id="registration">
                     <g:if test='${emailSent}'>
                       <br/>
@@ -127,11 +121,7 @@
                 </g:else>
 
                 </div>
-            </div>
-            <div id="mainbottom"></div>
-        </div>
-    </div>
-</div>
+
 
 <g:javascript>
 $(document).ready(function() {
