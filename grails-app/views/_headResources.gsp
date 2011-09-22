@@ -5,7 +5,7 @@
         <!--<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.0r4/build/reset-fonts-grids/reset-fonts-grids.css" />-->
         <link rel="stylesheet" type="text/css" href="${createLinkTo(dir:'css', file:'960-reset-text-12col.css')}" />
         <link rel="stylesheet" type="text/less" href="${createLinkTo(dir:'css', file:'style.css')}" />
-        <link rel="stylesheet" type="text/css" href="${createLinkTo(dir:'css', file='jquery.multiselect.css')}" />
+        <link rel="stylesheet" type="text/css" href="${createLinkTo(dir:'css', file:'jquery.multiselect.css')}" />
         <link href="/plugins/jquery-ui-1.8.7/jquery-ui/themes/ui-lightness/jquery-ui-1.8.7.custom.css" type="text/css" rel="stylesheet" media="screen, projection" id="jquery-ui-theme" />
 
 <%-- Loading Modernizr with yepnope.js to serve as the foundation of JS/CSS loading.  Everything else is loaded using their loading functions, as it allows asynchronous loading, which doesn't hold up page load AK--%>
@@ -60,10 +60,14 @@
                 if (fieldValue === '' || !fieldValue.match(/\w/)) {
                     $(this).val('User Name');
                 }
-            }).val('User Name');
+            });
+
+            if (!$('#username').val().match(/\w/)){
+                $('#username').val('User Name');
+            }
 
             //password.  It shows/hides itself and a "password" label field
-            $('#password').hide().after('<input type="text" value="Password" id="passwordLabelField" tabindex="2" />').blur(function(){
+            $('#password').after('<input type="text" value="Password" id="passwordLabelField" tabindex="2" style="display: none;" />').blur(function(){
                 var fieldValue = $(this).val();
                 if (fieldValue === '' || !fieldValue.match(/\w/)) {
                     $(this).hide();
@@ -73,7 +77,11 @@
             $('#passwordLabelField').focus(function(){
                 $(this).hide();
                 $('#password').show().focus(); 
-            })
+            });
+
+            if (!$('#password').val().match(/\w/)) {
+                $('#password').hide().next().show();
+            }
 
             //login button
             $('#loginButton').button();
@@ -85,11 +93,12 @@
 
                 //TODO: validation needs to happen here!
 
-                var dataString = $('#loginForm').serialize();
+                var dataString = $('#loginForm').serialize(),
+                    postURL = $('#loginForm').attr('action');
 
                 $.ajax({
                     type: "POST",
-                    url: "${postUrl}",
+                    url: postURL,
                     data: dataString,
                     dataType: "json",
                     success: function(jsonData, textStatus) {

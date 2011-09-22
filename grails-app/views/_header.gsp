@@ -20,7 +20,7 @@
                 </div>-->
             </sec:ifLoggedIn>
             <sec:ifNotLoggedIn>
-                <form action='${postUrl}' method='POST' id="loginForm" name="loginForm" autocomplete='off'>
+                <form action="/j_spring_security_check" method="POST" id="loginForm" name="loginForm">
                     <p id="loginErrorMessage">User name or password was incorrect</p>
                     <div>
                         <input type="text" name="j_username" id="username" value="" tabindex="1"/>

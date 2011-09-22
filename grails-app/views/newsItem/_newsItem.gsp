@@ -1,30 +1,11 @@
-<div class="feedItem">
-    <div class="feedItemHeader">
-        <div class="feedItemInfo">
-            <a class="news_title_dep headline" target="_blank" href="/newsItem/showLink/${newsItem.id}">${newsItem.title}</a>
-          <span class="subheadline">
-              <wellmia:dateFromNow date="${newsItem.publishDate}"/>
-          </span>
-        </div>
-        <div class="clear"></div>
-    </div>
-    <div class="feedItemContent">
-      <div class="news_description_dep">
-          <a class="news_source_dep source" target="_blank" href="${newsItem.newsSource.sourceHomeURL}">
-              <span class="news_source_border_dep"><strong>${newsItem.newsSource.name}</strong></span>
-          </a>&mdash; ${newsItem.content}
-          <a class="news_teaser_dep link" target="_blank" href="/newsItem/showLink/${newsItem.id}">
-              (read more...)
-          </a>
-      </div>
-    </div>
+<article class="showDetails">
+    <g:render template="/newsItem/newsItemSourceDate"  model="[newsItem : newsItem]" />
+    <p class="feedItemContent">
+        ${newsItem.content}
+        <a class="news_teaser_dep link" target="_blank" href="/newsItem/showLink/${newsItem.id}">(read more...)</a>
+    </p>
     <div class='feedItemFooter'>
-        <span class="feedItemTag"><strong>Tags:</strong>
-              <g:each status="i" var="category" in="${newsItem.category}">
-                  ${ (i > 0) ? ',    ' : ''}
-                  <a href="/topics/${category.replace(' ','_')}">${category}</a>
-              </g:each>
-        </span>
+        <g:render template="/newsItem/newsItemTags" model="[newsItem : newsItem]" />
         <span class="feedItemCommentSummary">
             <a class="source responseLink" href="" name="comment" title="View or Make Comments">
               <g:if test="${newsItem.comments.size() > 0}">${newsItem.comments.size()} Comments</g:if>

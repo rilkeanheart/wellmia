@@ -3,10 +3,82 @@
 
 /* global variables using LESS */
 @newsLinkActive: #FF8F3A;
+@lightGray: #aaa;
 
 
+/* styles applicable to multiple views */
 
-/* Defaults that were used to be provided by YUI Grid*/
+h3.feedSourceDate {
+	display:block;
+	font-size:14px;
+    font-weight: normal;
+	margin-bottom: .5em;
+	color: @lightGray;
+
+	a.source{
+		color: @lightGray;				
+		&:hover {color: @newsLinkActive;}
+	}
+}
+
+ul.feedItemStats {
+	float: right;
+    margin: 0 0 1em 1em;
+
+	li {
+		float: left;
+	    width: 50px;
+		list-style: none;
+		margin-left: 0;
+		font-size: 3.2em;
+		line-height: .8em;
+		text-align: center;
+		color: @lightGray;
+		
+		&.feedItemComments {
+			width: 60px;
+			
+			a {color: inherit;
+				
+				&:hover {
+					color: @newsLinkActive;
+				}
+			}
+		}
+		
+
+		span {
+			display: block;
+			font-size: 9px;
+		} 
+		
+		
+	} /* end feedItemStats li */
+} /* end feedItemStats */
+
+ul.feedItemTag {
+	list-style: none;
+	color: @lightGray;
+	display: block;
+	overflow: hidden;
+	
+	li {
+		float: left;
+		margin: 0 1em .5em 0;
+		
+		a {
+			display: block;
+			color: inherit;
+			background-color: #e8e8e8;
+			padding: 0 .7em;
+			&:hover {color: @newsLinkActive; background-color: #FBF5AB;}
+			
+		}
+	}
+} /* end ul.feedItemTag */
+
+
+/* Defaults that used to be provided by YUI Grid*/
 #wrapper {
    /* width:82.69em;
     *width:80.7em;
@@ -367,6 +439,10 @@ footer, #ft a{
 
 
 
+
+
+
+/* registraion page styles */
 
 #registration{
 	padding:20px 40px;
@@ -884,91 +960,27 @@ article.feedItem{
 	overflow: hidden;
 	color:#aaa;
 	
-	
+	h2.articleTitle {
+		font-size:1.8em;
+		color:#2085BB;
+	    font-weight: normal;
+		margin-bottom: .3em;
+		line-height: 1.2em;
+
+		a {text-decoration: none;
+			&:hover {
+			    color: @newsLinkActive;
+			}
+		}
+	} /* h2.articleTitle */
+
+
 	.feedItemImage{
 		float:left;
 	}
-
-	ul.feedItemStats {
-		float: right;
-	    margin: 0 0 1em 1em;
-
-		li {
-			float: left;
-		    width: 40px;
-			list-style: none;
-			margin-left: 0;
-			font-size: 4em;
-			line-height: .8em;
-			text-align: center;
-			
-			&.feedItemComments {
-				width: 60px;
-				
-				a {color: inherit;
-					
-					&:hover {
-						color: @newsLinkActive;
-					}
-				}
-			}
-			
-
-			span {
-				display: block;
-				font-size: 9px;
-			} 
-			
-			
-		} /* end feedItemStats li */
-	} /* end feedItemStats */
 	
 	section.feedItemContent{
 		overflow: hidden;
-		
-		h2 {
-			font-size:1.8em;
-			color:#2085BB;
-		    font-weight: normal;
-			margin-bottom: .3em;
-			line-height: 1.2em;
-		
-			a {text-decoration: none;
-				&:hover {
-				    color: @newsLinkActive;
-				}
-			}
-		} /* /.feedItemContent h2 */
-		
-		h3 {
-			display:block;
-			font-size:14px;
-		    font-weight: normal;
-			margin-bottom: .5em;
-		
-			a.source{
-				color: inherit;				
-				&:hover {color: @newsLinkActive;}
-			}
-		} /* ./feedItemContent h3 */
-		
-		ul.feedItemTag {
-			list-style: none;
-			
-			li {
-				float: left;
-				margin: 0 1em .5em 0;
-				
-				a {
-					display: block;
-					color: inherit;
-					background-color: #e8e8e8;
-					padding: 0 .7em;
-					&:hover {color: @newsLinkActive; background-color: #FBF5AB;}
-					
-				}
-			}
-		}
 
 	} /* /.feedItemContent */
 	
@@ -1145,3 +1157,60 @@ article.feedItem{
 }
 
 /* End of Health Profile Style*/
+
+
+
+/* article showDetails page style */
+#maincenter h1.articleTitle {
+	font-size: 2em;
+	color:#2085BB;
+    font-weight: normal;
+	margin: 1em 0 .3em;
+	line-height: 1.2em;
+
+	a {text-decoration: none;
+		&:hover {
+		    color: @newsLinkActive;
+		}
+	}
+}
+
+.showDetails {
+	.articleUtilities {
+		float: right;
+		background-color: #ddd;
+		padding: 10px;
+		border-radius: 4px;
+		border: 1px solid #fff;
+
+		.feedItemStats {
+			margin: 0;
+		}
+	}
+
+	.feedItemContent { font-size: 1.2em; }
+
+	a.follow_button {
+		margin: 0 auto;
+		display: block;
+		clear: both;
+		font-size: .9em;
+	}
+
+
+
+	.feedItemCommentSummary {
+		float: none;
+		display: block;
+
+		a.responseLink {
+			display: block;
+		}
+	}
+}
+
+
+
+
+
+/* article showDetails page style */

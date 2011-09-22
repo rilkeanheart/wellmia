@@ -4,22 +4,27 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
         <title><g:layoutTitle default='wellmia'/></title>
+        
+        <%--<g:render template="/headerResources"/>--%>
 
         <link rel="shortcut icon" href="${resource(dir:'images',file:'favicon.ico')}" type="image/x-icon"/>
         <link rel="stylesheet" href="http://yui.yahooapis.com/2.8.0r4/build/reset-fonts-grids/reset-fonts-grids.css" type="text/css">
         <style type="text/css">#custom-doc { width:82.69em;*width:80.7em;min-width:1075px; margin:auto; text-align:left; }</style>
-        <g:javascript library='jquery' plugin='jquery' />
+        <%--<g:javascript library='jquery' plugin='jquery' />--%>
 
-        <link rel="stylesheet" media="screen" href="${resource(dir:'css',file:'reset.css')}"/>
+        <!-- <link rel="stylesheet" media="screen" href="${resource(dir:'css',file:'reset.css')}"/>
         <link rel="stylesheet" media="screen" href="${resource(dir:'css',file:'spring-security-ui.css')}"/>
         <link rel="stylesheet" media="screen" href="${resource(dir:'css/smoothness',file:'jquery-ui-1.8.2.custom.css',plugin:'spring-security-ui')}"/>
         <link rel="stylesheet" media="screen" href="${resource(dir:'css',file:'jquery.jgrowl.css')}"/>
         <link rel="stylesheet" media="screen" href="${resource(dir:'css',file:'jquery.safari-checkbox.css')}"/>
         <link rel="stylesheet" media="screen" href="${resource(dir:'css',file:'auth.css')}"/>
-        <link rel="stylesheet" media="screen" href="${resource(dir:'css',file:'style.css')}" />
+        <link rel="stylesheet" media="screen" href="${resource(dir:'css',file:'style.css')}" /> -->
+
+        <g:render template="/headerResources"/>
+
         <script type="text/javascript">
 
-          var _gaq = _gaq || [];
+          /*var _gaq = _gaq || [];
           _gaq.push(['_setAccount', 'UA-21722315-1']);
           _gaq.push(['_trackPageview']);
 
@@ -27,7 +32,7 @@
             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
+          })();*/
 
         </script>
         <g:layoutHead/>
@@ -69,11 +74,11 @@
                 <div class="clear"></div>
             </div>
             <div id="nav"></div>
-            <g:javascript src='jquery/jquery.jgrowl.js'/>
+            <%--<g:javascript src='jquery/jquery.jgrowl.js'/>
             <g:javascript src='jquery/jquery.checkbox.js'/>
             <g:javascript src='jquery/jquery.password_strength.js'/>
             <jqui:resources />
-            <g:javascript src='spring-security-ui.js'/>
+            <g:javascript src='spring-security-ui.js'/>--%>
             <g:layoutBody/>
             <div id="ft">
                 <div id="footernav">

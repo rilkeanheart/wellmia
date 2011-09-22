@@ -18,27 +18,20 @@
         <meta name="layout" content="wellmia" />
     </head>
     <body>
-                                <h1>${newsItem.title}</h1>
-                                <div>
-                                    ${newsItem.rating} Votes
-                                </div>
-                                <div>
-                                    ${newsItem.numberOfViews} Views
-                                </div>
-                                <g:if test="${bIsFollowed == true}">
-                                    <a class="follow_button" href="#" feedItemId="" bShouldFollow="${!bIsFollowed}">Followed</a>
-                                </g:if>
-                                <g:else>
-                                    <a class="follow_button" href="#" feedItemId="" bShouldFollow="${!bIsFollowed}">Follow This</a>
-                                </g:else>
-                                <input id="itemId" type="hidden" name="feedItemId" value="${newsItem.id}"/>
-                                <input type="hidden" name="feedItemType" value="${newsItem.class.name}"/>
-                                <div id="pagelet_news_stream_dep" class="news_list_container_dep">
-                                    <div id="news_stream_items_dep" class="news_list_dep">
-                                        <g:render template="/newsItem/newsItem" model="[newsItem : newsItem]"/>
-                                    </div>
-                                </div>
-
-
+        <section class="showDetails">
+            <h1 class="articleTitle"><a href="/newsItem/showDetails/${newsItem.id}">${newsItem.title}</a></h1>
+            <div class="articleUtilities">
+                <g:render template="/newsItem/newsItemStats" />
+                <g:if test="${bIsFollowed == true}">
+                    <a class="follow_button" href="#" feedItemId="" bShouldFollow="${!bIsFollowed}">Followed</a>
+                </g:if>
+                <g:else>
+                    <a class="follow_button" href="#" feedItemId="" bShouldFollow="${!bIsFollowed}">Follow This</a>
+                </g:else>
+            </div>
+            <input id="itemId" type="hidden" name="feedItemId" value="${newsItem.id}"/>
+            <input type="hidden" name="feedItemType" value="${newsItem.class.name}"/>
+            <g:render template="/newsItem/newsItem" model="[newsItem : newsItem]"/>
+        </section>
     </body>
 </html>
